@@ -25,7 +25,7 @@
 
 var returnBackgroundToStartAfterRepetitions = 3;
 var backgroundX = 0;
-var backgroundVelocity = -1;
+var backgroundVelocity = -7;
 
 // variables to initialize
 var backgroundWasInitialized = false;
@@ -58,7 +58,7 @@ function moveBackground() {
 
     // set the position according to 
     //    http://stackoverflow.com/questions/15254659/a-generic-js-function-to-move-any-svg-element
-    bg.setAttribute('transform', backgroundInitialTranslation + ',translate(' + backgroundX + '0)');
+    bg.setAttribute('transform', backgroundInitialTranslation + ',translate(' + Math.floor(backgroundX) + ', 0)');
 }
 
 var movingBackgoundIntervalID = null;
@@ -188,7 +188,7 @@ function fly() {
     }
     // set the position according to 
     //    http://stackoverflow.com/questions/15254659/a-generic-js-function-to-move-any-svg-element
-    bird.setAttribute(&quot;transform&quot;, &quot;translate(0,&quot; + y + &quot;)&quot;);
+    bird.setAttribute(&quot;transform&quot;, &quot;translate(0,&quot; + Math.floor(y) + &quot;)&quot;);
 }
 
 function flap() { 
@@ -266,11 +266,11 @@ window.onload = function() {
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.36848957"
-     inkscape:cx="-12.239313"
-     inkscape:cy="407.44644"
+     inkscape:zoom="0.046061196"
+     inkscape:cx="15715.254"
+     inkscape:cy="7780.6673"
      inkscape:document-units="px"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer3"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1005"
