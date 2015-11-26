@@ -25,7 +25,7 @@
 
 var returnBackgroundToStartAfterRepetitions = 3;
 var backgroundX = 0;
-var backgroundVelocity = -7;
+var backgroundVelocity = -1;
 
 // variables to initialize
 var backgroundWasInitialized = false;
@@ -50,15 +50,15 @@ function moveBackground() {
     backgroundX += backgroundVelocity;
     var maximumX = returnBackgroundToStartAfterRepetitions * backgroundWidth;
     var direction = Math.sign(backgroundVelocity);
-    if (backgroundX * direction > maximumX) {
+    if (backgroundX * direction &gt; maximumX) {
         backgroundX -= maximumX * direction;
     }
 
-    var bg = layerNamed('background');
+    var bg = layerNamed(&quot;background&quot;);
 
     // set the position according to 
     //    http://stackoverflow.com/questions/15254659/a-generic-js-function-to-move-any-svg-element
-    bg.setAttribute('transform', backgroundInitialTranslation + ',translate(' + backgroundX + ', 0)');
+    bg.setAttribute('transform', backgroundInitialTranslation + ',translate(' + backgroundX + '0)');
 }
 
 var movingBackgoundIntervalID = null;
@@ -122,8 +122,11 @@ function layerNamed(name) {
     var layers = document.getElementsByTagName(&quot;g&quot;);
     for (var i = 0; i &lt; layers.length; i++) {
         var layer = layers[i];
-        if (layer.getAttribute('inkscape:label').toLowerCase() == name.toLowerCase()) {
-            return layer;
+        if (layer.getAttribute('inkscape:groupmode') == 'layer') {
+            var label = layer.getAttribute('inkscape:label');
+            if (label != null &amp;&amp; label.toLowerCase() == name.toLowerCase()) {
+                return layer;
+            }
         }
     }
     alert('Error: getLayerNamed: Can not find a layer named &quot;' + name + '&quot;. You should debug!');
@@ -139,7 +142,8 @@ function startGame() {
     layerNamed('background').style.display = 'inline'; // inline = show layer
     startFlapping();
 }
-</script>  <script
+</script>
+  <script
      id="startscreen_show">// startGame
 
 function showStartScreen() {
@@ -262,11 +266,11 @@ window.onload = function() {
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.023030598"
-     inkscape:cx="9926.8646"
-     inkscape:cy="-7697.1417"
+     inkscape:zoom="0.13028074"
+     inkscape:cx="2770.8916"
+     inkscape:cy="1543.1003"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer4"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1005"
@@ -318,9 +322,29 @@ window.onload = function() {
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="invisible_stuff"
-     style="display:none"
-     transform="translate(0,-452.36216)" />
+     inkscape:label="do not touch and show this layer"
+     style="display:inline"
+     transform="translate(0,-452.36216)"
+     sodipodi:insensitive="true">
+    <path
+       inkscape:connector-curvature="0"
+       id="backgroundWidth"
+       d="m -41.522068,-191.05004 10051.881068,0 0,599.99618 -10051.881068,0 z"
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       inkscape:label="#path4702" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text4202"
+       y="173.09712"
+       x="2019.0531"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:187.5px;line-height:125%;font-family:Aleo;-inkscape-font-specification:Aleo;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="fill:#f2f2f2"
+         y="173.09712"
+         x="2019.0531"
+         id="tspan4204"
+         sodipodi:role="line">backgroundWidth - careful</tspan></text>
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
@@ -332,12 +356,6 @@ window.onload = function() {
        d="m -41.522068,408.94614 0,643.41606 20103.871068,0 20103.871,0 0,-643.41606 -20103.871,0 -20103.871068,0 z"
        id="path4704"
        inkscape:connector-curvature="0" />
-    <path
-       inkscape:connector-curvature="0"
-       id="backgroundWidth"
-       d="m -41.522068,-191.05004 10051.881068,0 0,599.99618 -10051.881068,0 z"
-       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
-       inkscape:label="#path4702" />
     <path
        inkscape:connector-curvature="0"
        id="path4706"
@@ -508,6 +526,8 @@ window.onload = function() {
        id="path4774"
        d="m 33001.953,1033.4622 c 32.266,0 199.333,-75.4 239.733,-83.5 40.4,-8.09863 -51.2,-5.39863 132,-13.39866 183.2,-8.1 255.867,-48.5 379.733,-53.9 123.867,-5.4 250.534,-21.6 331.334,-21.6 80.933,0 53.866,-16.09999 274.8,-24.19999 220.933,-8.10001 158.933,-16.20001 328.533,-16.20001 169.867,0 97.067,-21.50003 245.2,-5.4 148.134,16.20001 150.8,-18.80003 202,40.39999 51.2,59.3 18.934,32.40001 62,86.20004 43.067,53.89863 10.667,56.59863 72.667,64.69863 62,8.1 48.533,-10.8 75.467,8.1 26.933,18.8 62,61.9 62,61.9 0,0 121.2,67.3961 -207.467,86.196 -328.667,18.9068 150.8,37.7067 -598,105.1067 -748.8,67.2934 -856.667,80.8001 -1115.2,56.6001 -258.667,-24.3067 -325.867,-10.8 -379.867,-40.4001 -53.867,-29.7066 -104.933,-250.6027 -104.933,-250.6027 z"
        style="fill:#c4987b;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:6.69995165px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <g
+       id="g4210" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -579,10 +599,10 @@ window.onload = function() {
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="hull"
-     sodipodi:insensitive="true">
+     style="display:none">
     <path
        style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.65700001;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
-       d="m -182.9375,-274.4082 0,1148.8164 825.8755,0 0,-1148.8164 z M 0,0 480,0 480,600 0,600 Z"
+       d="m -1182.938,-474.408 0,1548.816 2825.876,0 0,-1548.816 z M 0,0 480,0 480,600 0,600 Z"
        id="rect4822"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccc" />
