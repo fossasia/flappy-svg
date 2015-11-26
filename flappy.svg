@@ -21,19 +21,23 @@
      id="start_scale_to_fullscreen">// scale the game so it always fits the screen
 // This way the zoom is not activated on tablets and phones
 
-function scale_to_full_screen() {
+function scale_to_fullscreen() {
     // compute scales
     var svg = document.getElementsByTagName(&quot;svg&quot;)[0];
-    var scale_height = window.screen.availHeight / svg.getAttribute('height');
-    var scale_width = window.screen.availWidth / svg.getAttribute('width');
+
+    var width = svg.getAttribute('width');
+    var height = svg.getAttribute('height');
+
+    var scale_width = window.innerWidth / width;
+    var scale_height = window.innerHeight / height;
 
     // choose smallest scale
     //    http://www.w3schools.com/jsref/jsref_min.asp
     var scale = Math.min(scale_height, scale_width);
 
-    // scale the svg
-    //    http://tutorials.jenkov.com/svg/svg-transformation.html#scale
-    svg.setAttribute('transform', &quot;scale(&quot; + scale + &quot;)&quot;);
+    // set the dimensions
+    svg.setAttribute('width', width * scale);
+    svg.setAttribute('height', height * scale);
 }
 
   </script>
@@ -112,7 +116,9 @@ svg.onmousedown = flap;</script>
      id="start">// Execute everything that should be started.
 // This script must be the last script. Otherwise not all functions may be loaded.
 
-startFlapping();</script>
+startFlapping();
+scale_to_fullscreen();
+</script>
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -142,7 +148,7 @@ startFlapping();</script>
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
         <cc:license
            rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
         <dc:creator>
