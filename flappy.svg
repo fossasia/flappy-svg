@@ -17,6 +17,7 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="flappy.svg"
    enable-background="new">
+   
   <script
      id="script4153">// debug help
 
@@ -126,7 +127,9 @@ function flap() {
 // set mouse down according to 
 //    http://stackoverflow.com/questions/322378/javascript-check-if-mouse-button-down
 var svg = document.getElementsByTagName(&quot;svg&quot;)[0];
-svg.onmousedown = flap;</script>
+svg.onmousedown = flap;
+svg.touchend = flap;
+</script>
   <script
      id="start">// Execute everything that should be started.
 // This script must be the last script. Otherwise not all functions may be loaded.
