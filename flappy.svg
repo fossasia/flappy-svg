@@ -15,8 +15,28 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="svg-flappy.svg"
+   sodipodi:docname="flappy.svg"
    enable-background="new">
+  <script
+     id="start_scale_to_fullscreen">// scale the game so it always fits the screen
+// This way the zoom is not activated on tablets and phones
+
+function scale_to_full_screen() {
+    // compute scales
+    var svg = document.getElementsByTagName(&quot;svg&quot;)[0];
+    var scale_height = window.screen.availHeight / svg.getAttribute('height');
+    var scale_width = window.screen.availWidth / svg.getAttribute('width');
+
+    // choose smallest scale
+    //    http://www.w3schools.com/jsref/jsref_min.asp
+    var scale = Math.min(scale_height, scale_width);
+
+    // scale the svg
+    //    http://tutorials.jenkov.com/svg/svg-transformation.html#scale
+    svg.setAttribute('transform', &quot;scale(&quot; + scale + &quot;)&quot;);
+}
+
+  </script>
   <script
      id="layer_functions">// some functions that are useful
 
@@ -36,11 +56,11 @@ function layerNamed(name) {
      id="startscreen_startGame">// startGame
 
 function startGame() {
-    layerNamed('startscreen').style.display = &quot;none&quot;;
-    layerNamed('bird').style.display = &quot;inline&quot;;
+    layerNamed('startscreen').style.display = &quot;none&quot;; // none = hide layer
+    layerNamed('bird').style.display = &quot;inline&quot;; // inline = show layer
+    layerNamed('background').style.display = &quot;inline&quot;; // inline = show layer
     startFlapping();
 }
-
 </script>
   <script
      id="flapping">// setInterval http://www.w3schools.com/jsref/met_win_setinterval.asp
@@ -50,6 +70,8 @@ function startFlapping() {
     if (flappingIntervalID == null) {
          flappingIntervalID = setInterval(fly, 50);
     }
+    y = 0;
+    velocity = 0;
 }
 
 function stopFlapping() {
@@ -63,7 +85,7 @@ var velocity = 0;
 var y = 0;
 var flap_velocity = -15;
 
-var bottom = 120;
+var bottom = 250;
 var top = -bottom; // suppose we are in the middle
 
 function fly() {
@@ -86,6 +108,11 @@ function flap() {
 //    http://stackoverflow.com/questions/322378/javascript-check-if-mouse-button-down
 var svg = document.getElementsByTagName(&quot;svg&quot;)[0];
 svg.onmousedown = flap;</script>
+  <script
+     id="start">// Execute everything that should be started.
+// This script must be the last script. Otherwise not all functions may be loaded.
+
+startFlapping();</script>
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -95,11 +122,11 @@ svg.onmousedown = flap;</script>
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0422459"
-     inkscape:cx="37.197777"
-     inkscape:cy="232.61079"
+     inkscape:zoom="0.73697914"
+     inkscape:cx="-447.09545"
+     inkscape:cy="399.31625"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1-5"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1005"
@@ -115,12 +142,22 @@ svg.onmousedown = flap;</script>
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <cc:license
-           rdf:resource="http://creativecommons.org/licenses/by/3.0/" />
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Nicco Kunzmann</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Nicco Kunzmann, </dc:title>
+          </cc:Agent>
+        </dc:contributor>
       </cc:Work>
       <cc:License
-         rdf:about="http://creativecommons.org/licenses/by/3.0/">
+         rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
@@ -131,9 +168,49 @@ svg.onmousedown = flap;</script>
            rdf:resource="http://creativecommons.org/ns#Attribution" />
         <cc:permits
            rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
       </cc:License>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="invisible_stuff"
+     style="display:none"
+     transform="translate(0,-452.36216)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="background"
+     style="display:none"
+     transform="translate(0,-452.36216)">
+    <rect
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:0.65700001;fill:#ff0000;fill-opacity:0.95111114;fill-rule:nonzero;stroke:#2b1100;stroke-width:7.58403587;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       id="rect4145"
+       width="472.41599"
+       height="592.41595"
+       x="3.7920179"
+       y="-1048.5702"
+       transform="scale(1,-1)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="bird"
+     style="display:none">
+    <g
+       transform="matrix(-0.38499866,0,0,0.38499866,204.22603,49.462824)"
+       id="layer1-5"
+       inkscape:label="Ebene 1"
+       style="fill:#a05a2c;stroke:#2b1100;stroke-width:12.98705864;stroke-miterlimit:4;stroke-dasharray:none">
+      <path
+         inkscape:connector-curvature="0"
+         id="path5510"
+         d="m 308.65625,495.28125 c -0.55306,0.0169 -1.10391,0.0556 -1.6875,0.125 C 288.29402,497.62708 292.29998,508.16124 285,517 c -7.29998,8.83876 -2.06309,21.69128 -9.65625,33.21875 -35.04614,32.50819 -41.06063,38.97216 -48.375,-22.15625 -28.74026,-34.30549 -50.72823,-23.44742 -49.65625,-5.6875 1.07198,17.75992 -9.51668,2.36043 -12.5,5.34375 -2.98332,2.98332 -7.14832,7.30678 -6.25,11.78125 0.89832,4.47447 7.54265,4.86449 9.28125,11.4375 1.7386,6.57301 -0.94812,15.38177 -3.03125,25.875 -2.08313,10.49323 -8.32309,24.24346 -6.96875,36.96875 1.35434,12.72529 3.62641,24.71317 13.59375,35 9.96734,10.28683 25.76344,22.0499 42.125,21.4375 16.36156,-0.6124 36.69944,-33.77652 43.59375,-26.4375 6.89431,7.33902 -18.97675,39.27129 17.84375,49.28125 4.64326,15.54583 8.09742,36.14471 5,45.71875 -3.09742,9.57404 9.09902,3.06607 15,1.4375 5.90098,-1.62857 -5.6833,-15.65064 -3.5625,-17.15625 2.1208,-1.50561 4.59714,-11.94235 4.09375,-17.3125 2.05565,-4.68632 4.68315,-7.62325 12.3125,-3.9375 3.3662,2.5287 4.22349,5.2497 5.71875,9.125 1.49526,3.8753 4.54219,4.01044 6.4375,10 1.89531,5.98956 0.52169,23.66253 0.71875,25.71875 0.19706,2.05622 17.40599,3.19509 17.84375,-2.875 0.43776,-6.07009 -7.96461,-19.55049 -7.5,-38.03125 0.46461,-18.48076 7.08805,-7.95804 9.28125,-27.84375 2.1932,-19.88571 14.77772,-3.13637 20.5625,-9.46875 5.78478,-6.33238 29.17471,-16.13199 34.4375,-23.5625 19.79595,24.37794 21.46039,12.39942 23.21875,29.625 1.75836,17.22558 -0.30817,24.15072 -0.15625,33.75 0.15191,9.59928 -8.49355,25.11989 -8.40625,31.25 0.0873,6.13011 -0.13308,-1.21983 7.84375,-0.53125 7.97682,0.68858 5.24181,-26.71277 12.15625,-26.59375 6.91444,0.11902 -0.95719,17.20233 2.15625,20 3.11344,2.79767 2.8134,5.52747 5,0 2.1866,-5.52747 2.70244,-36.7803 6.59375,-38.9375 3.89131,-2.15721 -9.78079,-23.68538 -7.5,-28.40625 2.28079,-4.72087 -1.39893,5.25744 4.28125,-3.21875 5.68018,-8.47619 9.60453,-46.47271 5.90625,-61.78125 -3.69828,-15.30854 -16.50761,-13.87654 -20,-24.09375 -3.49239,-10.21721 1.06132,-14.44104 -2.875,-26.25 -3.93632,-11.80896 -15.33796,-36.30546 -29.46875,-42.875 -14.13079,-6.56954 -27.73952,-3.66085 -37.65625,6.09375 -9.91673,9.7546 -6.24627,35.69903 -9.84375,39.09375 -3.59747,3.39472 -9.63918,-5.39159 -13.90625,-19.46875 -4.13371,-13.63725 -6.88648,-37.77257 -24.03125,-37.25 z m -110.78125,33.25 c 1.34771,-0.15955 2.49716,1.20929 3.6875,2.21875 -2.36417,1.74521 -4.601,2.62897 -6.375,0.125 1.01379,-1.61983 1.87887,-2.24802 2.6875,-2.34375 z m -33.78125,11.0625 15.46875,0.28125 c -0.23768,0.8081 -14.12505,1.36445 -15.46875,-0.28125 z"
+         style="fill:#a05a2c;stroke:#2b1100;stroke-width:12.98705864;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
   <g
      inkscape:groupmode="layer"
      id="layer4"
@@ -165,34 +242,5 @@ svg.onmousedown = flap;</script>
        onclick="startGame();"
        onmouseup=""
        onload="" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="invisible_stuff"
-     style="display:none"
-     transform="translate(0,-452.36216)" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer2"
-     inkscape:label="background"
-     style="display:none"
-     transform="translate(0,-452.36216)" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:label="bird"
-     style="display:none">
-    <g
-       transform="matrix(-0.38499866,0,0,0.38499866,364.33911,54.890386)"
-       id="layer1-5"
-       inkscape:label="Ebene 1"
-       style="fill:#a05a2c;stroke:#2b1100;stroke-width:12.98705864;stroke-miterlimit:4;stroke-dasharray:none">
-      <path
-         inkscape:connector-curvature="0"
-         id="path5510"
-         d="m 308.65625,495.28125 c -0.55306,0.0169 -1.10391,0.0556 -1.6875,0.125 C 288.29402,497.62708 292.29998,508.16124 285,517 c -7.29998,8.83876 -2.06309,21.69128 -9.65625,33.21875 -35.04614,32.50819 -41.06063,38.97216 -48.375,-22.15625 -28.74026,-34.30549 -50.72823,-23.44742 -49.65625,-5.6875 1.07198,17.75992 -9.51668,2.36043 -12.5,5.34375 -2.98332,2.98332 -7.14832,7.30678 -6.25,11.78125 0.89832,4.47447 7.54265,4.86449 9.28125,11.4375 1.7386,6.57301 -0.94812,15.38177 -3.03125,25.875 -2.08313,10.49323 -8.32309,24.24346 -6.96875,36.96875 1.35434,12.72529 3.62641,24.71317 13.59375,35 9.96734,10.28683 25.76344,22.0499 42.125,21.4375 16.36156,-0.6124 36.69944,-33.77652 43.59375,-26.4375 6.89431,7.33902 -18.97675,39.27129 17.84375,49.28125 4.64326,15.54583 8.09742,36.14471 5,45.71875 -3.09742,9.57404 9.09902,3.06607 15,1.4375 5.90098,-1.62857 -5.6833,-15.65064 -3.5625,-17.15625 2.1208,-1.50561 4.59714,-11.94235 4.09375,-17.3125 2.05565,-4.68632 4.68315,-7.62325 12.3125,-3.9375 3.3662,2.5287 4.22349,5.2497 5.71875,9.125 1.49526,3.8753 4.54219,4.01044 6.4375,10 1.89531,5.98956 0.52169,23.66253 0.71875,25.71875 0.19706,2.05622 17.40599,3.19509 17.84375,-2.875 0.43776,-6.07009 -7.96461,-19.55049 -7.5,-38.03125 0.46461,-18.48076 7.08805,-7.95804 9.28125,-27.84375 2.1932,-19.88571 14.77772,-3.13637 20.5625,-9.46875 5.78478,-6.33238 29.17471,-16.13199 34.4375,-23.5625 19.79595,24.37794 21.46039,12.39942 23.21875,29.625 1.75836,17.22558 -0.30817,24.15072 -0.15625,33.75 0.15191,9.59928 -8.49355,25.11989 -8.40625,31.25 0.0873,6.13011 -0.13308,-1.21983 7.84375,-0.53125 7.97682,0.68858 5.24181,-26.71277 12.15625,-26.59375 6.91444,0.11902 -0.95719,17.20233 2.15625,20 3.11344,2.79767 2.8134,5.52747 5,0 2.1866,-5.52747 2.70244,-36.7803 6.59375,-38.9375 3.89131,-2.15721 -9.78079,-23.68538 -7.5,-28.40625 2.28079,-4.72087 -1.39893,5.25744 4.28125,-3.21875 5.68018,-8.47619 9.60453,-46.47271 5.90625,-61.78125 -3.69828,-15.30854 -16.50761,-13.87654 -20,-24.09375 -3.49239,-10.21721 1.06132,-14.44104 -2.875,-26.25 -3.93632,-11.80896 -15.33796,-36.30546 -29.46875,-42.875 -14.13079,-6.56954 -27.73952,-3.66085 -37.65625,6.09375 -9.91673,9.7546 -6.24627,35.69903 -9.84375,39.09375 -3.59747,3.39472 -9.63918,-5.39159 -13.90625,-19.46875 -4.13371,-13.63725 -6.88648,-37.77257 -24.03125,-37.25 z m -110.78125,33.25 c 1.34771,-0.15955 2.49716,1.20929 3.6875,2.21875 -2.36417,1.74521 -4.601,2.62897 -6.375,0.125 1.01379,-1.61983 1.87887,-2.24802 2.6875,-2.34375 z m -33.78125,11.0625 15.46875,0.28125 c -0.23768,0.8081 -14.12505,1.36445 -15.46875,-0.28125 z"
-         style="fill:#a05a2c;stroke:#2b1100;stroke-width:12.98705864;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    </g>
   </g>
 </svg>
