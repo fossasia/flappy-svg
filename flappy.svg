@@ -25,7 +25,7 @@
 
 var returnBackgroundToStartAfterRepetitions = 3;
 var backgroundX = 0;
-var backgroundVelocity = -1;
+var backgroundVelocity = -7;
 
 // variables to initialize
 var backgroundWasInitialized = false;
@@ -54,11 +54,11 @@ function moveBackground() {
         backgroundX -= maximumX * direction;
     }
 
-    var bg = layerNamed(&quot;background&quot;);
+    var bg = layerNamed('background');
 
     // set the position according to 
     //    http://stackoverflow.com/questions/15254659/a-generic-js-function-to-move-any-svg-element
-    bg.setAttribute('transform', backgroundInitialTranslation + ',translate(' + backgroundX + '0)');
+    bg.setAttribute('transform', backgroundInitialTranslation + ',translate(' + backgroundX + ', 0)');
 }
 
 var movingBackgoundIntervalID = null;
