@@ -130,9 +130,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.36848957"
-     inkscape:cx="1020.7341"
-     inkscape:cy="481.55693"
+     inkscape:zoom="0.52112294"
+     inkscape:cx="642.48302"
+     inkscape:cy="342.02749"
      inkscape:document-units="px"
      inkscape:current-layer="layer10"
      showgrid="false"
@@ -342,7 +342,7 @@
     </g>
     <g
        id="g9705"
-       transform="translate(-178.2024,-14.33884)"
+       transform="translate(-178.2024,27.66116)"
        onclick="window.open('http://www.fileformat.info/info/unicode/char/328a/index.htm', '_blank');">
       <ellipse
          ry="35.904133"
@@ -375,7 +375,7 @@
        y="-240.85091"
        inkscape:label="width" />
     <g
-       transform="translate(817.707,-14.33884)"
+       transform="translate(817.707,27.66116)"
        id="g9713"
        onclick="window.open('http://www.fileformat.info/info/unicode/char/328a/index.htm', '_blank');">
       <ellipse
