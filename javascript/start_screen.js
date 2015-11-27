@@ -12,5 +12,8 @@ function startGame() {
     layerNamed('startscreen').style.display = 'none'; // none = hide layer
     startFlapping('bird');
     startMovingBackgound('background', -7);
+    startMovingBackgound('cactus', -7);
+    startMovingBackgound('DayAndNight', -20);
+    startMovingBackgound('SunAndMoon', 1);
     scaleToFullscreen();
 }
