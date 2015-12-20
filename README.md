@@ -2,7 +2,7 @@
 
 Flappy Bird in SVG
 
-[Play](https://niccokunzmann.github.io/flappy-svg)
+[Play](https://fossasia.github.io/flappy-svg)
 
 
 Lizenz
