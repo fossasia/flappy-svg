@@ -76,4 +76,43 @@ function stopMovingBackgound(name) {
     background(name).stopMoving();
 }
 
+function backgroundChange(layer){
+	desertHide()
+	gothamHide()
+	
+	if (layer =='background'){
+		desertShow()}
+	
+	if (layer =='Gotham'){
+		gothamShow()}
+}
+
+function desertShow(){
+		layerNamed('cactus').style.display = 'inline'
+		layerNamed('DayAndNight').style.display = 'inline'
+		layerNamed('background').style.display = 'inline'
+		layerNamed('SunAndMoon').style.display = 'inline'
+		layerNamed('sky').style.display = 'inline';
+}
+
+function desertHide(){
+		layerNamed('cactus').style.display = 'none'
+		layerNamed('DayAndNight').style.display = 'none'
+		layerNamed('background').style.display = 'none'
+		layerNamed('SunAndMoon').style.display = 'none'
+		layerNamed('sky').style.display = 'none';
+}
+
+function gothamShow(){
+		layerNamed('Gotham').style.display = 'inline'
+		layerNamed('Gotham_obstacles').style.display = 'inline'
+}
+		
+function gothamHide(){
+		layerNamed('Gotham').style.display = 'none'
+		layerNamed('Gotham_obstacles').style.display = 'none'
+}
+
+
+
 
