@@ -38,6 +38,12 @@ Flappy.prototype = {
     },
     flap : function() {
         this.velocity = this.flapVelocity;
+    },
+    show : function() {
+        this.position.show();
+    },
+    hide : function() {
+        this.position.hide();
     }
 }
 

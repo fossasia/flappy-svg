@@ -41,6 +41,12 @@ Background.prototype = {
     },
     started : function() {
         this.position.x = 0;
+    },
+    show : function() {
+        this.position.show();
+    },
+    hide : function() {
+        this.position.hide();
     }
 }
 
