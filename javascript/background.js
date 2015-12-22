@@ -43,7 +43,6 @@ Background.prototype = {
     stopMoving : function() {
         this.action.stop();
     },
-    
     move : function() {
         var x = this.position.x;
         x += this.velocity;
@@ -60,11 +59,17 @@ Background.prototype = {
     },
     hide : function() {
         this.position.hide();
+    },
+    isVisible : function() {
+        return this.position.isVisible();
     }
 }
 
 function startMovingBackgound(name, velocity) {
-    background(name, velocity).startMoving();
+    var bg = background(name, velocity);
+    if (bg.isVisible()) {
+        bg.startMoving();
+    }
 }
 
 function stopMovingBackgound(name) {

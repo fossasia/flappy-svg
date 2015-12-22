@@ -62,6 +62,9 @@ GameObject.prototype = {
     hide : function() {
         this.SVGElement.style.display = 'none';
     },
+    isVisible : function() {
+        return this.SVGElement.style.display != 'none';
+    },
     cache : function(name, callable) {
         var value = this._cache[name];
         if (value != undefined) return value;
