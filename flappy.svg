@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<?xml-stylesheet type="text/css" href="index.css" ?><!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -152,11 +152,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4739582"
-     inkscape:cx="77.48473"
-     inkscape:cy="369.73098"
+     inkscape:zoom="2.0844917"
+     inkscape:cx="460.51412"
+     inkscape:cy="564.90319"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="g5056"
      showgrid="false"
      inkscape:window-width="1440"
      inkscape:window-height="837"
@@ -9353,14 +9353,19 @@
        rx="21.01499"
        ry="21.031803"
        onclick="backgroundChange('background')" />
-    <a xlink:href="http://fossasia.org/" target="_blank">
-    <image
-       y="490"
-       x="245"
-       id="image8275"
-       xlink:href="FOSSASIA_Logo.png"
-       height="94"
-       width="220" /></a>
+    <a
+       xlink:href="http://fossasia.org/"
+       target="_blank"
+       id="a1702">
+      <image
+         sodipodi:absref="C:\Users\pohsa\Documents\GitHub\flappy-svg\FOSSASIA_Logo.png"
+         xlink:href="FOSSASIA_Logo.png"
+         width="220"
+         height="94"
+         id="image8275"
+         x="245"
+         y="490" />
+    </a>
     <ellipse
        style="opacity:0.69999994;fill:#af9300;fill-opacity:1;stroke:#e1e1ee;stroke-opacity:1"
        id="path5839"
@@ -9369,6 +9374,36 @@
        rx="22.388695"
        ry="21.710249"
        onclick="backgroundChange('Gotham')" />
+    <a
+       style="display:inline"
+       id="a5061"
+	   target="_blank"
+       xlink:href="https://github.com/fossasia/flappy-svg">
+      <desc
+         id="desc5844">Credits to:Lionel T (http://codepen.io/elrumordelaluz/pen/XmygWX)</desc>
+      <g
+         transform="matrix(0.40000001,0,0,0.40000001,380,0)"
+         id="g5056"
+         style="color:#ffffff;fill:#70b7fd" >
+        <path
+           inkscape:connector-curvature="0"
+           d="m 0,0 115,115 15,0 12,27 108,108 0,-250 z"
+           id="path5044"
+           style="fill:#0000ff" />
+        <path
+           inkscape:connector-curvature="0"
+           class="octo-arm"
+           style="fill:#ff6600;transform-origin:130px 106px"
+           d="M 128.3,109 C 113.8,99.7 119,89.6 119,89.6 c 3,-6.9 1.5,-11 1.5,-11 -1.3,-6.6 2.9,-2.3 2.9,-2.3 3.9,4.6 2.1,11 2.1,11 -2.6,10.3 5.1,14.6 8.9,15.9"
+           id="path5046" />
+        <path
+           style="fill:#ff6600"
+           inkscape:connector-curvature="0"
+           class="octo-body"
+           d="m 115,115 c -0.1,0.1 3.7,1.5 4.8,0.4 l 13.9,-13.8 c 3.2,-2.4 6.2,-3.2 8.5,-3 -8.4,-10.6 -14.7,-24.2 1.6,-40.6 4.7,-4.6 10.2,-6.8 15.9,-7 0.6,-1.6 3.5,-7.4 11.7,-10.9 0,0 4.7,2.4 7.4,16.1 4.3,2.4 8.4,5.6 12.1,9.2 3.6,3.6 6.8,7.8 9.2,12.2 13.7,2.6 16.2,7.3 16.2,7.3 -3.6,8.2 -9.4,11.1 -10.9,11.7 -0.3,5.8 -2.4,11.2 -7.1,15.9 -16.4,16.4 -30,10 -40.6,1.6 0.2,2.8 -1,6.8 -5,10.8 L 141,136.5 c -1.2,1.2 0.6,5.4 0.8,5.3 z"
+           id="path5048" />
+      </g>
+    </a>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -9398,6 +9433,18 @@
        style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
        d="m -1182.938,-474.408 0,1548.816 2825.876,0 0,-1548.816 z M 0,0 480,0 480,600 0,600 Z"
        id="rect4822"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="g1708"
+     inkscape:label="hull"
+     style="display:inline">
+    <path
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+       d="m -1182.938,-474.408 0,1548.816 2825.876,0 0,-1548.816 z M 0,0 480,0 480,600 0,600 Z"
+       id="path1710"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccc" />
   </g>
