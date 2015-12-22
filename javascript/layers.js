@@ -45,5 +45,15 @@ function widthOfLayer(layer) {
         return;
     });
     if (!result) return;
-    return result.getBBox().width;
+    try {
+        var bbox = result.getBBox();
+    } catch (error) {
+        if (error.name == "NS_ERROR_FAILURE") {
+            // This error occurs of we try to get the width of a javascript element that is hidden.
+            // Firefox 43.0.1
+            return;
+        }
+        throw error;
+    }
+    return bbox.width;
 }
