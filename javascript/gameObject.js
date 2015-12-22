@@ -91,7 +91,7 @@ Screen.prototype = {
     set _x(x) {
         this.gameObject.x = x;
     },
-    get (_y) {
+    get _y() {
         return this.gameObject.y;
     },
     set _y(y) {
