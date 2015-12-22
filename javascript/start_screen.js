@@ -15,5 +15,7 @@ function startGame() {
     startMovingBackgound('cactus', -7);
     startMovingBackgound('DayAndNight', -20);
     startMovingBackgound('SunAndMoon', 1);
+    startMovingBackgound('Gotham', -7);
+    startMovingBackgound('Gotham_obstacles', -7);
     scaleToFullscreen();
 }
