@@ -10,12 +10,25 @@ function background(layerName, velocity) {
     return new Background(layerName, velocity);
 }
 
+function sign(number) {
+    // Math.sign is not present in Internet Explorer.
+    // We define this here so it works everywhere.
+    if (number < 0) {
+        return -1;
+    } else if (number > 0) {
+        return  1;
+    } else if (number == 0) {
+        return  0;
+    }
+    return null;
+}
+
 function Background(layerName, velocity) {
     this.layerName = layerName;
     this.layer = layerNamed(layerName);
     this.position = gameObject(this.layer);
     this.velocity = velocity;
-    this.direction = Math.sign(this.velocity)
+    this.direction = sign(this.velocity)
     this.width = widthOfLayer(this.layer);
     var me = this;
     this.action = new Action(function(){me.move()}, function(){me.started()});
