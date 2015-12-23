@@ -9353,6 +9353,14 @@
        rx="21.01499"
        ry="21.031803"
        onclick="backgroundChange('background')" />
+    <a xlink:href="http://fossasia.org/">
+    <image
+       y="490"
+       x="245"
+       id="image8275"
+       xlink:href="FOSSASIA_Logo.png"
+       height="94"
+       width="220" /></a>
     <ellipse
        style="opacity:0.69999994;fill:#af9300;fill-opacity:1;stroke:#e1e1ee;stroke-opacity:1"
        id="path5839"
