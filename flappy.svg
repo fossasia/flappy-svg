@@ -9353,7 +9353,7 @@
        rx="21.01499"
        ry="21.031803"
        onclick="backgroundChange('background')" />
-    <a xlink:href="http://fossasia.org/">
+    <a xlink:href="http://fossasia.org/" target="_blank">
     <image
        y="490"
        x="245"
