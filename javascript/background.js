@@ -88,29 +88,30 @@ function backgroundChange(layer){
 }
 
 function desertShow(){
-		layerNamed('cactus').style.display = 'inline'
-		layerNamed('DayAndNight').style.display = 'inline'
-		layerNamed('background').style.display = 'inline'
-		layerNamed('SunAndMoon').style.display = 'inline'
-		layerNamed('sky').style.display = 'inline';
+		show_layer('cactus');
+		show_layer('DayAndNight');
+		show_layer('background');
+		show_layer('SunAndMoon');
+		show_layer('sky');
 }
 
 function desertHide(){
-		layerNamed('cactus').style.display = 'none'
-		layerNamed('DayAndNight').style.display = 'none'
-		layerNamed('background').style.display = 'none'
-		layerNamed('SunAndMoon').style.display = 'none'
-		layerNamed('sky').style.display = 'none';
+        hide_layer('cactus');
+        hide_layer('DayAndNight');
+        hide_layer('background');
+        hide_layer('SunAndMoon');
+        hide_layer('sky');
 }
 
 function gothamShow(){
-		layerNamed('Gotham').style.display = 'inline'
-		layerNamed('Gotham_obstacles').style.display = 'inline'
+        show_layer('Gotham');
+        show_layer('Gotham_obstacles');
 }
 		
 function gothamHide(){
-		layerNamed('Gotham').style.display = 'none'
-		layerNamed('Gotham_obstacles').style.display = 'none'
+        hide_layer('Gotham');
+        hide_layer('Gotham_obstacles');
+
 }
 
 

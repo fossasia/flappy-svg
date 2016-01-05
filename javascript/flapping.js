@@ -53,14 +53,14 @@ var flappy = null;
 
 function characterChange(layer) {
    if (layer == 'bat'){
-	layerNamed('bat').style.display = 'inline';
-	layerNamed('bird').style.display = 'none';
-	flappy = new Flappy(layer)}
-   
+	hide_layer('bird');
+    }
+
    if (layer == 'bird'){
-	layerNamed('bird').style.display = 'inline';
-	layerNamed('bat').style.display = 'none';
-	flappy = new Flappy(layer)}
+	hide_layer('bat');
+	}
+    show_layer(layer);
+    flappy = new Flappy(layer);
 }
 
 function stopCharacterChange(){
@@ -81,5 +81,3 @@ function stopFlappingBackgound(name) {
         flappy.stopFlapping();
     }
 }
-
-
