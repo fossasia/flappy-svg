@@ -1521,7 +1521,7 @@
        height="100%" />
     <use
        x="0"
-       y="0"
+       y="-35"
        inkscape:tiled-clone-of="#use10524"
        xlink:href="#use10524"
        id="use10574"
@@ -9317,11 +9317,11 @@
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4140"
-         x="255.98065"
+         x="205.98065"
          y="191.03279"
          style="text-align:center;text-anchor:middle">JoJo Let's </tspan><tspan
          sodipodi:role="line"
-         x="243.67596"
+         x="223.67596"
          y="255.53278"
          id="tspan4146"
          style="text-align:center;text-anchor:middle">Gooo</tspan></text>
