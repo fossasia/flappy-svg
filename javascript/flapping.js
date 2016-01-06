@@ -52,9 +52,8 @@ var flappy = null;
 
 
 function characterChange(layer) {
-    if(flappy){
-        flappy.hide();
-    }
+    hide_layer('bird');
+    hide_layer('bat');
     flappy = new Flappy(layer);
     flappy.show();
 }
