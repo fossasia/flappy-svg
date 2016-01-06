@@ -52,15 +52,11 @@ var flappy = null;
 
 
 function characterChange(layer) {
-   if (layer == 'bat'){
-	hide_layer('bird');
+    if(flappy){
+        flappy.hide();
     }
-
-   if (layer == 'bird'){
-	hide_layer('bat');
-	}
-    show_layer(layer);
     flappy = new Flappy(layer);
+    flappy.show();
 }
 
 function stopCharacterChange(){
@@ -81,3 +77,5 @@ function stopFlappingBackgound(name) {
         flappy.stopFlapping();
     }
 }
+
+

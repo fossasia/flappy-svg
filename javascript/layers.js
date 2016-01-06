@@ -59,9 +59,7 @@ function widthOfLayer(layer) {
 }
 function show_layer(layer){
     layerNamed(layer).style.display = 'inline';
-
 }
 function hide_layer(layer){
-        layerNamed(layer).style.display = 'none';
-
+    layerNamed(layer).style.display = 'none';
 }
