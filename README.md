@@ -1,9 +1,10 @@
-# flappy-svg
+Flappy-SVG
+==========
 
-Flappy Bird in SVG
+Flappy Bird in SVG 
 
-[Play](https://fossasia.github.io/flappy-svg)
-
+- **[Play](https://fossasia.github.io/flappy-svg)**
+- [See who contributed](Contributors.md)
 
 Lizenz
 ------
