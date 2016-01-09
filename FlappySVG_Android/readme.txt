@@ -1,0 +1,1 @@
+Keystore(FlappySVG_Android\keystore.jks) passwords, alias... = fossasia
