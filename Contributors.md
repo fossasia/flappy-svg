@@ -8,6 +8,7 @@ These people have contributed to this game:
 - [Shashank Sharma](https://github.com/shashank-sharma)
 - [Annie Zhou](https://github.com/anniezhou301)
 - [Hemanth Kumar Veeranki](https://github.com/harry-7/)
+- [Antonio Molner Domenech](https://github.com/antoniomdk)
  
 Credits To:
 - [Lionel T](http://codepen.io/elrumordelaluz/pen/XmygWX)(Github Edge)
