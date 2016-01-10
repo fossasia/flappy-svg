@@ -1,4 +1,4 @@
-Flappy-SVG
+Flappy SVG
 ==========
 
 Flappy Bird in SVG 
