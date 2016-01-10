@@ -12,17 +12,21 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.Window;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import java.io.BufferedInputStream;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.net.URL;
+import java.net.URLConnection;
 
 import fossasia.flappysvg.util.DecompressZip;
-import fossasia.flappysvg.util.DownloadFile;
-import fossasia.flappysvg.util.ExternalStorage;
 
 public class Game extends Activity {
     private WebView myWebView;
@@ -35,8 +39,6 @@ public class Game extends Activity {
 
     //Name of the root folder inside the packaged game.
     private final String game_folder_name = "flappy-svg-gh-pages";
-    private String local_game_path;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,13 +47,14 @@ public class Game extends Activity {
         setContentView(R.layout.activity_game);
 
         myWebView = (WebView) findViewById(R.id.webView);
-        myWebView.setWebViewClient(new WebViewClient());
         WebSettings webSettings = myWebView.getSettings();
+
+        myWebView.setWebViewClient(new WebViewClient());
         webSettings.setJavaScriptEnabled(true);
         webSettings.setAllowFileAccess(true);
 
         //Path where the game html page is saved(locally)
-        local_game_path = "file:///" + ExternalStorage.getSDCacheDir(this, game_folder_name + "/index.html").getPath();
+        String local_game_path = "file:///" + getCacheFolder(this).getPath() + File.separator + game_folder_name + "/index.html";
 
         //Checking network connection. If there is connection, it downloads the game to use later locally.
         if(isNetworkAvailable()){
@@ -66,7 +69,6 @@ public class Game extends Activity {
     }
 
     private class DownloadTask extends AsyncTask<String,Void,Exception> {
-
         @Override
         protected void onPreExecute() {
             //Put here, alert messages(on download starts)
@@ -92,21 +94,32 @@ public class Game extends Activity {
     }
 
     private void downloadAssets(String url) {
-        // Temp folder for holding asset during download
-        File zipDir =  ExternalStorage.getSDCacheDir(this, "tmp");
-        // File path to store .zip file before unzipping
-        File zipFile = new File( zipDir.getPath() + "/temp.zip" );
-        // Folder to hold unzipped output
-        File outputDir = ExternalStorage.getSDCacheDir(this, "");
+        try{
+            URL gameURL = new URL(url);
+            URLConnection connection = gameURL.openConnection();
+            InputStream inputStream = new BufferedInputStream(gameURL.openStream(), 10240);
+            File cacheDir = getCacheFolder(Game.this);
+            File cacheFile = new File(cacheDir, "game.zip");
+            FileOutputStream outputStream = new FileOutputStream(cacheFile);
 
-        try {
-            DownloadFile.download(url, zipFile, zipDir);
-            unzipFile( zipFile, outputDir );
-        } finally {
-            zipFile.delete();
+            byte buffer[] = new byte[1024];
+            int dataSize;
+            int loadedSize = 0;
+            while ((dataSize = inputStream.read(buffer)) != -1) {
+                loadedSize += dataSize;
+                outputStream.write(buffer, 0, dataSize);
+
+                //Progress bar code here(use loaded size)
+            }
+
+            outputStream.close();
+            unzipFile(cacheFile,cacheDir);
+        }
+
+        catch (Exception exp){
+            throw new RuntimeException(exp);
         }
     }
-
 
     protected void unzipFile( File zipFile, File destination ) {
         DecompressZip decomp = new DecompressZip( zipFile.getPath(),
@@ -121,10 +134,22 @@ public class Game extends Activity {
         return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
+    public File getCacheFolder(Context context) {
+        File cacheDir = null;
+        if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+            cacheDir = new File(Environment.getExternalStorageDirectory(), "cachefolder");
+            if(!cacheDir.isDirectory()) {
+                cacheDir.mkdirs();
+            }
+        }
+
+        if(!cacheDir.isDirectory()) {
+            cacheDir = context.getCacheDir(); //get system cache folder
+        }
+
+        return cacheDir;
+    }
 }
-
-
-
 
 
 
