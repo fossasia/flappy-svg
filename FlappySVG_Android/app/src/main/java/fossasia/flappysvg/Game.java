@@ -17,7 +17,6 @@ import android.view.Window;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
 
 import java.io.File;
 
@@ -28,8 +27,16 @@ import fossasia.flappysvg.util.ExternalStorage;
 public class Game extends Activity {
     private WebView myWebView;
 
+    //URL of online game page.
+    private final String game_web_url = "http://fossasia.github.io/flappy-svg/";
+
+    //URL of the packaged game.
     private final String download_file_path = "https://github.com/fossasia/flappy-svg/archive/gh-pages.zip";
+
+    //Name of the root folder inside the packaged game.
     private final String game_folder_name = "flappy-svg-gh-pages";
+    private String local_game_path;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,28 +50,26 @@ public class Game extends Activity {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setAllowFileAccess(true);
 
+        //Path where the game html page is saved(locally)
+        local_game_path = "file:///" + ExternalStorage.getSDCacheDir(this, game_folder_name + "/index.html").getPath();
+
+        //Checking network connection. If there is connection, it downloads the game to use later locally.
         if(isNetworkAvailable()){
-            myWebView.loadUrl("http://fossasia.github.io/flappy-svg/");
+            myWebView.loadUrl(game_web_url);
             new DownloadTask().execute(download_file_path);
         }
         else {
-            Log.d("Loading Game", ExternalStorage.getSDCacheDir(this, game_folder_name + "/index.html").getAbsolutePath());
-            myWebView.loadUrl("file:///" + ExternalStorage.getSDCacheDir(this, game_folder_name + "/index.html").getPath());
+            Log.d("Loading Game", local_game_path);
+            myWebView.loadUrl(local_game_path);
         }
 
-    }
-    private boolean isNetworkAvailable() {
-        ConnectivityManager connectivityManager
-                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
     private class DownloadTask extends AsyncTask<String,Void,Exception> {
 
         @Override
         protected void onPreExecute() {
-
+            //Put here, alert messages(on download starts)
         }
 
         @Override
@@ -82,7 +87,7 @@ public class Game extends Activity {
         protected void onPostExecute(Exception result) {
             if ( result == null ) { return; }
             // something went wrong, post a message to user - you could use a dialog here or whatever
-            Toast.makeText(Game.this, result.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+            //Toast.makeText(Game.this, result.getLocalizedMessage(), Toast.LENGTH_LONG).show();
         }
     }
 
@@ -107,6 +112,13 @@ public class Game extends Activity {
         DecompressZip decomp = new DecompressZip( zipFile.getPath(),
                 destination.getPath() + File.separator );
         decomp.unzip();
+    }
+
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
 }
