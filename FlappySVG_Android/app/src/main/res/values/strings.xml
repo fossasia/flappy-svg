@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Flappy-SVG</string>
-    <string name="title_activity_splash_screen">SplashScreen</string>
-
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-</resources>

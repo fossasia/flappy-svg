@@ -1,1 +1,0 @@
-pictures should be 480x600 pixels
