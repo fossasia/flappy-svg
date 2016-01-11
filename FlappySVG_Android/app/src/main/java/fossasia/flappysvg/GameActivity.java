@@ -180,6 +180,11 @@ public class GameActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.update_button) {
+            if(!isNetworkAvailable()) {
+                Toast.makeText(GameActivity.this, "Could not update game", Toast.LENGTH_LONG).show();
+                return true;
+            }
+
             Toast.makeText(GameActivity.this,"Updating game", Toast.LENGTH_SHORT).show();
             new DownloadTask().execute(download_file_path);
             return true;
