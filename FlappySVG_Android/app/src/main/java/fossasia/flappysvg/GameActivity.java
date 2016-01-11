@@ -1,20 +1,15 @@
-/*
-This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
-To view a copy of this license, visit
- http://creativecommons.org/licenses/by-nc/4.0/.
- */
-
 package fossasia.flappysvg;
 
-import android.app.Activity;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Window;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -29,7 +24,8 @@ import java.net.URLConnection;
 
 import fossasia.flappysvg.util.DecompressZip;
 
-public class Game extends Activity {
+public class GameActivity extends AppCompatActivity {
+
     private WebView myWebView;
 
     //URL of online game page.
@@ -46,8 +42,7 @@ public class Game extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_game);
+        setContentView(R.layout.game_activity);
 
         myWebView = (WebView) findViewById(R.id.webView);
         WebSettings webSettings = myWebView.getSettings();
@@ -60,6 +55,17 @@ public class Game extends Activity {
         //Path where the game html page is saved(locally)
         local_game_path = getCacheFolder(this).getPath() + File.separator + game_folder_name + "/index.html";
 
+        LoadGame();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_game, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    void LoadGame(){
         //Checking network connection. If there is connection, it downloads the game to use later locally.
         if(isNetworkAvailable()){
             myWebView.loadUrl(game_web_url);
@@ -71,7 +77,7 @@ public class Game extends Activity {
                 myWebView.loadUrl("file:///" + local_game_path);
             }
             else
-                Toast.makeText(Game.this, "Please, connect to internet", Toast.LENGTH_LONG).show();
+                Toast.makeText(GameActivity.this, "Please, connect to internet to download the game", Toast.LENGTH_LONG).show();
         }
     }
 
@@ -80,7 +86,7 @@ public class Game extends Activity {
         @Override
         protected void onPreExecute() {
             if(isFirstTime) {
-                Toast.makeText(Game.this, "Downloading game", Toast.LENGTH_LONG).show();
+                Toast.makeText(GameActivity.this, "Downloading game", Toast.LENGTH_LONG).show();
             }
         }
 
@@ -99,10 +105,9 @@ public class Game extends Activity {
         protected void onPostExecute(Exception result) {
             if(isFirstTime){
                 if ( result == null )
-                    Toast.makeText(Game.this, "Game downloaded", Toast.LENGTH_LONG).show();
+                    Toast.makeText(GameActivity.this, "Game downloaded", Toast.LENGTH_LONG).show();
                 else {
-                    Toast.makeText(Game.this, "A problem occurs, trying again", Toast.LENGTH_LONG).show();
-                    new DownloadTask().execute(download_file_path);
+                    Toast.makeText(GameActivity.this, "A problem occurs, connect to internet and use Update button", Toast.LENGTH_LONG).show();
                 }
             }
         }
@@ -113,7 +118,7 @@ public class Game extends Activity {
             URL gameURL = new URL(url);
             URLConnection connection = gameURL.openConnection();
             InputStream inputStream = new BufferedInputStream(gameURL.openStream(), 10240);
-            File cacheDir = getCacheFolder(Game.this);
+            File cacheDir = getCacheFolder(GameActivity.this);
             File cacheFile = new File(cacheDir, "game.zip");
             FileOutputStream outputStream = new FileOutputStream(cacheFile);
 
@@ -169,8 +174,22 @@ public class Game extends Activity {
         File file = new File(local_game_path);
         return file.exists();
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.update_button) {
+            Toast.makeText(GameActivity.this,"Updating game", Toast.LENGTH_SHORT).show();
+            new DownloadTask().execute(download_file_path);
+            return true;
+        }
+
+        if (id == R.id.restart_button) {
+            LoadGame();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 }
-
-
-
-
