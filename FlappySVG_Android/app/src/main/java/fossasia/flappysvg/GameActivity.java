@@ -1,23 +1,19 @@
-/*
-This work is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
-To view a copy of this license, visit
- http://creativecommons.org/licenses/by-nc/4.0/.
- */
-
 package fossasia.flappysvg;
 
-import android.app.Activity;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Window;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -28,7 +24,8 @@ import java.net.URLConnection;
 
 import fossasia.flappysvg.util.DecompressZip;
 
-public class Game extends Activity {
+public class GameActivity extends AppCompatActivity {
+
     private WebView myWebView;
 
     //URL of online game page.
@@ -40,38 +37,57 @@ public class Game extends Activity {
     //Name of the root folder inside the packaged game.
     private final String game_folder_name = "flappy-svg-gh-pages";
 
+    private String local_game_path;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_game);
+        setContentView(R.layout.game_activity);
 
         myWebView = (WebView) findViewById(R.id.webView);
         WebSettings webSettings = myWebView.getSettings();
 
-        myWebView.setWebViewClient(new WebViewClient());
         webSettings.setJavaScriptEnabled(true);
         webSettings.setAllowFileAccess(true);
 
-        //Path where the game html page is saved(locally)
-        String local_game_path = "file:///" + getCacheFolder(this).getPath() + File.separator + game_folder_name + "/index.html";
+        myWebView.setWebViewClient(new WebViewClient());
 
+        //Path where the game html page is saved(locally)
+        local_game_path = getCacheFolder(this).getPath() + File.separator + game_folder_name + "/index.html";
+
+        LoadGame();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_game, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    void LoadGame(){
         //Checking network connection. If there is connection, it downloads the game to use later locally.
         if(isNetworkAvailable()){
             myWebView.loadUrl(game_web_url);
             new DownloadTask().execute(download_file_path);
         }
         else {
-            Log.d("Loading Game", local_game_path);
-            myWebView.loadUrl(local_game_path);
+            if (isThereAPreviousVersion()) {
+                Log.d("Loading Game", local_game_path);
+                myWebView.loadUrl("file:///" + local_game_path);
+            }
+            else
+                Toast.makeText(GameActivity.this, "Please, connect to internet to download the game", Toast.LENGTH_LONG).show();
         }
-
     }
 
     private class DownloadTask extends AsyncTask<String,Void,Exception> {
+        boolean isFirstTime = !isThereAPreviousVersion();
         @Override
         protected void onPreExecute() {
-            //Put here, alert messages(on download starts)
+            if(isFirstTime) {
+                Toast.makeText(GameActivity.this, "Downloading game", Toast.LENGTH_LONG).show();
+            }
         }
 
         @Override
@@ -87,9 +103,13 @@ public class Game extends Activity {
 
         @Override
         protected void onPostExecute(Exception result) {
-            if ( result == null ) { return; }
-            // something went wrong, post a message to user - you could use a dialog here or whatever
-            //Toast.makeText(Game.this, result.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+            if(isFirstTime){
+                if ( result == null )
+                    Toast.makeText(GameActivity.this, "Game downloaded", Toast.LENGTH_LONG).show();
+                else {
+                    Toast.makeText(GameActivity.this, "A problem occurs, connect to internet and use Update button", Toast.LENGTH_LONG).show();
+                }
+            }
         }
     }
 
@@ -98,7 +118,7 @@ public class Game extends Activity {
             URL gameURL = new URL(url);
             URLConnection connection = gameURL.openConnection();
             InputStream inputStream = new BufferedInputStream(gameURL.openStream(), 10240);
-            File cacheDir = getCacheFolder(Game.this);
+            File cacheDir = getCacheFolder(GameActivity.this);
             File cacheFile = new File(cacheDir, "game.zip");
             FileOutputStream outputStream = new FileOutputStream(cacheFile);
 
@@ -149,8 +169,27 @@ public class Game extends Activity {
 
         return cacheDir;
     }
+
+    boolean isThereAPreviousVersion(){
+        File file = new File(local_game_path);
+        return file.exists();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.update_button) {
+            Toast.makeText(GameActivity.this,"Updating game", Toast.LENGTH_SHORT).show();
+            new DownloadTask().execute(download_file_path);
+            return true;
+        }
+
+        if (id == R.id.restart_button) {
+            LoadGame();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 }
-
-
-
-
