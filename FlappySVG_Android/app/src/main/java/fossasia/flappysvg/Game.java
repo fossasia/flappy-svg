@@ -18,6 +18,7 @@ import android.view.Window;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -40,6 +41,8 @@ public class Game extends Activity {
     //Name of the root folder inside the packaged game.
     private final String game_folder_name = "flappy-svg-gh-pages";
 
+    private String local_game_path;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,12 +52,13 @@ public class Game extends Activity {
         myWebView = (WebView) findViewById(R.id.webView);
         WebSettings webSettings = myWebView.getSettings();
 
-        myWebView.setWebViewClient(new WebViewClient());
         webSettings.setJavaScriptEnabled(true);
         webSettings.setAllowFileAccess(true);
 
+        myWebView.setWebViewClient(new WebViewClient());
+
         //Path where the game html page is saved(locally)
-        String local_game_path = "file:///" + getCacheFolder(this).getPath() + File.separator + game_folder_name + "/index.html";
+        local_game_path = getCacheFolder(this).getPath() + File.separator + game_folder_name + "/index.html";
 
         //Checking network connection. If there is connection, it downloads the game to use later locally.
         if(isNetworkAvailable()){
@@ -62,16 +66,22 @@ public class Game extends Activity {
             new DownloadTask().execute(download_file_path);
         }
         else {
-            Log.d("Loading Game", local_game_path);
-            myWebView.loadUrl(local_game_path);
+            if (isThereAPreviousVersion()) {
+                Log.d("Loading Game", local_game_path);
+                myWebView.loadUrl("file:///" + local_game_path);
+            }
+            else
+                Toast.makeText(Game.this, "Please, connect to internet", Toast.LENGTH_LONG).show();
         }
-
     }
 
     private class DownloadTask extends AsyncTask<String,Void,Exception> {
+        boolean isFirstTime = !isThereAPreviousVersion();
         @Override
         protected void onPreExecute() {
-            //Put here, alert messages(on download starts)
+            if(isFirstTime) {
+                Toast.makeText(Game.this, "Downloading game", Toast.LENGTH_LONG).show();
+            }
         }
 
         @Override
@@ -87,9 +97,14 @@ public class Game extends Activity {
 
         @Override
         protected void onPostExecute(Exception result) {
-            if ( result == null ) { return; }
-            // something went wrong, post a message to user - you could use a dialog here or whatever
-            //Toast.makeText(Game.this, result.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+            if(isFirstTime){
+                if ( result == null )
+                    Toast.makeText(Game.this, "Game downloaded", Toast.LENGTH_LONG).show();
+                else {
+                    Toast.makeText(Game.this, "A problem occurs, trying again", Toast.LENGTH_LONG).show();
+                    new DownloadTask().execute(download_file_path);
+                }
+            }
         }
     }
 
@@ -148,6 +163,11 @@ public class Game extends Activity {
         }
 
         return cacheDir;
+    }
+
+    boolean isThereAPreviousVersion(){
+        File file = new File(local_game_path);
+        return file.exists();
     }
 }
 
