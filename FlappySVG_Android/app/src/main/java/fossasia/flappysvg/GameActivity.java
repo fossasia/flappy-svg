@@ -1,5 +1,6 @@
 package fossasia.flappysvg;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -38,6 +39,9 @@ public class GameActivity extends AppCompatActivity {
     private final String game_folder_name = "flappy-svg-gh-pages";
 
     private String local_game_path;
+    private boolean isUpdating;
+
+    private ProgressDialog progress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +58,6 @@ public class GameActivity extends AppCompatActivity {
 
         //Path where the game html page is saved(locally)
         local_game_path = getCacheFolder(this).getPath() + File.separator + game_folder_name + "/index.html";
-
         LoadGame();
     }
 
@@ -66,34 +69,46 @@ public class GameActivity extends AppCompatActivity {
     }
 
     void LoadGame(){
-        //Checking network connection. If there is connection, it downloads the game to use later locally.
-        if(isNetworkAvailable()){
-            myWebView.loadUrl(game_web_url);
-            new DownloadTask().execute(download_file_path);
+        if (isThereAPreviousVersion()) {
+            Log.d("Loading Game", local_game_path);
+            myWebView.loadUrl("file:///" + local_game_path);
         }
-        else {
-            if (isThereAPreviousVersion()) {
-                Log.d("Loading Game", local_game_path);
-                myWebView.loadUrl("file:///" + local_game_path);
+        else{
+            if(isNetworkAvailable()){
+                new DownloadTask().execute(download_file_path);
             }
             else
                 Toast.makeText(GameActivity.this, "Please, connect to internet to download the game", Toast.LENGTH_LONG).show();
+
         }
     }
 
     private class DownloadTask extends AsyncTask<String,Void,Exception> {
         boolean isFirstTime = !isThereAPreviousVersion();
+
         @Override
         protected void onPreExecute() {
             if(isFirstTime) {
                 Toast.makeText(GameActivity.this, "Downloading game", Toast.LENGTH_LONG).show();
             }
+
+            progress = new ProgressDialog(GameActivity.this);
+            progress.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+            progress.setIndeterminate(false);
+            progress.setProgress(0);
+
+            if(isUpdating) {
+                progress.setMessage("Updating game");
+            }
+            else
+                progress.setMessage("Downloading game");
+                progress.show();
+
         }
 
         @Override
         protected Exception doInBackground(String... params) {
             String url = params[0];
-
             try {
                 downloadAssets(url);
             } catch ( Exception e ) { return e; }
@@ -103,11 +118,22 @@ public class GameActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Exception result) {
+            if (progress.isShowing()) {
+                progress.dismiss();
+            }
+
             if(isFirstTime){
                 if ( result == null )
                     Toast.makeText(GameActivity.this, "Game downloaded", Toast.LENGTH_LONG).show();
                 else {
                     Toast.makeText(GameActivity.this, "A problem occurs, connect to internet and use Update button", Toast.LENGTH_LONG).show();
+                }
+            }
+            if(result == null){
+                myWebView.loadUrl("file:///" + local_game_path);
+                if(isUpdating){
+                    Toast.makeText(GameActivity.this, "Game updated", Toast.LENGTH_LONG).show();
+                    isUpdating = false;
                 }
             }
         }
@@ -123,13 +149,15 @@ public class GameActivity extends AppCompatActivity {
             FileOutputStream outputStream = new FileOutputStream(cacheFile);
 
             byte buffer[] = new byte[1024];
+            int fileLength = connection.getContentLength();
             int dataSize;
             int loadedSize = 0;
             while ((dataSize = inputStream.read(buffer)) != -1) {
                 loadedSize += dataSize;
                 outputStream.write(buffer, 0, dataSize);
+                if(fileLength > 0)
+                    progress.setProgress(loadedSize * 100 / fileLength);
 
-                //Progress bar code here(use loaded size)
             }
 
             outputStream.close();
@@ -180,7 +208,13 @@ public class GameActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.update_button) {
+            if(!isNetworkAvailable()) {
+                Toast.makeText(GameActivity.this, "Could not update game", Toast.LENGTH_LONG).show();
+                return true;
+            }
+
             Toast.makeText(GameActivity.this,"Updating game", Toast.LENGTH_SHORT).show();
+            isUpdating = true;
             new DownloadTask().execute(download_file_path);
             return true;
         }
