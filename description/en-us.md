@@ -7,5 +7,5 @@ Flappy-SVG is an obstacle-based game where you can add your own characters, leve
 You can also support and contribute to this game in a simple and free way [here](https://github.com/fossasia/flappy-svg/).
 
 [HOW TO PLAY]
-- Tap screen to fly.
+- Tap or click the screen to fly.
 - Avoid obstacles and get as far as you can.
