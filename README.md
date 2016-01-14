@@ -4,7 +4,7 @@ Flappy SVG
 Flappy Bird in SVG 
 
 - **[Play](https://fossasia.github.io/flappy-svg)**
-- **[Android](FlappySVG_Android/app-release.apk?raw=true)**
+- **[Android](https://play.google.com/store/apps/details?id=fossasia.flappysvg)**
 - [See who contributed](Contributors.md)
 
 Lizenz
