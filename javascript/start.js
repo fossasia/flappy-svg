@@ -4,4 +4,7 @@
 window.onload = function() {
     scaleToFullscreen();
     showStartScreen();
+
+    //Default Layer
+    desertShow();
 }

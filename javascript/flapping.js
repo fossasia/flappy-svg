@@ -1,4 +1,4 @@
-
+var current_flappy;
 
 function Flappy(layerName) {
     this.layerName = layerName;
@@ -6,7 +6,9 @@ function Flappy(layerName) {
     this.position = gameObject(this.layer);
     var me = this;
     this.action = new Action(function(){me.fly()}, function(){me.started()});
-    document.onmousedown = function(){me.flap()};
+    document.onmousedown = function () { me.flap() };
+
+    current_flappy = this;
 }
 
 Flappy.prototype = {
@@ -76,5 +78,3 @@ function stopFlappingBackgound(name) {
         flappy.stopFlapping();
     }
 }
-
-
