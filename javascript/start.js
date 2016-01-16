@@ -7,4 +7,5 @@ window.onload = function() {
 
     //Default Layer
     desertShow();
+    flappy = new Flappy("bird");
 }

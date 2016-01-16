@@ -1,5 +1,3 @@
-var current_flappy;
-
 function Flappy(layerName) {
     this.layerName = layerName;
     this.layer = layerNamed(layerName);
@@ -7,8 +5,6 @@ function Flappy(layerName) {
     var me = this;
     this.action = new Action(function(){me.fly()}, function(){me.started()});
     document.onmousedown = function () { me.flap() };
-
-    current_flappy = this;
 }
 
 Flappy.prototype = {
@@ -50,8 +46,6 @@ Flappy.prototype = {
 }
 
 var flappy = null;
-
-
 
 function characterChange(layer) {
     hide_layer('bird');
