@@ -8,22 +8,17 @@
 
 Obstacle.prototype = {
     update: function () {
-        try {
-            if(!current_flappy)
-                return;
+        if (!flappy)
+           return;
 
-            if (isColliding(this.svg, current_flappy.layer)) {
-                if (!this.isCollided) {
-                    console.log("hit");
-                    this.isCollided = true;
-                }
-            }
-            else if (this.isCollided) {
-                this.isCollided = false;
+        if (isColliding(this.svg, flappy.layer)) {
+            if (!this.isCollided) {
+                console.log("hit");
+                this.isCollided = true;
             }
         }
-        catch (e) {
-            console.log(e);
+        else if (this.isCollided) {
+            this.isCollided = false;
         }
     }
 }
