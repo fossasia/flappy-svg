@@ -119,19 +119,3 @@ function gothamHide(){
         hide_layer('Gotham');
         hide_layer('Gotham_obstacles');
 }
-
-function createObstacles(layer) {
-    obstacles = [];
-    var list = layerNamed(layer).getElementsByTagName("g");
-
-    for (var i = 0; i < list.length; i++) {
-        if (list[i].getAttribute('inkscape:label') == null) {
-            var obstacle = obstacles[i];
-            var new_obstacle = new Obstacle(list[i]);
-            if (obstacle)
-                obstacle = new_obstacle;
-            else
-                obstacles.push(new_obstacle);
-        }
-    }
-}
