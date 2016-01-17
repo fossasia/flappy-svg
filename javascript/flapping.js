@@ -2,6 +2,7 @@ function Flappy(layerName) {
     this.layerName = layerName;
     this.layer = layerNamed(layerName);
     this.position = gameObject(this.layer);
+    this._isCollided = false;
     var me = this;
     this.action = new Action(function(){me.fly()}, function(){me.started()});
     document.onmousedown = function () { me.flap() };
@@ -29,6 +30,8 @@ Flappy.prototype = {
         if (this.position.screen.top < 0) {
             this.position.screen.top = 0;
         }
+
+        this.checkCollision();
     },
     started : function() {
         this.position.y = 0;
@@ -42,6 +45,35 @@ Flappy.prototype = {
     },
     hide : function() {
         this.position.hide();
+    },
+
+    checkCollision : function() {
+        var flappy_rect = this.layer.getBoundingClientRect();
+        for (i = 0; i < 3; i++) {
+            var o_rect = obstacles[i].getBox;
+            if (i > obstacles.lenght)
+                return;
+
+            var c = isOverlap(flappy_rect, o_rect);
+                        
+            if (c || o_rect.right < flappy_rect.left)
+                obstacles.push(obstacles.shift());
+
+            this.isCollided = c;
+        }
+    },
+
+    set isCollided(value){
+        if (this._isCollided != value)
+            this._isCollided = value;
+
+        //On collision code here.
+        if (this._isCollided)
+            alert("hit");
+    },
+
+    get isCollided(){
+        return this._isCollided;
     }
 }
 
@@ -71,4 +103,9 @@ function stopFlappingBackgound(name) {
     if (flappy) {
         flappy.stopFlapping();
     }
+}
+
+//Parameters are rects
+function isOverlap(e1, e2) {
+    return (e1.top <= e2.bottom && e2.top <= e1.bottom && e1.right >= e2.left && e1.left <= e2.right);
 }
