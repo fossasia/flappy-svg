@@ -1,5 +1,6 @@
 
 backgrounds = {};
+var obstacles;
 
 function background(layerName, velocity) {
     if (backgrounds[layerName]) {
@@ -81,18 +82,22 @@ function backgroundChange(layer){
 	gothamHide()
 	
 	if (layer =='background'){
-		desertShow()}
+		desertShow()
+	}
 	
 	if (layer =='Gotham'){
-		gothamShow()}
+		gothamShow()
+	}
 }
 
 function desertShow(){
-		show_layer('cactus');
-		show_layer('DayAndNight');
-		show_layer('background');
-		show_layer('SunAndMoon');
-		show_layer('sky');
+    show_layer('cactus');
+    show_layer('DayAndNight');
+    show_layer('background');
+    show_layer('SunAndMoon');
+    show_layer('sky');
+
+    createObstacles("cactus");
 }
 
 function desertHide(){
@@ -106,14 +111,11 @@ function desertHide(){
 function gothamShow(){
         show_layer('Gotham');
         show_layer('Gotham_obstacles');
+
+        createObstacles("Gotham_obstacles");
 }
 		
 function gothamHide(){
         hide_layer('Gotham');
         hide_layer('Gotham_obstacles');
-
 }
-
-
-
-

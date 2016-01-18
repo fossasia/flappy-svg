@@ -4,4 +4,8 @@
 window.onload = function() {
     scaleToFullscreen();
     showStartScreen();
+
+    //Default Layer
+    desertShow();
+    flappy = new Flappy("bird");
 }
