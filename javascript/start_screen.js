@@ -18,4 +18,6 @@ function startGame() {
     startMovingBackgound('Gotham', -7);
     startMovingBackgound('Gotham_obstacles', -7);
     scaleToFullscreen();
+
+
 }

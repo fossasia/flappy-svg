@@ -45,6 +45,10 @@
   <script
      xlink:href="javascript/start_screen.js"
      id="script14" />
+
+  <script
+     xlink:href="javascript/obstacle.js"
+     id="script15" />
   <defs
      id="defs4">
     <linearGradient
