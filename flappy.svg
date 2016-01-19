@@ -45,7 +45,6 @@
   <script
      xlink:href="javascript/start_screen.js"
      id="script14" />
-
   <script
      xlink:href="javascript/obstacle.js"
      id="script15" />
@@ -156,14 +155,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.0844917"
-     inkscape:cx="460.51412"
-     inkscape:cy="564.90319"
+     inkscape:zoom="1.0422459"
+     inkscape:cx="149.62166"
+     inkscape:cy="359.2453"
      inkscape:document-units="px"
-     inkscape:current-layer="g5056"
+     inkscape:current-layer="layer10"
      showgrid="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="837"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -9235,7 +9234,8 @@
      id="layer3"
      inkscape:label="bat"
      style="display:none"
-     onclick="characterChange('bird');">
+     onclick="characterChange('alien');"
+     sodipodi:insensitive="true">
     <g
        id="g8075"
        transform="matrix(1.8586722,0,0,2.0228421,-33.140248,-245.41149)">
@@ -9281,6 +9281,90 @@
   </g>
   <g
      inkscape:groupmode="layer"
+     id="layer13"
+     inkscape:label="alien"
+     sodipodi:insensitive="true"
+     style="display:none"
+	 onclick="characterChange('bird');">
+    <g
+       id="g5929"
+       transform="matrix(0.76196743,0,0,0.85685411,246.45133,38.482319)">
+      <ellipse
+         ry="44.77739"
+         rx="66.487633"
+         cy="251.27913"
+         cx="-172.32509"
+         id="path5049"
+         style="fill:#d45500" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m -152.74865,245.85432 c 1.53915,-7.04868 4.00635,-13.91204 6.86972,-20.52901 2.26342,-4.58628 5.98043,-8.17623 9.80302,-11.47987 2.77651,-2.97882 6.47274,-4.77145 9.62461,-7.28444 14.92072,-7.55065 30.014059,-22.05041 47.846499,-24.6865 3.55284,-0.73725 7.26635,-0.13036 10.82868,-0.59024 1.531234,-0.19767 2.990195,-0.77063 4.487769,-1.14615 4.826375,-1.11967 9.790617,-1.318 14.722508,-1.47499 5.330744,-0.34545 10.744657,0.43763 15.99678,-0.61084 6.266276,-1.3114 12.67685,-1.64572 19.055855,-1.916 1.006944,-0.20756 2.013889,-0.41512 3.020833,-0.62268 0,0 -32.090815,24.0339 -32.090815,24.0339 l 0,0 c -1.061162,0.0944 -2.122325,0.18886 -3.183487,0.28329 -6.38146,0.40441 -12.710012,1.17657 -19.018242,2.2198 -5.393141,0.25847 -10.797231,0.0866 -16.190191,0.39598 -4.84462,0.30916 -9.65957,0.86242 -14.38599,2.01434 -5.066039,0.84733 -10.262169,0.51184 -15.291009,1.68538 -14.81362,3.83702 -39.492,23.65413 21.698859,-14.42047 -3.35204,2.18247 -6.2908,4.91847 -9.88138,6.75987 -3.312429,3.58317 -7.498729,6.27254 -10.568169,10.13773 -2.87274,6.28944 -5.6771,12.70112 -7.22054,19.46524 0,0 -36.12531,17.76566 -36.12531,17.76566 z"
+         id="path5065"
+         style="fill:#ff0000" />
+      <use
+         height="100%"
+         width="100%"
+         transform="matrix(-1,0,0,1,-339.41957,-0.1060075)"
+         id="use5073"
+         xlink:href="#path5065"
+         y="0"
+         x="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path5095"
+         d="m -136.2714,263.29387 c -55.26271,7.23867 -53.0411,-41.2047 -55.54042,7.23867 -2.49931,48.44336 55.54042,-7.23867 55.54042,-7.23867 z"
+         style="fill:#ff00ff;fill-rule:nonzero;stroke:#b50000;stroke-width:0.40984273px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <g
+         id="g5913">
+        <path
+           style="fill:#ffff00;fill-rule:evenodd;stroke:#f1fc00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m -266.25196,248.83525 c 35.02053,8.6352 35.02053,8.6352 35.02053,8.6352 z"
+           id="path5901"
+           inkscape:connector-curvature="0" />
+        <use
+           x="0"
+           y="0"
+           xlink:href="#path5901"
+           id="use5903"
+           transform="matrix(0.89549284,-0.45467961,0.49610187,1.7431112,-153.18079,-290.53702)"
+           width="100%"
+           height="100%" />
+        <use
+           x="0"
+           y="0"
+           xlink:href="#path5901"
+           id="use5911"
+           transform="matrix(0.86902426,-0.49476947,0.49476947,0.86902426,-156.56683,-69.32433)"
+           width="100%"
+           height="100%" />
+      </g>
+      <use
+         height="100%"
+         width="100%"
+         transform="matrix(-1,0,0,1,-346.98809,1.3568906)"
+         id="use5918"
+         xlink:href="#g5913"
+         y="0"
+         x="0" />
+      <ellipse
+         ry="4.0706716"
+         rx="4.7491169"
+         cy="226.17664"
+         cx="-205.56891"
+         id="path5921"
+         style="fill:#ffff00;fill-rule:nonzero;stroke:#f1fc00;stroke-opacity:1" />
+      <use
+         height="100%"
+         width="100%"
+         transform="translate(71.236759,0.67844552)"
+         id="use5927"
+         xlink:href="#path5921"
+         y="0"
+         x="0" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="DayAndNight"
      style="display:inline">
@@ -9321,12 +9405,12 @@
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4140"
-         x="205.98065"
-         y="191.03279"
+         x="255.98065"
+         y="203.03279"
          style="text-align:center;text-anchor:middle">JoJo Let's </tspan><tspan
          sodipodi:role="line"
-         x="223.67596"
-         y="255.53278"
+         x="243.67596"
+         y="290.53278"
          id="tspan4146"
          style="text-align:center;text-anchor:middle">Gooo</tspan></text>
     <path
@@ -9362,13 +9446,13 @@
        target="_blank"
        id="a1702">
       <image
-         sodipodi:absref="C:\Users\pohsa\Documents\GitHub\flappy-svg\FOSSASIA_Logo.png"
+         sodipodi:absref="D:\flappy-svg\FOSSASIA_Logo.png"
          xlink:href="FOSSASIA_Logo.png"
-         width="220"
-         height="94"
-         id="image8275"
+         y="490"
          x="245"
-         y="490" />
+         id="image8275"
+         height="94"
+         width="220" />
     </a>
     <ellipse
        style="opacity:0.69999994;fill:#af9300;fill-opacity:1;stroke:#e1e1ee;stroke-opacity:1"
@@ -9381,14 +9465,14 @@
     <a
        style="display:inline"
        id="a5061"
-	   target="_blank"
+       target="_blank"
        xlink:href="https://github.com/fossasia/flappy-svg">
       <desc
          id="desc5844">Credits to:Lionel T (http://codepen.io/elrumordelaluz/pen/XmygWX)</desc>
       <g
          transform="matrix(0.40000001,0,0,0.40000001,380,0)"
          id="g5056"
-         style="color:#ffffff;fill:#70b7fd" >
+         style="color:#ffffff;fill:#70b7fd">
         <path
            inkscape:connector-curvature="0"
            d="m 0,0 115,115 15,0 12,27 108,108 0,-250 z"
@@ -9397,7 +9481,7 @@
         <path
            inkscape:connector-curvature="0"
            class="octo-arm"
-           style="fill:#ff6600;transform-origin:130px 106px"
+           style="fill:#ff6600"
            d="M 128.3,109 C 113.8,99.7 119,89.6 119,89.6 c 3,-6.9 1.5,-11 1.5,-11 -1.3,-6.6 2.9,-2.3 2.9,-2.3 3.9,4.6 2.1,11 2.1,11 -2.6,10.3 5.1,14.6 8.9,15.9"
            id="path5046" />
         <path
