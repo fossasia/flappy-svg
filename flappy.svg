@@ -9396,23 +9396,7 @@
      id="layer4"
      inkscape:label="startscreen"
      style="display:inline">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70px;line-height:125%;font-family:Aleo;-inkscape-font-specification:Aleo;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="243.67596"
-       y="203.03279"
-       id="text4138"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan4140"
-         x="255.98065"
-         y="203.03279"
-         style="text-align:center;text-anchor:middle">JoJo Let's </tspan><tspan
-         sodipodi:role="line"
-         x="243.67596"
-         y="290.53278"
-         id="tspan4146"
-         style="text-align:center;text-anchor:middle">Gooo</tspan></text>
+
     <path
        style="fill:#008000;fill-rule:evenodd;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 187.83413,486.76013 301.50378,388.10268 182.81547,347.13244 Z"
@@ -9481,7 +9465,7 @@
         <path
            inkscape:connector-curvature="0"
            class="octo-arm"
-           style="fill:#ff6600"
+           style="fill:#ff6600;transform-origin:130px 106px"
            d="M 128.3,109 C 113.8,99.7 119,89.6 119,89.6 c 3,-6.9 1.5,-11 1.5,-11 -1.3,-6.6 2.9,-2.3 2.9,-2.3 3.9,4.6 2.1,11 2.1,11 -2.6,10.3 5.1,14.6 8.9,15.9"
            id="path5046" />
         <path
