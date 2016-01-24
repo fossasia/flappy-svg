@@ -9,6 +9,7 @@ These people have contributed to this game:
 - [Annie Zhou](https://github.com/anniezhou301)
 - [Hemanth Kumar Veeranki](https://github.com/harry-7/)
 - [Antonio Molner Domenech](https://github.com/antoniomdk)
+- [Siah Bing Ze](https://github.com/toxicdeath32)
  
 Credits To:
 - [Lionel T](http://codepen.io/elrumordelaluz/pen/XmygWX)(Github Edge)
