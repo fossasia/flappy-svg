@@ -17,7 +17,6 @@ function startGame() {
     startMovingBackgound('SunAndMoon', 1);
     startMovingBackgound('Gotham', -7);
     startMovingBackgound('Gotham_obstacles', -7);
+    startScore();
     scaleToFullscreen();
-
-
 }

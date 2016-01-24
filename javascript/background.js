@@ -1,6 +1,8 @@
 
 backgrounds = {};
 var obstacles;
+var distance = 0;
+var score;
 
 function background(layerName, velocity) {
     if (backgrounds[layerName]) {
@@ -47,10 +49,13 @@ Background.prototype = {
     move : function() {
         var x = this.position.x;
         x += this.velocity;
+        distance += this.velocity * 1/30;
         if (x * this.direction > this.width) {
             x -= this.direction * this.width;
         }
         this.position.x = x;
+
+        score.textContent = Math.abs(Math.round(distance)) + "m";
     },
     started : function() {
         this.position.x = 0;
@@ -118,4 +123,9 @@ function gothamShow(){
 function gothamHide(){
         hide_layer('Gotham');
         hide_layer('Gotham_obstacles');
+}
+
+function startScore() {
+    show_layer("score");
+    score = layerNamed("score").getElementsByTagName("text")[0];
 }

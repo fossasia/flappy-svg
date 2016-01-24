@@ -45,7 +45,6 @@
   <script
      xlink:href="javascript/start_screen.js"
      id="script14" />
-
   <script
      xlink:href="javascript/obstacle.js"
      id="script15" />
@@ -156,16 +155,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.0844917"
-     inkscape:cx="460.51412"
-     inkscape:cy="564.90319"
+     inkscape:zoom="1.0422459"
+     inkscape:cx="59.492699"
+     inkscape:cy="375.0458"
      inkscape:document-units="px"
-     inkscape:current-layer="g5056"
+     inkscape:current-layer="layer13"
      showgrid="false"
-     inkscape:window-width="1440"
-     inkscape:window-height="837"
+     inkscape:window-width="1360"
+     inkscape:window-height="705"
      inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-y="138"
      inkscape:window-maximized="1"
      units="px"
      inkscape:snap-smooth-nodes="false"
@@ -9362,13 +9361,13 @@
        target="_blank"
        id="a1702">
       <image
-         sodipodi:absref="C:\Users\pohsa\Documents\GitHub\flappy-svg\FOSSASIA_Logo.png"
+         sodipodi:absref="C:\Users\Antonio\Documents\DESARROLLOS\GoogleCodein\flappy-svg\FOSSASIA_Logo.png"
          xlink:href="FOSSASIA_Logo.png"
-         width="220"
-         height="94"
-         id="image8275"
+         y="490"
          x="245"
-         y="490" />
+         id="image8275"
+         height="94"
+         width="220" />
     </a>
     <ellipse
        style="opacity:0.69999994;fill:#af9300;fill-opacity:1;stroke:#e1e1ee;stroke-opacity:1"
@@ -9381,14 +9380,14 @@
     <a
        style="display:inline"
        id="a5061"
-	   target="_blank"
+       target="_blank"
        xlink:href="https://github.com/fossasia/flappy-svg">
       <desc
          id="desc5844">Credits to:Lionel T (http://codepen.io/elrumordelaluz/pen/XmygWX)</desc>
       <g
          transform="matrix(0.40000001,0,0,0.40000001,380,0)"
          id="g5056"
-         style="color:#ffffff;fill:#70b7fd" >
+         style="color:#ffffff;fill:#70b7fd">
         <path
            inkscape:connector-curvature="0"
            d="m 0,0 115,115 15,0 12,27 108,108 0,-250 z"
@@ -9426,6 +9425,24 @@
          id="tspan4151"
          x="10.346291"
          y="18.742029">debugString</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer13"
+     inkscape:label="score"
+     style="display:none">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:47.71827698px;line-height:125%;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="12.017714"
+       y="56.867992"
+       id="text"
+       sodipodi:linespacing="125%"
+       transform="scale(1.100604,0.908592)"><tspan
+         sodipodi:role="line"
+         id="tspan5048"
+         x="12.017714"
+         y="56.867992">0</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
