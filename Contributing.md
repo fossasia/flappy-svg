@@ -8,4 +8,6 @@ How to Contribute
 - If reasonable, each issue should have an own pull request.
 - You can add issues yourself if you want specific improvements of the game. We categorize them into `easy`, `middle` and `hard`.
 - When the issue is tagged as [GCI](https://github.com/fossasia/flappy-svg/labels/GCI), it is possible to solve google codein tasks with it. 
+- All works must be your own creation or you must give proper, license-dependent attribution to the creator. See the [LICENSE](LICENSE) file and [Contributors.md](Contributors.md).
+- This must work online and offline and without internet connection.
 - This all is possible to be discussed.
