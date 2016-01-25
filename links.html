@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>Flappy Links</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style type="text/css">
+ #x1,#x2,#x3,#x4
+ {
+ 	position: absolute;
+ }
+#linkbox
+{
+	margin-top:65%;
+	margin-left: 40%;
+
+}
+#x1
+{
+	animation:anim1 2s;
+	 animation-fill-mode: forwards;
+}
+@keyframes anim1
+{
+	from { }
+	to {margin-top:20%;}
+}
+#x2
+{
+	animation:anim2 2s;
+	 animation-fill-mode: forwards;
+}
+@keyframes anim2
+{
+	from { }
+	to {margin-top:-20%;}
+}
+#x3
+{
+	animation:anim3 2s;
+	 animation-fill-mode: forwards;
+}
+@keyframes anim3
+{
+	from { }
+	to {margin-left:20%;}
+}
+#x4
+{
+	animation:anim4 2s;
+	 animation-fill-mode: forwards;
+}
+@keyframes anim4
+{
+	from { }
+	to {margin-left:-20%;}
+}
+  </style>
+	</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4" style="height:100%;background-color:#000">
+		</div>
+		<div class="col-md-4" style="height:100%;background-color:#ffcc7e">
+			<a href="http://fossasia.github.io/flappy-svg/"><img src="back.png" style="position:absolute;width:50px;margin-top:10px;" /></a>
+			<div id="linkbox" >
+			<div id="x1" class="btn btn-info" onclick="window.location='https://github.com/fossasia/flappy-svg';" style="width:77px;padding:7px;border-radius:135px;"><img style="width:60px;" src="githubLogo.png"/></div>
+			<div id="x2"class="btn btn-default" style="width:77px;height:77px;padding-left:7px;padding-top:25px;border-radius:135px;" onclick="window.location='http://fossasia.org/';"><img style="width:60px;" src="FOSSASIA_Logo.png"/></div>
+			<div id="x3"class="btn btn-success" onclick="window.location='https://github.com/fossasia/flappy-svg/blob/master/FlappySVG_Android/app-release.apk?raw=true';" style="width:77px;padding:7px;border-radius:135px;"><img style="width:60px;" src="androidLogo.png"/></div>
+			<div id="x4"class="btn btn-danger" onclick="window.location='https://github.com/niccokunzmann/rotoscopes/#rotoscopes-as-svg-grafics';" style="width:77px;height:77px;padding-left:9px;padding-top:12px;border-radius:135px;"><img style="width:50px;" src="paint.png"/></div>
+		</div>
+		
+
+		</div>
+		<div class="col-md-4" style="height:100%;background-color:#000">
+		</div>
+
+	</div>
+
+
+</div>
+
+</body>

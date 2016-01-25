@@ -1672,7 +1672,7 @@
     <g
        id="g9647"
        transform="translate(-314.69493,-40.997723)"
-       onclick="window.open('https://github.com/niccokunzmann/rotoscopes/#rotoscopes-as-svg-grafics', '_blank');">
+       >
       <path
          sodipodi:nodetypes="cc"
          inkscape:connector-curvature="0"
@@ -1868,7 +1868,7 @@
     <g
        transform="translate(-1314.6946,-40.997775)"
        id="g9723"
-       onclick="window.open('https://github.com/niccokunzmann/rotoscopes/#rotoscopes-as-svg-grafics', '_blank');">
+       >
       <path
          style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#8c0004;stroke-width:3;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 550.00896,134.74142 c -11.26867,9.13796 -21.78419,18.89808 -40.45516,21.92109"
@@ -2005,7 +2005,7 @@
        style="display:inline"
        transform="translate(685.30545,-40.997777)"
        id="g9723-7"
-       onclick="window.open('https://github.com/niccokunzmann/rotoscopes/#rotoscopes-as-svg-grafics', '_blank');">
+       >
       <path
          style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#8c0004;stroke-width:3;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          d="m 550.00896,134.74142 c -11.26867,9.13796 -21.78419,18.89808 -40.45516,21.92109"
@@ -9354,16 +9354,16 @@
        ry="21.031803"
        onclick="backgroundChange('background')" />
     <a
-       xlink:href="http://fossasia.org/"
+       xlink:href="links.html"
        target="_blank"
        id="a1702">
       <image
-         sodipodi:absref="C:\Users\pohsa\Documents\GitHub\flappy-svg\FOSSASIA_Logo.png"
-         xlink:href="FOSSASIA_Logo.png"
+         sodipodi:href="links.jpg"
+         xlink:href="links.jpg"
          width="220"
          height="94"
          id="image8275"
-         x="245"
+         x="300"
          y="490" />
     </a>
     <ellipse
@@ -9374,36 +9374,8 @@
        rx="22.388695"
        ry="21.710249"
        onclick="backgroundChange('Gotham')" />
-    <a
-       style="display:inline"
-       id="a5061"
-	   target="_blank"
-       xlink:href="https://github.com/fossasia/flappy-svg">
-      <desc
-         id="desc5844">Credits to:Lionel T (http://codepen.io/elrumordelaluz/pen/XmygWX)</desc>
-      <g
-         transform="matrix(0.40000001,0,0,0.40000001,380,0)"
-         id="g5056"
-         style="color:#ffffff;fill:#70b7fd" >
-        <path
-           inkscape:connector-curvature="0"
-           d="m 0,0 115,115 15,0 12,27 108,108 0,-250 z"
-           id="path5044"
-           style="fill:#0000ff" />
-        <path
-           inkscape:connector-curvature="0"
-           class="octo-arm"
-           style="fill:#ff6600;transform-origin:130px 106px"
-           d="M 128.3,109 C 113.8,99.7 119,89.6 119,89.6 c 3,-6.9 1.5,-11 1.5,-11 -1.3,-6.6 2.9,-2.3 2.9,-2.3 3.9,4.6 2.1,11 2.1,11 -2.6,10.3 5.1,14.6 8.9,15.9"
-           id="path5046" />
-        <path
-           style="fill:#ff6600"
-           inkscape:connector-curvature="0"
-           class="octo-body"
-           d="m 115,115 c -0.1,0.1 3.7,1.5 4.8,0.4 l 13.9,-13.8 c 3.2,-2.4 6.2,-3.2 8.5,-3 -8.4,-10.6 -14.7,-24.2 1.6,-40.6 4.7,-4.6 10.2,-6.8 15.9,-7 0.6,-1.6 3.5,-7.4 11.7,-10.9 0,0 4.7,2.4 7.4,16.1 4.3,2.4 8.4,5.6 12.1,9.2 3.6,3.6 6.8,7.8 9.2,12.2 13.7,2.6 16.2,7.3 16.2,7.3 -3.6,8.2 -9.4,11.1 -10.9,11.7 -0.3,5.8 -2.4,11.2 -7.1,15.9 -16.4,16.4 -30,10 -40.6,1.6 0.2,2.8 -1,6.8 -5,10.8 L 141,136.5 c -1.2,1.2 0.6,5.4 0.8,5.3 z"
-           id="path5048" />
-      </g>
-    </a>
+    
+      
   </g>
   <g
      inkscape:groupmode="layer"
