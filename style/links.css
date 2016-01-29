@@ -1,0 +1,50 @@
+#x1,#x2,#x3,#x4
+ {
+ 	position: absolute;
+ }
+#linkbox
+{
+	margin-top:65%;
+	margin-left: 40%;
+
+}
+#x1
+{
+	animation:anim1 2s;
+	 animation-fill-mode: forwards;
+}
+@keyframes anim1
+{
+	from { }
+	to {margin-top:20%;}
+}
+#x2
+{
+	animation:anim2 2s;
+	 animation-fill-mode: forwards;
+}
+@keyframes anim2
+{
+	from { }
+	to {margin-top:-20%;}
+}
+#x3
+{
+	animation:anim3 2s;
+	 animation-fill-mode: forwards;
+}
+@keyframes anim3
+{
+	from { }
+	to {margin-left:20%;}
+}
+#x4
+{
+	animation:anim4 2s;
+	 animation-fill-mode: forwards;
+}
+@keyframes anim4
+{
+	from { }
+	to {margin-left:-20%;}
+}
