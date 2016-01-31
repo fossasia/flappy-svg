@@ -13,3 +13,4 @@ These people have contributed to this game:
  
 Credits To:
 - [Lionel T](http://codepen.io/elrumordelaluz/pen/XmygWX)(Github Edge)
+- [Rotoscopes](https://github.com/niccokunzmann/rotoscopes/)
