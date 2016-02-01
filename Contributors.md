@@ -10,6 +10,7 @@ These people have contributed to this game:
 - [Hemanth Kumar Veeranki](https://github.com/harry-7/)
 - [Antonio Molner Domenech](https://github.com/antoniomdk)
 - [Siah Bing Ze](https://github.com/toxicdeath32)
+- [Alan Aipe](https://github.com/alan-aipe)
  
 Credits To:
 - [Lionel T](http://codepen.io/elrumordelaluz/pen/XmygWX)(Github Edge)
