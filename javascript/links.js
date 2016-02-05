@@ -14,3 +14,14 @@ function android()
 	document.getElementById('x4img').style.display="none";
 	}
 }
+function playstore()
+{
+	if(document.getElementById('x4').innerHTML.indexOf('i')!=1)
+	{
+		window.location="https://github.com/fossasia/flappy-svg/blob/master/FlappySVG_Android/app-release.apk?raw=true";
+	}
+	else
+	{
+		window.location="credits.html";
+	}
+}
