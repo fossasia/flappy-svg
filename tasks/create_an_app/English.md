@@ -10,7 +10,7 @@ The game [Flappy-SVG](https://github.com/fossasia/flappy-svg#flappy-svg) can be 
 **Expected Outcome:** 
 
 - The source code of the App is Creative Commons licensed
-- Your name is in the Contributors.md file - preferably with your website as link
+- Your name is in the [credits.html](http://fossasia.github.io/flappy-svg/credits.html) file - preferably with your website as link
 - The source code is provided as a pull request.
 - [Post improvement ideas of your app](https://github.com/fossasia/flappy-svg/issues)
 

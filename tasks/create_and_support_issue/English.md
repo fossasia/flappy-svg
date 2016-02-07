@@ -17,7 +17,7 @@ Create issues for your ideas of the game and help others to solve them. Do not s
 
 - You did experience what it means to be 'on the other side of the project' - being like a mentor. 
 - The issue is resolved, or we can see the other person abandoned the task but you gave your best.
-- Your name should be in the Contributors.md file - preferably with a link to your website.
+- Your name should be in the [credits.html](http://fossasia.github.io/flappy-svg/credits.html) file - preferably with a link to your website.
 
 **Links/Tutorials:**
 

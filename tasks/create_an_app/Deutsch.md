@@ -11,7 +11,7 @@ Erstelle eine App (z.B. Android, IOS, FirefoxOS, Windows Phone, ...), mit der ma
 **Erwartetes Ergebnis**
 
 - Der Quelltext für die App ist unter Creative Commons lizensiert
-- Dein Name ist in der Contributors.md-Datei, am Besten mit Link auf deine Webseite
+- Dein Name ist in der [credits.html](http://fossasia.github.io/flappy-svg/credits.html)-Datei, am Besten mit Link auf deine Webseite
 - Der Quelltext wird als Pull-Request bereitgestellt.
 - [Stelle Verbesserungsvorschläge für das Spiel auf Github zur Diskussion](https://github.com/fossasia/flappy-svg/issues)
 

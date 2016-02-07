@@ -17,7 +17,7 @@ Erstelle [Issues](https://github.com/fossasia/flappy-svg/issues) für das Spiel 
 
 - Du bekommst mit, wie es auf der anderen Seite von Google-Codein zugeht, als Mentor oder Stammentwickler in einem Projekt
 - Die Issue ist erledigt und geschlossen
-- Dein Name ist in der Contributors.md-Datei, am Besten mit Link auf deine Webseite
+- Dein Name ist in der [credits.html](http://fossasia.github.io/flappy-svg/credits.html)-Datei, am Besten mit Link auf deine Webseite
 
 **Links & Tutorials**
 

@@ -15,7 +15,7 @@ Erstelle Hindernisse dafür.
 
 - Die Hindernisse sind unter Creative Commons lizensiert.
 - Die Pull-Request ist eingepflegt (merged)
-- Dein Name ist in der Contributors.md-Datei, am Besten mit Link auf deine Webseite
+- Dein Name ist in der [credits.html](http://fossasia.github.io/flappy-svg/credits.html)-Datei, am Besten mit Link auf deine Webseite
 
 **Links & Tutorials**
 
