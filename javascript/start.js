@@ -4,17 +4,18 @@
 window.onload = function() {
     scaleToFullscreen();
     showStartScreen();
-    var character = ["bird", "bat", "alien","flappydino","helicopter"];
-    var back=["background","Gotham"];
+    var characters = ["bird", "bat", "alien","flappydino","helicopter"];
+    var backgrounds=["background","Gotham"];
 
     //Default Layer
-    	var MAX = 1;
-	rand=Math.round((Math.random() * MAX)); 
-    	backgroundChange(back[rand])
+    	
+	rand=Math.floor((Math.random() * (backgrounds.length))); 
+    	backgroundChange(backgrounds[rand])
 	
-	MAX = 5;
-	rand = Math.floor((Math.random() * MAX));
-    	characterChange(character[rand])
+	
+	rand = Math.floor((Math.random() * (characters.length)));
+    	characterChange(characters[rand])
 	
 	
 }
+
