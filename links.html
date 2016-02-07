@@ -7,27 +7,46 @@
 		<script src="javascript/links.js"></script>
 		<script src="javascript/jquery.js"></script>
 		<script src="style/bootstrap/js/bootstrap.min.js"></script>
-		 
+
 		<link rel="stylesheet" type="text/css" href="style/links.css"/>
 	</head>
 	<body>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-4" style="height:100%;background-color:#000">
+				<div class="col-md-4"  id="col1">
 				</div>
-				<div class="col-md-4" style="height:100%;background-color:#ffcc7e">
-					<a href="index.html"><img src="back.png" style="position:absolute;width:50px;margin-top:10px;" /></a>
+				<div class="col-md-4" id="col2">
+					<a href="index.html" target="_blank">
+						<img id="x" src="back.png" />
+					</a>
 					<div id="linkbox" >
-						<div id="x1" class="btn btn-info" onclick="window.location='https://github.com/fossasia/flappy-svg';" style="width:77px;padding:7px;border-radius:135px;"><img id="x1img" style="width:60px;" src="githubLogo.png"/></div>
-						<div id="x2"class="btn btn-default" style="width:77px;height:77px;padding-left:7px;padding-top:25px;border-radius:135px;" onclick="window.location='http://fossasia.org/';"><img id="x2img"style="width:60px;" src="FOSSASIA_Logo.png"/></div>
-						<div type="button" id="x3" class="btn btn-success"  onclick="android();" style="width:77px;height:77px;padding:7px;border-radius:135px;"><img id="x3img" style="width:60px;" src="androidLogo.png"/></div>
+						<div id="x1" class="btn btn-info">
+							<a href="https://github.com/fossasia/flappy-svg" target="_blank">
+								<img id="x1img" src="githubLogo.png"/>
+							</a>
+						</div>
+						
+						<div id="x2"class="btn btn-default">
+							<a href="http://fossasia.org/" target="_blank">
+								<img id="x2img" src="FOSSASIA_Logo.png"/>
+							</a>
+						</div>
+						
+						<div type="button" id="x3" class="btn btn-success">
+							<a href="javascript:android()" >
+								<img id="x3img"  src="androidLogo.png"/>
+							</a>
+						</div>
 
-
-						<div id="x4" class="btn btn-danger" onclick="contributors();" style="width:77px;height:77px;padding-left:9px;padding-top:12px;border-radius:135px;"><img id="x4img" style="width:50px;" src="paint.png"/></div>
+						<div id="x4" class="btn btn-danger">
+							<a href="javascript:contributors()">
+								<img id="x4img" src="paint.png"/>
+							</a>
+						</div>
 
 					</div>
 				</div>
-				<div class="col-md-4" style="height:100%;background-color:#000">
+				<div class="col-md-4" id="col3" >
 				</div>
 			</div>
 		</div>
