@@ -6,6 +6,7 @@ Learn how to contribute to open source projects using git.
 **Requirements:**
 
 1. Do a git tutorial.
+	- [git - the simple guide](https://rogerdudler.github.io/git-guide/index.html)
 	- [try.github.io](https://try.github.io/levels/1/challenges/1)
 	- [learn.opentechschool.org](http://learn.opentechschool.org/)
 
