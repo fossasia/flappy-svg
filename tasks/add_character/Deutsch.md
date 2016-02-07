@@ -19,6 +19,6 @@ Erstelle deinen Lieblingsfigur dafür.
 **Links & Tutorials**
 
 - [Flappy-SVG](https://github.com/fossasia/flappy-svg#flappy-svg)
-- [Eigene Figur ertsellen](https://www.youtube.com/watch?v=dPHrmw4r16o)
+- [Eigene Figur erstellen](https://www.youtube.com/watch?v=dPHrmw4r16o)
 - [Inkscape](http://inkscape.org/)
 - [Verbesserungsvorschläge und Ideen](https://github.com/fossasia/flappy-svg/issues)
