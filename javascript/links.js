@@ -4,7 +4,7 @@ function android()
 	{
 		
 		window.open('https://play.google.com/store/apps/details?id=fossasia.flappysvg','_blank');
-        	done = true;
+        	
 	}
 	else
 	{
