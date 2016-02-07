@@ -2,7 +2,9 @@ function android()
 {
 	if(document.getElementById('x3').innerHTML.indexOf('i')!=1)
 	{
-		window.location="https://play.google.com/store/apps/details?id=fossasia.flappysvg";
+		
+		window.open('https://play.google.com/store/apps/details?id=fossasia.flappysvg','_blank');
+        	
 	}
 	else
 	{
