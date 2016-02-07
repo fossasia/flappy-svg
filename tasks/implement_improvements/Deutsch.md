@@ -1,7 +1,7 @@
 **Beschreibung**
 
 Das Spiel [Flappy-SVG](https://github.com/fossasia/flappy-svg#flappy-svg) kann mit [Inkscape](http://inkscape.org/) and JavaScript verändert werden. 
-Setze einen [einfachen Verbesserungsvorschlag](https://github.com/fossasia/flappy-svg/issues) um.
+Setze einen [Verbesserungsvorschlag](https://github.com/fossasia/flappy-svg/issues) um.
 
 **Anforderungen**
 
