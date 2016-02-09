@@ -12,7 +12,7 @@ Flappy.prototype = {
     velocity : 0,
     gravity : 1.8,
     flapVelocity : -20,
-    
+
     startFlapping : function() {
         this.action.start();
         this.position.show();
@@ -20,7 +20,7 @@ Flappy.prototype = {
     stopFlapping : function() {
         this.action.stop();
     },
-    
+
     fly : function() {
         this.velocity += this.gravity;
         this.position.y = this.position.y + this.velocity;
@@ -55,7 +55,7 @@ Flappy.prototype = {
                 return;
 
             var c = isOverlap(flappy_rect, o_rect);
-                        
+
             if (c || o_rect.right < flappy_rect.left)
                 obstacles.push(obstacles.shift());
 
@@ -69,7 +69,9 @@ Flappy.prototype = {
 
         //On collision code here.
         if (this._isCollided)
-            alert("hit");
+        {
+	    location.reload(); 
+	}
     },
 
     get isCollided(){
@@ -81,7 +83,7 @@ var flappy = null;
 
 function characterChange(layer) {
     hide_layer('bird');
-    hide_layer('bat'); 
+    hide_layer('bat');
     hide_layer('alien');
     hide_layer('flappydino');
     hide_layer('helicopter');

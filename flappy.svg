@@ -1807,7 +1807,7 @@
          d="m 561.34266,135.16119 c -1.04714,-2.13101 -2.31373,-3.97667 -5.33703,-3.53803 -2.90602,-2.45953 -4.08569,1.73977 -5.99667,3.11826"
          style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#a80200;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
-    
+
     <g
        id="g9705"
        transform="translate(-178.2024,27.66116)"
@@ -9391,6 +9391,29 @@
        y="-1098.7704"
        inkscape:label="width" />
   </g>
+
+
+  <g
+     inkscape:groupmode="layer"
+     id="layer16"
+     inkscape:label="score"
+     style="display:inline">
+     <text
+        xml:space="preserve"
+        style="font-style:normal;font-weight:normal;font-size:22.5px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+        x="100.3568906"
+        y="20.353357"
+          id="text5831"
+        sodipodi:linespacing="125%"><tspan
+          sodipodi:role="line"
+          id="tspan5834"
+          x="300.3568906"
+          y="20.353357">Score:-1111</tspan></text>
+  </g>
+
+
+
+
   <g
      inkscape:groupmode="layer"
      id="layer4"
@@ -9445,7 +9468,7 @@
        rx="22.388695"
        ry="21.710249"
        onclick="backgroundChange('Gotham')" />
-    
+
   </g>
   <g
      inkscape:groupmode="layer"
@@ -9454,7 +9477,7 @@
      onclick="characterChange('helicopter');"
      style="display:none"
      sodipodi:insensitive="true">
-	 
+
     <path
        style="fill:#008000"
        d=""
