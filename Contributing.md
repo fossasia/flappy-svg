@@ -1,6 +1,5 @@
-How to Contribute
-=================
 
+<<<<<<< HEAD
 - You should add your name with a link to your website to the [Contributors.md](./Contributors.md).
 - Have a look at the [implementation hints](./hints).
 - When you claim an issue, you need to comment. We can not let you do all the [easy](https://github.com/fossasia/flappy-svg/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aeasy+label%3Agci) issues because they are for people who first contribute to the project, unless we have a lot of them.
@@ -11,3 +10,7 @@ How to Contribute
 - All works must be your own creation or you must give proper, license-dependent attribution to the creator. See the [LICENSE](LICENSE) file and [Contributors.md](Contributors.md).
 - This must work online and offline and without internet connection.
 - This all is possible to be discussed.
+=======
+[See here](../../tree/master/Contributing.md).
+
+>>>>>>> 704df9e34d348a289124c78626f15162e7159307
