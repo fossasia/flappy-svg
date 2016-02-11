@@ -1807,7 +1807,7 @@
          d="m 561.34266,135.16119 c -1.04714,-2.13101 -2.31373,-3.97667 -5.33703,-3.53803 -2.90602,-2.45953 -4.08569,1.73977 -5.99667,3.11826"
          style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#a80200;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
-    
+
     <g
        id="g9705"
        transform="translate(-178.2024,27.66116)"
@@ -9430,7 +9430,7 @@
        id="a1702">
       <image
          sodipodi:absref="links.jpg"
-         xlink:href="links.jpg"
+         xlink:href="images/links.jpg"
          width="220"
          height="94"
          id="image8275"
@@ -9445,7 +9445,7 @@
        rx="22.388695"
        ry="21.710249"
        onclick="backgroundChange('Gotham')" />
-    
+
   </g>
   <g
      inkscape:groupmode="layer"
@@ -9454,7 +9454,7 @@
      onclick="characterChange('helicopter');"
      style="display:none"
      sodipodi:insensitive="true">
-	 
+
     <path
        style="fill:#008000"
        d=""
