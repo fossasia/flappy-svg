@@ -70,7 +70,21 @@ Flappy.prototype = {
         //On collision code here.
         if (this._isCollided)
         {
-	    location.reload(); 
+	   document.getElementById('layer17').style.display="inline";
+	   
+	   document.getElementById('layer1').style.display="none";
+	   document.getElementById('layer3').style.display="none";
+	   document.getElementById('layer7').style.display="none";
+	   document.getElementById('layer13').style.display="none";
+	   document.getElementById('layer14').style.display="none";
+	   document.getElementById('layer15').style.display="none";
+	
+	   stopMovingBackgound('background');
+	   stopMovingBackgound('DayAndNight');
+	   stopMovingBackgound('SunAndMoon');
+	   stopMovingBackgound('Gotham');
+           stopMovingBackgound('Gotham_obstacles');
+			
 	}
     },
 
@@ -113,4 +127,9 @@ function stopFlappingBackgound(name) {
 //Parameters are rects
 function isOverlap(e1, e2) {
     return (e1.top <= e2.bottom && e2.top <= e1.bottom && e1.right >= e2.left && e1.left <= e2.right);
+}
+
+
+function restart_game(){
+    location.reload();
 }
