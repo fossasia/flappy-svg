@@ -1,6 +1,14 @@
 How to Contribute
 =================
 
+Start
+-----
+
+To start developing Flappy SVG, there is a variety of repeatable [tasks](tasks#tasks) for you and one time [Issues](https://github.com/fossasia/flappy-svg/issues) you can solve.
+
+Hints
+-----
+
 - You should add your name with a link to your website to the [credits.html](http://fossasia.github.io/flappy-svg/credits.html).
 - Have a look at the [implementation hints](./hints).
 - When you claim an issue, you need to comment. We can not let you do all the [easy](https://github.com/fossasia/flappy-svg/issues?utf8=%E2%9C%93&q=is%3Aopen+label%3Aeasy+label%3Agci) issues because they are for people who first contribute to the project, unless we have a lot of them.
