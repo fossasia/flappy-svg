@@ -114,7 +114,7 @@ function isOverlap(e1, e2) {
 }
 
 function onCollision(){
-    document.getElementById('layer17').style.display="inline";
+    show_layer('gameover');
     stopAllBackgrounds();
 }
 

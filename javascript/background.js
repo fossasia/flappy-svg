@@ -78,17 +78,13 @@ function stopMovingBackgound(name) {
 }
 
 function stopAllBackgrounds(){
-	for (i = 0; i < backgrounds.length; i++)
-    	    stopMovingBackgound(backgrounds[i]);
-
-	for (i = 0; i < characters.length; i++)
-    	    stopMovingBackgound(characters[i]);
 	
-	for (i = 0; i < skyobjects.length; i++)
-            stopMovingBackgound(skyobjects[i]);
+	var keys = Object.keys(backgrounds);
+	for (i = 0; i < keys.length; i++){
+    	    stopMovingBackgound(keys[i]);
+	}
+	stopMovingBackgound(flappy.layerName);
 	
-	for (i = 0; i <=path_obstacles.length ; i++)
-	    stopMovingBackgound(path_obstacles[i]);
 }
 
 function backgroundChange(layer){
