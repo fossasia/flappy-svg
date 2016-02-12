@@ -77,6 +77,20 @@ function stopMovingBackgound(name) {
     background(name).stopMoving();
 }
 
+function stopAllBackgrounds(){
+	for (i = 0; i < backgrounds.length; i++)
+    	    stopMovingBackgound(backgrounds[i]);
+
+	for (i = 0; i < characters.length; i++)
+    	    stopMovingBackgound(characters[i]);
+	
+	for (i = 0; i < skyobjects.length; i++)
+            stopMovingBackgound(skyobjects[i]);
+	
+	for (i = 0; i <=path_obstacles.length ; i++)
+	    stopMovingBackgound(path_obstacles[i]);
+}
+
 function backgroundChange(layer){
 	desertHide()
 	gothamHide()

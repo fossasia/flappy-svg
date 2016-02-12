@@ -9884,7 +9884,7 @@
 
      <g
        cursor="pointer"
-       onmouseup="restart_game()">
+       onmouseup="restartGame()">
        <rect
           x="210"
           y="300"
