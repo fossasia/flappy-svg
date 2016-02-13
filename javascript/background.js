@@ -81,9 +81,9 @@ function stopAllBackgrounds(){
 	
 	var keys = Object.keys(backgrounds);
 	for (i = 0; i < backgrounds.length; i++){
-    	    stopMovingBackgound(keys[i]);
+    	    stopMovingBackgound(backgrounds[i]);
 	}
-	stopMovingBackgound(flappy.layerName);
+	stopMovingBackgound(flappy.stopFlapping());
 	
 }
 
