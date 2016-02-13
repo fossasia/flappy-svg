@@ -32,7 +32,7 @@ function androidPageChanges(instance)
 {
 	if(instance==0)
 	{
-		window.open('http://fossasia.github.io/flappy-svg/index.html','_blank');
+		window.location="index.html";
 	}
 	else
 	{
