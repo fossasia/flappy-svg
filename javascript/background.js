@@ -78,13 +78,10 @@ function stopMovingBackgound(name) {
 }
 
 function stopAllBackgrounds(){
-	
-	var keys = Object.keys(backgrounds);
-	for (i = 0; i < backgrounds.length; i++){
-    	    stopMovingBackgound(keys[i]);
-	}
-	stopMovingBackgound(flappy.stopFlapping());
-	
+    for(var characters in backgrounds) {
+    	stopMovingBackgound(characters);
+    }
+    flappy.stopFlapping();
 }
 
 function backgroundChange(layer){
