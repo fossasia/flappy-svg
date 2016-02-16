@@ -50,9 +50,9 @@ Flappy.prototype = {
     checkCollision : function() {
         var flappy_rect = this.layer.getBoundingClientRect();
         for (i = 0; i < 3; i++) {
-            var o_rect = obstacles[i].getBox;
-            if (i > obstacles.lenght)
+            if (i >= obstacles.length)
                 return;
+            var o_rect = obstacles[i].getBox;
 
             var c = isOverlap(flappy_rect, o_rect);
                         
