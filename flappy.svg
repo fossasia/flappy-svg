@@ -9391,6 +9391,14 @@
        y="-1098.7704"
        inkscape:label="width" />
   </g>
+
+
+
+
+
+
+
+
   <g
      inkscape:groupmode="layer"
      id="layer4"
@@ -9824,4 +9832,73 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccc" />
   </g>
+
+
+  <g
+     inkscape:groupmode="layer"
+     id="layer16"
+     inkscape:label="score_board"
+     style="display:inline">
+     <rect
+        x="350"
+        y="0"
+        rx="5"
+        ry="5"
+        width="130"
+        height="32"
+        style="display:inline;fill:rgb(26, 0, 0);"/>
+     <text
+        x="351"
+        y="20"
+        fill="red"
+        font-family="Verdana"
+        font-size="20">Score:</text>
+     <text
+        x="430"
+        y="20"
+        fill="red">1111</text>
+  </g>
+
+
+
+  <g
+     inkscape:groupmode="layer"
+     id="layer17"
+     inkscape:label="gameover"
+     style="display:none"
+     sodipodi:insensitive="true">
+     <rect
+        x="100"
+        y="200"
+        rx="20"
+        ry="20"
+        width="300"
+        height="300"
+        style="display:inline;fill:rgb(51, 0, 0);stroke-width:3;stroke:rgb(0,0,0);fill-rule:evenodd;stroke:none" />
+     <text
+        x="130"
+        y="235"
+        font-family="Verdana"
+        font-size="40"
+        fill="red">Game Over!</text>
+
+     <g
+       cursor="pointer"
+       onmouseup="restartGame()">
+       <rect
+          x="210"
+          y="300"
+          rx="5"
+          ry="5"
+          width="70"
+          height="32"
+          style="display:inline;fill:rgb(0, 64, 255);"/>
+       <text
+          x="215"
+          y="316"
+          font-family="Verdana">Restart</text>
+     </g>
+  </g>
+
+
 </svg>

@@ -77,6 +77,13 @@ function stopMovingBackgound(name) {
     background(name).stopMoving();
 }
 
+function stopAllBackgrounds(){
+    for(var characters in backgrounds) {
+    	stopMovingBackgound(characters);
+    }
+    flappy.stopFlapping();
+}
+
 function backgroundChange(layer){
 	desertHide()
 	gothamHide()
