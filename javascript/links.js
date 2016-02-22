@@ -2,19 +2,19 @@ function android(instance)
 {
 	if(instance==1)
 	{
+
+
 		document.getElementById('x2').style.display="none";
 		document.getElementById('x1').style.display="none";
 		document.getElementById('x0').innerHTML="<div id=x0' ><a href='javascript:androidPageChanges(1)'><img id='x' src='images/back.png' /></a></div>"
-		document.getElementById('x3').innerHTML="<div style='margin-top:20px;margin-left:-3px;'><a href='javascript:android(0)'><b>Play Store</b></a></div>";
-		document.getElementById('x4').innerHTML="<div style='margin-top:15px;'><a href='javascript:contributors(0)'><b>APK</b></a></div>";
-		document.getElementById('x3img').style.display="none";
-		document.getElementById('x4img').style.display="none";
+		document.getElementById('x3').innerHTML="<a href='javascript:android(0)'><img id='x3img' src='images/playStore.svg' /></a>";
+		document.getElementById('x4').innerHTML="<a href='javascript:contributors(0)'><img id='x4img' src='images/apk.png' /></a>";
 	}
 	else
 	{
-		
+
 		window.open('https://play.google.com/store/apps/details?id=fossasia.flappysvg','_blank');
-        	
+
 	}
 }
 function contributors(instance)
