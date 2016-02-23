@@ -39,28 +39,3 @@ function androidPageChanges(instance)
 		window.location="links.html";
 	}
 }
-<<<<<<< HEAD
-function howtoplay(instance)
-{
-	if(instance==1)
-	{
-		window.location="howtoplay.html";
-	}
-	else
-	{
-		window.location="https://github.com/fossasia/flappy-svg/blob/master/FlappySVG_Android/app-release.apk?raw=true";
-	}	
-}
-function scores(instance)
-{
-	if(instance==1)
-	{
-		window.location="leaderboard.html";
-	}
-	else
-	{
-		window.location="https://github.com/fossasia/flappy-svg/blob/master/FlappySVG_Android/app-release.apk?raw=true";
-	}	
-}
-=======
->>>>>>> upstream/gh-pages
