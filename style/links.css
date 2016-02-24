@@ -1,8 +1,18 @@
+body
+{
+  background: #ffcc7e;
+}
+
+#x0
+{
+	margin: 15px;
+	margin-top: 0%;
+	margin-left: 0%;
+}
+
 #x
 {
-	position:absolute;
 	width:50px;
-	margin-top:10px;
 }
 
 #x1,#x2,#x3,#x4
@@ -10,28 +20,17 @@
  	position: absolute;
  }
 
-#col1
-{
-	height:100%;
-	background-color:#000;
-}
-
-#col2
+/*#col1
 {
 	height:100%;
 	background-color:#ffcc7e;
-}
-
-#col3
-{
-	height:100%;
-	background-color:#000;
-}
+}*/
 
 #linkbox
 {
-	margin-top:65%;
-	margin-left: 40%;
+	margin-top:20%;
+	margin-left: 0%;
+	text-align: center;
 
 }
 #x1
@@ -40,13 +39,13 @@
 	 animation-fill-mode: forwards;
 	width:77px;
 	padding:7px;
-	border-radius:135px;
+	border-radius:170px;
 
 }
 @keyframes anim1
 {
 	from { }
-	to {margin-top:20%;}
+	to {margin-top:10%;}
 }
 #x2
 {
@@ -56,13 +55,13 @@
 	height:77px;
 	padding-left:7px;
 	padding-top:25px;
-	border-radius:135px;
+	border-radius:170px;
 
 }
 @keyframes anim2
 {
 	from { }
-	to {margin-top:-20%;}
+	to {margin-top:-10%;}
 }
 #x3
 {
@@ -71,12 +70,12 @@
 	width:77px;
 	height:77px;
 	padding:7px;
-	border-radius:135px;
+	border-radius:170px;
 }
 @keyframes anim3
 {
 	from { }
-	to {margin-left:20%;}
+	to {margin-left:10%;}
 }
 #x4
 {
@@ -86,12 +85,12 @@
 	height:77px;
 	padding-left:9px;
 	padding-top:12px;
-	border-radius:135px;
+	border-radius:170px;
 }
 @keyframes anim4
 {
 	from { }
-	to {margin-left:-20%;}
+	to {margin-left:-10%;}
 }
 
 #x1img
