@@ -1,0 +1,50 @@
+.menu {
+    background-color: white;
+    border: black;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 5px solid black;
+    font-family: Courier New;
+    width: 200px;
+    height: 45px;
+    font-weight: bold;
+}
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+#x {
+    position: absolute;
+    width: 50px;
+    margin-top: 10px;
+    color: red;
+}
+div {
+    background-color: lightblue;
+    width: 92%;
+    left: 0;
+    height: 150%;
+    padding-top: 20px;
+}
+body {
+    background-color: black;
+    margin: 0px 400px 0px 400px;
+    padding: 0;
+    text-align: center;
+}
+a {
+    color: darkblue;
+}
+br {
+    line-height: 10px;
+}
