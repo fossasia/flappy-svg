@@ -1,5 +1,4 @@
 .menu {
-    margin: auto;
     background-color: white;
     border: black;
     color: white;
@@ -13,7 +12,7 @@
     border: 5px solid black;
     font-family: Courier New;
     width: 200px;
-    height: 50px;
+    height: 45px;
     font-weight: bold;
 }
 li {
@@ -28,7 +27,24 @@ li a:hover {
     position: absolute;
     width: 50px;
     margin-top: 10px;
+    color: red;
+}
+div {
+    background-color: lightblue;
+    width: 92%;
+    left: 0;
+    height: 150%;
+    padding-top: 20px;
 }
 body {
-    background-color: lightblue;
+    background-color: black;
+    margin: 0px 400px 0px 400px;
+    padding: 0;
+    text-align: center;
+}
+a {
+    color: darkblue;
+}
+br {
+    line-height: 10px;
 }
