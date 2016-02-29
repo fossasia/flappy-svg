@@ -1,19 +1,50 @@
 .menu {
+    position: absolute;
     background-color: white;
     border: black;
-    color: white;
-    padding: 15px 15px;
+    padding: 2% 2%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 30px;
+    font-size: 200%;
     margin: 4px 2px;
     cursor: pointer;
     border: 5px solid black;
     font-family: Courier New;
-    width: 200px;
-    height: 45px;
+    width: 40%;
+    height: 5%;
     font-weight: bold;
+}
+#x1 {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+#x2 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+#x3 {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+}
+#x4 {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+}
+#x5 {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+}
+h1 {
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    font-size: 250%;
 }
 li {
     text-decoration: none;
@@ -25,19 +56,20 @@ li a:hover {
 }
 #x {
     position: absolute;
-    width: 50px;
-    margin-top: 10px;
+    width: 50%;
+    margin-top: 10%;
     color: red;
 }
 div {
+    position: absolute;
     background-color: lightblue;
-    width: 92%;
-    left: 0;
-    height: 150%;
-    padding-top: 20px;
+    width: 40%;
+    left: 30%;
+    height: 110%;
+    padding-top: 0px;
 }
 body {
-    background-color: black;
+    background-color: #ffcc7e;
     margin: 0px 400px 0px 400px;
     padding: 0;
     text-align: center;
