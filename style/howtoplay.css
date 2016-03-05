@@ -5,3 +5,7 @@ body{
 	position:absolute;
 	left:35%;
 }
+#embed
+{
+	height:100%;
+}
