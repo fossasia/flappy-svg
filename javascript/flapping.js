@@ -56,6 +56,13 @@ Flappy.prototype = {
 
             var c = isOverlap(flappy_rect, o_rect);
 
+            if(!c){
+                var d = isBehind(o_rect,flappy_rect);
+                if(d){
+                    updateScore();
+                }
+            }
+
             if (c || o_rect.right < flappy_rect.left)
                 obstacles.push(obstacles.shift());
 
@@ -120,4 +127,7 @@ function onCollision(){
 
 function restartGame(){
     location.reload();
+}
+function isBehind(r1,r2){
+    return (r1.right<=r2.left);
 }

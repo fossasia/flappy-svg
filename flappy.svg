@@ -48,6 +48,9 @@
   <script
      xlink:href="javascript/obstacle.js"
      id="script15" />
+  <script
+     xlink:href="javascript/score.js"
+     id="script16" />
   <defs
      id="defs4">
     <linearGradient
@@ -9856,7 +9859,7 @@
      <text
         x="430"
         y="20"
-        fill="red">1111</text>
+        fill="red" id="score">0</text>
   </g>
 
 
