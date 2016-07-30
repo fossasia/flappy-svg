@@ -115,9 +115,26 @@ function stopFlappingBackgound(name) {
     }
 }
 
+function getCenteredrect(rect){
+    centered_rect = {
+        x:rect.left+rect.width/2,
+        y:rect.bottom+rect.height/2,
+        width:rect.width,
+        height:rect.height,
+    };
+    return centered_rect;
+}
+
 //Parameters are rects
 function isOverlap(e1, e2) {
-    return (e1.top <= e2.bottom && e2.top <= e1.bottom && e1.right >= e2.left && e1.left <= e2.right);
+    rect1 = getCenteredrect(e1);
+    rect2 = getCenteredrect(e2);
+    if (rect1.x < rect2.x + rect2.width &&
+   rect1.x + rect1.width > rect2.x &&
+   rect1.y < rect2.y + rect2.height &&
+   rect1.height + rect1.y > rect2.y)
+        return true;
+    else return false;
 }
 
 function onCollision(){
