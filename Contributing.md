@@ -15,6 +15,6 @@ Hints
 - Create [new branches](http://www.git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) for pull requests if you do several pull requests or issues at a time, so they can be reviewed independently.
 - If reasonable, each issue should have an own pull request.
 - You can add issues yourself if you want specific improvements of the game. We categorize them into `easy`, `middle` and `hard`.
-- All works must be your own creation or you must give proper, license-dependent attribution to the creator. See the [LICENSE](LICENSE) file and [credits.html](http://fossasia.github.io/flappy-svg/credits.html) and the [Seveloper Certificate](http://developercertificate.org/).
+- All works must be your own creation or you must give proper, license-dependent attribution to the creator. See the [LICENSE](LICENSE) file and [credits.html](http://fossasia.github.io/flappy-svg/credits.html) and the [Developer Certificate](http://developercertificate.org/).
 - This must work online and offline and without internet connection.
 - This all is possible to be discussed.
