@@ -1,55 +1,30 @@
 <html>
-    <head>
-        <title>Flappy Main Menu</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/ico" href="images/favicon.ico"/>
-        <link rel="stylesheet" type="text/css" href="style/main_menu.css">
-    </head>
-    <body>
-        <div >
-            <li>
-                <h1>MAIN MENU</h1>
-            </li>
-            <li>
-                <div type=button id="x1" class="menu new_game">
-                    <a href="index.html" >
-                    NEW GAME
-                    </a>
-                </div>
-            </li>
-            <br />
-            <li>
-                <div type="button" id="x2" class="menu controls">
-                    <a href="howtoplay.html" >
-                    CONTROLS
-                    </a>
-                </div>
-            </li>
-            <br />
-            <li>
-                <div type="button" id="x3" class="menu credits">
-                    <a href="credits.html" >
-                    CREDITS
-                    </a>
-                </div>
-            </li>
-            <br />
-            <li>
-                <div type="button" id="x4" class="menu scores">
-                    <a href="leaderboard.html" >
-                    SCORES
-                    </a>
-                </div>
-            </li>
-            <br />
-            <li>
-                <div type="button" id="x5" class="menu exit">
-                    <a href="links.html" >
-                    LINKS
-                    </a>
-                </div>
-            </li>
-        </div>
-    </body>
+	<head>
+		<title>Flappy Main Menu</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/ico" href="images/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="style/main_menu.css">
+		<link rel="stylesheet" type="text/css" href="style/bootstrap/css/bootstrap.css">
+	</head>
+	<body class="body">
+		<div  class="menu list-group">
+			<h2 class="list-group-item active" id="mainmenu">MAIN MENU</h3>
+			<a href="index.html" class = "list-group-item spacing"  >
+				NEW GAME
+			</a>
+			<a href="howtoplay.html" class = "list-group-item spacing" >
+				CONTROLS
+			</a>
+			<a href="credits.html" class = "list-group-item spacing" >
+				CREDITS
+			</a>
+			<a href="leaderboard.html" class = "list-group-item spacing" >
+				SCORES
+			</a>
+			<a href="links.html" class = "list-group-item spacing" >
+				LINKS
+			</a>
+		</div>
+	</body>
 </html>

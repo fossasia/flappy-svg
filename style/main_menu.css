@@ -1,82 +1,22 @@
-.menu {
-    position: absolute;
-    background-color: white;
-    border: black;
-    padding: 2% 2%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 200%;
-    margin: 4px 2px;
-    cursor: pointer;
-    border: 5px solid black;
-    font-family: Courier New;
-    width: 40%;
-    height: 5%;
-    font-weight: bold;
+.body{
+    background-color:#ffcc7e;
 }
-#x1 {
-    position: absolute;
-    top: 15%;
-    left: 30%;
+.menu{
+        padding: 2%;
+        width:40%;
+        height:auto;
+        text-align: center;
+        margin:0 auto;
+
 }
-#x2 {
-    position: absolute;
-    top: 30%;
-    left: 30%;
-}
-#x3 {
-    position: absolute;
-    top: 45%;
-    left: 30%;
-}
-#x4 {
-    position: absolute;
-    top: 60%;
-    left: 30%;
-}
-#x5 {
-    position: absolute;
-    top: 75%;
-    left: 30%;
-}
-h1 {
-    position: absolute;
-    top: 0%;
-    left: 30%;
-    font-size: 250%;
-}
-li {
-    text-decoration: none;
-    list-style-type: none;
-}
-li a:hover {
-    background-color: #555;
-    color: white;
-}
-#x {
-    position: absolute;
-    width: 50%;
-    margin-top: 10%;
-    color: red;
-}
-div {
-    position: absolute;
-    background-color: lightblue;
-    width: 40%;
-    left: 30%;
-    height: 110%;
-    padding-top: 0px;
-}
-body {
-    background-color: #ffcc7e;
-    margin: 0px 400px 0px 400px;
-    padding: 0;
-    text-align: center;
-}
-a {
-    color: darkblue;
-}
-br {
-    line-height: 10px;
+.spacing{
+     margin-top: 5%;
+     margin-left:5%;
+     font-weight: bold;
+     font-style: oblique;
+     font-color: ;
+ }
+
+#mainmenu{
+    margin-left:5%;
 }
