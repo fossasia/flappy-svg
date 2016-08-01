@@ -1,6 +1,6 @@
-function Level(home, backgroundLayers, obstaclesLayer){
-	this._backgrounds = backgroundLayers;
-	this.obstacleLayer = obstaclesLayer;
+function Level(name, backgrounds, obstacles){
+	this._backgrounds = backgrounds;
+	this.obstacles = obstacles;
 	this._obstacles = createObstacles(obstaclesLayer);
 	this._name = name;
 	this._score = 0;
@@ -9,17 +9,27 @@ function Level(home, backgroundLayers, obstaclesLayer){
 Level.prototype = {
 
 	show: function(){
-		show_layer(this.obstaclesLayer);
-		for (layer in this.backgrounds){
-			show_layer(layer);
+
+		for (background in this.backgrounds){
+			show_layer(background["layer"]);
 		}
+
+		for(obstacle in this.obstacles){
+			show_layer(obstacle["layer"]);
+		}
+
 	},
 
 	hide: function(){
-		hide_layer(this.obstaclesLayer);
-		for (layer in this.backgrounds){
-			hide_layer(layer);
+
+		for (background in this.backgrounds){
+			hide_layer(background["layer"]);
 		}
+
+		for(obstacle in this.obstacles){
+			hide_layer(obstacle["layer"]);
+		}
+
 	},
 
 	getBackgrounds(): function(){
@@ -59,21 +69,62 @@ function newLevel(name,backgroundLayers,obstaclesLayer){
 }
 
 function AlllevelObjects(){
-	// Need to be properly Modified
-	levels = ["level1","level2"];
 	
-	backgrounds = {
-		"level1":[],
-		"level2":[]
-	};
-	
-	obstacles = {
-		"level1":"obstacle for level1",
-		"level2":"obstacle for level2",
+
+	var all_level_specifications = {
+		"desert":{
+
+			"obstacles":[
+				{
+					"layer": "cactus",
+					"velocity": 10,
+				},
+			],
+
+			"backgrounds":[
+				{
+	                "layer" : "DayAndNight",
+	                "velocity" : -20
+	            },
+	            {
+	                "layer" : "background",
+	                "velocity" : -7
+	            },
+	            {
+	                "layer" : "SunAndMoon",
+	                "velocity" : 1
+	            },
+	            {
+	                "layer" : "sky",
+	                "velocity" : 0
+	            }
+			]
+
+		},
+
+		"gotham":{
+
+			"obstacles":[
+				{
+					"layer":"Gotham_Obstacles",
+					"velocity": -7
+				},
+			],
+
+			"backgrounds":[
+				{
+					"layer":"Gotham",
+					"velocity": -7
+				}
+			],
+		},
+
 	};
 
-	for(level in levels){
-		all_levels[level] = newLevel(level,backgrounds[level],obstacles[level]);
+
+	for( level in all_level_specifications ){
+		specs = all_level_specifications[level];
+		all_levels[level] = newLevel(level,specs["backgrounds"],specs["obstacles"]);
 	}
 }
 
