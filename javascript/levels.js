@@ -60,6 +60,59 @@ Level.prototype = {
 
 var all_levels,current_level;
 
+// Specifications of any new level must be given here
+
+var all_level_specifications = {
+	"desert":{
+
+		"obstacles":[
+		{
+			"layer": "cactus",
+			"velocity": 10,
+		}
+		],
+
+		"backgrounds":[
+		{
+			"layer" : "DayAndNight",
+			"velocity" : -20
+		},
+		{
+			"layer" : "background",
+			"velocity" : -7
+		},
+		{
+			"layer" : "SunAndMoon",
+			"velocity" : 1
+		},
+		{
+			"layer" : "sky",
+			"velocity" : 0
+		}
+		]
+
+	},
+
+	"gotham":{
+
+		"obstacles":[
+		{
+			"layer":"Gotham_Obstacles",
+			"velocity": -7
+		}
+		],
+
+		"backgrounds":[
+		{
+			"layer":"Gotham",
+			"velocity": -7
+		}
+		],
+	},
+
+};
+
+
 function getAllLevels(){
 	return all_levels;
 }
@@ -68,61 +121,10 @@ function newLevel(name,backgroundLayers,obstaclesLayer){
 	return new Level(name,backgroundLayers,obstaclesLayer);
 }
 
+
 function AlllevelObjects(){
-	
-
-	var all_level_specifications = {
-		"desert":{
-
-			"obstacles":[
-			{
-				"layer": "cactus",
-				"velocity": 10,
-			}
-			],
-
-			"backgrounds":[
-			{
-				"layer" : "DayAndNight",
-				"velocity" : -20
-			},
-			{
-				"layer" : "background",
-				"velocity" : -7
-			},
-			{
-				"layer" : "SunAndMoon",
-				"velocity" : 1
-			},
-			{
-				"layer" : "sky",
-				"velocity" : 0
-			}
-			]
-
-		},
-
-		"gotham":{
-
-			"obstacles":[
-			{
-				"layer":"Gotham_Obstacles",
-				"velocity": -7
-			}
-			],
-
-			"backgrounds":[
-			{
-				"layer":"Gotham",
-				"velocity": -7
-			}
-			],
-		},
-
-	};
-
-
 	for( level in all_level_specifications ){
+		//  This function generates all levels from the given specifications
 		specs = all_level_specifications[level];
 		all_levels[level] = newLevel(level,specs["backgrounds"],specs["obstacles"]);
 	}
