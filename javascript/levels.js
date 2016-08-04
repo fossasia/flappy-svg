@@ -75,29 +75,29 @@ function AlllevelObjects(){
 		"desert":{
 
 			"obstacles":[
-				{
-					"layer": "cactus",
-					"velocity": 10,
-				},
+			{
+				"layer": "cactus",
+				"velocity": 10,
+			}
 			],
 
 			"backgrounds":[
-				{
-	                "layer" : "DayAndNight",
-	                "velocity" : -20
-	            },
-	            {
-	                "layer" : "background",
-	                "velocity" : -7
-	            },
-	            {
-	                "layer" : "SunAndMoon",
-	                "velocity" : 1
-	            },
-	            {
-	                "layer" : "sky",
-	                "velocity" : 0
-	            }
+			{
+				"layer" : "DayAndNight",
+				"velocity" : -20
+			},
+			{
+				"layer" : "background",
+				"velocity" : -7
+			},
+			{
+				"layer" : "SunAndMoon",
+				"velocity" : 1
+			},
+			{
+				"layer" : "sky",
+				"velocity" : 0
+			}
 			]
 
 		},
@@ -105,17 +105,17 @@ function AlllevelObjects(){
 		"gotham":{
 
 			"obstacles":[
-				{
-					"layer":"Gotham_Obstacles",
-					"velocity": -7
-				},
+			{
+				"layer":"Gotham_Obstacles",
+				"velocity": -7
+			}
 			],
 
 			"backgrounds":[
-				{
-					"layer":"Gotham",
-					"velocity": -7
-				}
+			{
+				"layer":"Gotham",
+				"velocity": -7
+			}
 			],
 		},
 
