@@ -121,19 +121,17 @@ function newLevel(name,backgroundLayers,obstaclesLayer){
 	return new Level(name,backgroundLayers,obstaclesLayer);
 }
 
-
-function AlllevelObjects(){
-	for( level in all_level_specifications ){
-		//  This function generates all levels from the given specifications
-		specs = all_level_specifications[level];
-		all_levels[level] = newLevel(level,specs["backgrounds"],specs["obstacles"]);
-	}
-}
-
 function setCurrentLevel(name){
 	current_level = all_levels[name];
 }
 
 function getCurrentLevel(){
 	return current_level;
+}
+
+window.onload = function() {
+    for (level in all_level_specifications) {
+        specs = all_level_specifications[level];
+        all_levels[level] = newLevel(level, specs["backgrounds"], specs["obstacles"]);
+    }
 }
