@@ -15,6 +15,7 @@ Erstelle deinen Lieblingshintergrund dafür.
 
 - Der Hintegrund ist unter Creative Commons lizensiert.
 - Die Pull-Request ist eingepflegt (merged)
+- Alle Probleme, die aus der Pull-Request resultieren, sind behoben.
 - Dein Name ist in der Contributors.md-Datei, am Besten mit Link auf deine Webseite
 
 **Links & Tutorials**

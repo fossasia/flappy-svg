@@ -12,6 +12,7 @@ Setze einen [Verbesserungsvorschlag](https://github.com/fossasia/flappy-svg/issu
 
 - Die Issue wird geschlossen, stelle einen Link auf die Issue in Google-Codein.
 - Dein Name ist in der [credits.html](http://fossasia.github.io/flappy-svg/credits.html)-Datei, am Besten mit Link auf deine Webseite
+- Alle Probleme, die aus den Pull-Requests resultieren, sind behoben.
 
 **Links & Tutorials**
 

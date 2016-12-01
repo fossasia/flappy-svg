@@ -15,6 +15,7 @@ Add your favorite background to it.
 
 - The background is licensed under Creative Commons
 - a pull request that is merged
+- All issues resulting from your pull-request are resolved.
 - Have your name and preferably also a link to your digital online presence in the Contributors.md file.
 
 **Links/Tutorials:**

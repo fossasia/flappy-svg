@@ -16,6 +16,7 @@ Add your favorite character to it.
 - A new character that can be reached by clicking on the existing characters
 - The character is licensed under Creative Commons
 - a pull request that is merged
+- All issues resulting from your pull-request are resolved.
 - Have your name and preferably also a link to your digital online presence in the [credits.html](http://fossasia.github.io/flappy-svg/credits.html) file.
 
 **Links/Tutorials:**
