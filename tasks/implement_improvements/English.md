@@ -11,6 +11,7 @@ Resolve an existing [issue](https://github.com/fossasia/flappy-svg/issues).
 **Expected Outcome:** 
 
 - The issue is resolved, post a link to it so we can see you were the cause.
+- All issues resulting from your pull-requests are resolved.
 - Your name should be in the [credits.html](http://fossasia.github.io/flappy-svg/credits.html) file - preferably with a link to your site.
 
 **Links/Tutorials:**
