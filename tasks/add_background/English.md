@@ -16,7 +16,7 @@ Add your favorite background to it.
 - The background is licensed under Creative Commons
 - a pull request that is merged
 - All issues resulting from your pull-request are resolved.
-- Have your name and preferably also a link to your digital online presence in the Contributors.md file.
+- Your name should be in the [credits.html](http://fossasia.github.io/flappy-svg/credits.html) file - preferably with a link to your website.
 
 **Links/Tutorials:**
 

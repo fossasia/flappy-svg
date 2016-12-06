@@ -9,7 +9,7 @@ Create issues for your ideas of the game and help others to solve them. Do not s
 2. Create at least one [issue](https://github.com/fossasia/flappy-svg/issues) that describes your idea very precisely, gives hints, links, context. The more issues the likelier others are interested.
 3. We will review the issue, suggest improvements and tag it. If it is too big we will split it. Easy tasks are for beginners.
 4. Wait.
-5. Someone else wants to solve this issue. You instead of mentors help this person to resolve the issue. Mentors are allowd to help.  Do not do the work for this person. Do not keep too much to your idea. Now it is the idea of both of you and together you could create something cool.
+5. Someone else wants to solve this issue. You instead of mentors help this person to resolve the issue. Mentors are allowed to help.  Do not do the work for this person. Do not keep too much to your idea. Now it is the idea of both of you and together you could create something cool.
 6. Test and review the code of the other person, then notify the mentors e.g. @niccokunzmann that it is ready for merge into the main branch of the game.
 7. If merged, we will review if you were an OK mentor and tell you to claim this task.
 
