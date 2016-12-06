@@ -6,7 +6,7 @@ Resolve an existing [issue](https://github.com/fossasia/flappy-svg/issues).
 **Requirements:**
 
 - Comment on an [issue](https://github.com/fossasia/flappy-svg/issues) that you want to do it. If you have solved several tasks on this game before, you can not claim tasks that are too easy for you because we need them to give others an easy start.
-- Create a pull request or something that resolves the issue [issue](https://github.com/fossasia/flappy-svg/issues) which is tagged as GCI
+- Create a pull request or something that resolves the [issue](https://github.com/fossasia/flappy-svg/issues) which is tagged as GCI
 
 **Expected Outcome:** 
 
