@@ -87,6 +87,7 @@ function stopAllBackgrounds(){
 function backgroundChange(layer){
 	desertHide()
 	gothamHide()
+    spaceHide();
 	
 	if (layer =='background'){
 		desertShow()
@@ -95,6 +96,10 @@ function backgroundChange(layer){
 	if (layer =='Gotham'){
 		gothamShow()
 	}
+
+    if (layer =='space'){
+        spaceShow()
+    }
 }
 
 function desertShow(){
@@ -125,4 +130,16 @@ function gothamShow(){
 function gothamHide(){
         hide_layer('Gotham');
         hide_layer('Gotham_obstacles');
+}
+
+function spaceShow(){
+        show_layer('space');
+        show_layer('space_rocket');
+
+        createObstacles("space_rocket");
+}
+
+function spaceHide(){
+        hide_layer('space');
+        hide_layer('space_rocket');
 }
