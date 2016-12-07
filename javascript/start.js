@@ -7,8 +7,8 @@ window.onload = function() {
     scaleToFullscreen();
     showStartScreen();
     
-    var characters = ["bird", "bat", "alien","flappydino","helicopter"];
-    var backgrounds=["background","Gotham"];
+    var characters = ["bird", "bat", "alien","flappydino","helicopter", "rocket", "Super_rocket"];
+    var backgrounds=["background","Gotham","space"];
     
     rand=Math.floor((Math.random() * (backgrounds.length))); 
     backgroundChange(backgrounds[rand])

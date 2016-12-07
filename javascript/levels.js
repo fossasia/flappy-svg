@@ -94,7 +94,7 @@ var all_level_specifications = {
 	},
 
 	"gotham":{
-
+		
 		"obstacles":[
 		{
 			"layer":"Gotham_Obstacles",
@@ -105,6 +105,23 @@ var all_level_specifications = {
 		"backgrounds":[
 		{
 			"layer":"Gotham",
+			"velocity": -7
+		}
+		],
+	},
+
+	"space":{
+
+		"obstacles":[
+		{
+			"layer":"space_rocket",
+			"velocity": -7
+		}
+		],
+
+		"backgrounds":[
+		{
+			"layer":"space",
 			"velocity": -7
 		}
 		],
