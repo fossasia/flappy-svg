@@ -94,6 +94,7 @@ function characterChange(layer) {
     hide_layer('helicopter');
     hide_layer('rocket');
 	hide_layer('Santa');
+  hide_layer('Flappyfish');  
     flappy = new Flappy(layer);
     flappy.show();
 }

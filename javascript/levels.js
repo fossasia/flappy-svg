@@ -94,7 +94,7 @@ var all_level_specifications = {
 	},
 
 	"gotham":{
-		
+
 		"obstacles":[
 		{
 			"layer":"Gotham_Obstacles",
@@ -144,7 +144,26 @@ var all_level_specifications = {
 		],
 	},
 
+	"Sea":{
+
+		"obstacles":[
+		{
+			"layer":"fishinghook",
+			"velocity": -7
+		}
+		],
+
+		"backgrounds":[
+		{
+			"layer":"Sea",
+			"velocity": -7
+		}
+		],
+	},
+
 };
+
+
 
 
 function getAllLevels(){
