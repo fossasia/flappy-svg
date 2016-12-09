@@ -166,10 +166,12 @@ function snowHide(){
 
 function seaShow(){
         show_layer('Sea');
+        show_layer('fishinghook');
 
         createObstacles("fishinghook");
 }
 
 function seaHide(){
         hide_layer('Sea');
+        hide_layer('fishinghook');
 }
