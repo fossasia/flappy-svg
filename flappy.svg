@@ -289,9 +289,9 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.8101934"
      inkscape:cx="398.27289"
-     inkscape:cy="491.73939"
+     inkscape:cy="403.35105"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer25"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
@@ -19368,7 +19368,8 @@
      inkscape:groupmode="layer"
      id="layer25"
      inkscape:label="Sea"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <rect
        style="fill:#6495ed"
        id="rect7248"
