@@ -21,6 +21,8 @@ function startGame() {
     startMovingBackgound('space_rocket', -7);
     startMovingBackgound('Snow', -7);
     startMovingBackgound('Gifts', -7);
+    startMovingBackgound('Sea', -7);
+    startMovingBackgound('fishinghook', -7);
     scaleToFullscreen();
 
 

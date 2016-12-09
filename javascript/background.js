@@ -33,7 +33,7 @@ function Background(layerName, velocity) {
     this.width = widthOfLayer(this.layer);
     var me = this;
     this.action = new Action(function(){me.move()}, function(){me.started()});
-    
+
     backgrounds[this.layerName] = this;
 }
 
@@ -87,13 +87,14 @@ function stopAllBackgrounds(){
 function backgroundChange(layer){
 	desertHide()
 	gothamHide()
-    spaceHide()
-	snowHide();
-	
+  spaceHide()
+	snowHide()
+  seaHide();
+
 	if (layer =='background'){
 		desertShow()
 	}
-	
+
 	if (layer =='Gotham'){
 		gothamShow()
 	}
@@ -102,8 +103,11 @@ function backgroundChange(layer){
         spaceShow()
     }
 	if (layer =='Snow'){
-	snowShow()
+    snowShow()
 	}
+  if (layer =='Sea'){
+      seaShow()
+  }
 }
 
 function desertShow(){
@@ -130,7 +134,7 @@ function gothamShow(){
 
         createObstacles("Gotham_obstacles");
 }
-		
+
 function gothamHide(){
         hide_layer('Gotham');
         hide_layer('Gotham_obstacles');
@@ -155,7 +159,19 @@ function snowShow(){
         createObstacles("Gifts");
 }
 
-function ssnowHide(){
+function snowHide(){
         hide_layer('Snow');
         hide_layer('Gifts');
+}
+
+function seaShow(){
+        show_layer('Sea');
+
+        createObstacles("fishinghook");
+}
+
+function seaHide(){
+        hide_layer('Sea');
+
+        hide_layer("fishinghook");
 }
