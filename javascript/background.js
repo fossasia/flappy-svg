@@ -172,6 +172,4 @@ function seaShow(){
 
 function seaHide(){
         hide_layer('Sea');
-
-        hide_layer("fishinghook");
 }
