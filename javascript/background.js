@@ -87,9 +87,9 @@ function stopAllBackgrounds(){
 function backgroundChange(layer){
 	desertHide()
 	gothamHide()
-    spaceHide()
+  spaceHide()
 	snowHide()
-  Hide();
+  seaHide();
 
 	if (layer =='background'){
 		desertShow()
@@ -103,10 +103,10 @@ function backgroundChange(layer){
         spaceShow()
     }
 	if (layer =='Snow'){
-	snowShow()
+    snowShow()
 	}
   if (layer =='Sea'){
-      SeaShow()
+      seaShow()
   }
 }
 
@@ -159,13 +159,19 @@ function snowShow(){
         createObstacles("Gifts");
 }
 
-function ssnowHide(){
+function snowHide(){
         hide_layer('Snow');
         hide_layer('Gifts');
 }
 
-function SeaShow(){
+function seaShow(){
         show_layer('Sea');
 
         createObstacles("fishinghook");
+}
+
+function seaHide(){
+        hide_layer('Sea');
+
+        hide_layer("fishinghook");
 }
