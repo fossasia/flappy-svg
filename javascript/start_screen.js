@@ -17,6 +17,12 @@ function startGame() {
     startMovingBackgound('SunAndMoon', 1);
     startMovingBackgound('Gotham', -7);
     startMovingBackgound('Gotham_obstacles', -7);
+    startMovingBackgound('space', -7);
+    startMovingBackgound('space_rocket', -7);
+    startMovingBackgound('Snow', -7);
+    startMovingBackgound('Gifts', -7);
+    startMovingBackgound('Sea', -7);
+    startMovingBackgound('fishinghook', -7);
     scaleToFullscreen();
 
 

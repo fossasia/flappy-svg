@@ -110,7 +110,60 @@ var all_level_specifications = {
 		],
 	},
 
+	"space":{
+
+		"obstacles":[
+		{
+			"layer":"space_rocket",
+			"velocity": -7
+		}
+		],
+
+		"backgrounds":[
+		{
+			"layer":"space",
+			"velocity": -7
+		}
+		],
+	},
+
+	"Snow":{
+
+		"obstacles":[
+		{
+			"layer":"Gifts",
+			"velocity": -7
+		}
+		],
+
+		"backgrounds":[
+		{
+			"layer":"Snow",
+			"velocity": -7
+		}
+		],
+	},
+
+	"Sea":{
+
+		"obstacles":[
+		{
+			"layer":"fishinghook",
+			"velocity": -7
+		}
+		],
+
+		"backgrounds":[
+		{
+			"layer":"Sea",
+			"velocity": -7
+		}
+		],
+	},
+
 };
+
+
 
 
 function getAllLevels(){
