@@ -87,7 +87,8 @@ function stopAllBackgrounds(){
 function backgroundChange(layer){
 	desertHide()
 	gothamHide()
-    spaceHide();
+    spaceHide()
+	snowHide();
 	
 	if (layer =='background'){
 		desertShow()
@@ -100,6 +101,9 @@ function backgroundChange(layer){
     if (layer =='space'){
         spaceShow()
     }
+	if (layer =='Snow'){
+	snowShow()
+	}
 }
 
 function desertShow(){
@@ -142,4 +146,16 @@ function spaceShow(){
 function spaceHide(){
         hide_layer('space');
         hide_layer('space_rocket');
+}
+
+function snowShow(){
+        show_layer('Snow');
+        show_layer('Gifts');
+
+        createObstacles("Gifts");
+}
+
+function ssnowHide(){
+        hide_layer('Snow');
+        hide_layer('Gifts');
 }

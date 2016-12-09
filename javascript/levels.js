@@ -127,6 +127,23 @@ var all_level_specifications = {
 		],
 	},
 
+	"Snow":{
+
+		"obstacles":[
+		{
+			"layer":"Gifts",
+			"velocity": -7
+		}
+		],
+
+		"backgrounds":[
+		{
+			"layer":"Snow",
+			"velocity": -7
+		}
+		],
+	},
+
 };
 
 
