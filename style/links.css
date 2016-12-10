@@ -15,7 +15,7 @@ body
 	width:50px;
 }
 
-#x1,#x2,#x3,#x4,#x5
+#x1,#x2,#x3,#x4,#x5, #x6
  {
  	position: absolute;
  }
@@ -102,12 +102,28 @@ body
 	padding-top:12px;
 	border-radius:170px;
 }
+#x6
+{
+	animation:anim6 2s;
+	 animation-fill-mode: forwards;
+	width:77px;
+	height:77px;
+	padding-left:9px;
+	padding-top:12px;
+	border-radius:170px;
+
+}
+@keyframes anim6
+{
+	from { }
+	to {margin-left:-10%; margin-top:-8%;}
+}
 @keyframes anim5
 {
-	from { 
-            transform: rotate(0deg); 
-        } to { 
-            transform: rotate(360deg); 
+	from {
+            transform: rotate(0deg);
+        } to {
+            transform: rotate(360deg);
         }
 }
 #x1img
