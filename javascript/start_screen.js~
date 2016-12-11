@@ -15,8 +15,6 @@ function startGame() {
     startMovingBackgound('cactus', -7);
     startMovingBackgound('DayAndNight', -20);
     startMovingBackgound('SunAndMoon', 1);
-    startMovingBackgound('Island', -7);
-    startMovingBackgound('thunder', -7);
     startMovingBackgound('Gotham', -7);
     startMovingBackgound('Gotham_obstacles', -7);
     startMovingBackgound('space', -7);
