@@ -39,6 +39,8 @@ Flappy.prototype = {
     },
     flap : function() {
         this.velocity = this.flapVelocity;
+		var flapSound = new Audio("../flappy-svg/Sounds/Flappy.mp3");
+		flapSound.play();
     },
     show : function() {
         this.position.show();
@@ -61,7 +63,11 @@ Flappy.prototype = {
                 if(d){
                     updateScore();
                 }
-            }
+            } else {
+				var gameOverSound = new Audio("../flappy-svg/Sounds/GameOver.mp3");
+				gameOverSound.play();
+				alert('Game Over :( Final Score: ' + Number(document.getElementById("score").innerHTML));
+			}
 
             if (c || o_rect.right < flappy_rect.left)
                 obstacles.push(obstacles.shift());
