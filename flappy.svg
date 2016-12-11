@@ -288,13 +288,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.28"
-     inkscape:cx="343.11536"
-     inkscape:cy="450.979"
+     inkscape:cx="74.639692"
+     inkscape:cy="398.58201"
      inkscape:document-units="px"
-     inkscape:current-layer="layer27"
+     inkscape:current-layer="layer4"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -11823,6 +11823,7 @@
 
 
 
+
       path
          style=&quot;color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#ebbf25;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.02678571;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate&quot;
          d=&quot;m 569.04469,118.13981 c -0.29449,-0.11002 -0.82576,-0.28632 -1.18058,-0.39178 -0.5675,-0.16867 -0.70183,-0.25307 -1.11608,-0.70129 -0.63953,-0.69199 -0.99661,-1.42922 -0.99955,-2.06367 -0.006,-1.218 1.08493,-2.29435 2.75721,-2.72128 1.12869,-0.28816 1.68728,-0.12175 2.17495,0.64792 0.7933,1.25203 0.93345,3.26767 0.3072,4.41829 -0.26297,0.48316 -0.53246,0.7103 -1.05726,0.89111 -0.31784,0.10951 -0.40025,0.10213 -0.88589,-0.0793 z&quot;
@@ -12179,6 +12180,7 @@
 
 
 
+
     path
        inkscape:connector-curvature=&quot;0&quot;
        id=&quot;path4758&quot;
@@ -12226,6 +12228,7 @@
    style="fill:#c4987b;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:6.69995165px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
 <g
    id="g4210" />
+
 
 
 
@@ -22101,6 +22104,19 @@
   </g>
   <g
      inkscape:groupmode="layer"
+     id="layer29"
+     inkscape:label="Ball"
+     sodipodi:insensitive="true"
+     style="display:none">
+    <circle
+       style="display:inline;fill:#ffdd55;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path6039"
+       cx="117.60844"
+       cy="253.76175"
+       r="34.375" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="DayAndNight"
      style="display:none"
@@ -22132,7 +22148,8 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="startscreen"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <path
        style="fill:#008000;fill-rule:evenodd;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 187.83413,486.76013 301.50378,388.10268 182.81547,347.13244 Z"
@@ -22163,16 +22180,16 @@
        onclick="backgroundChange('background')" />
     <a
        xlink:href="links.html"
-       id="a1702"
-       target="_blank">
+       target="_blank"
+       id="a1702">
       <image
-         sodipodi:absref="C:\Users\user\Documents\GitHub\flappy-svg\images\links.jpg"
+         sodipodi:absref="E:\Projects\GoogleCodeIn\Github\Cloned\New folder\flappy-svg\images\links.jpg"
          xlink:href="images\links.jpg"
-         y="490"
-         x="295"
-         id="image8275"
+         width="220"
          height="94"
-         width="220" />
+         id="image8275"
+         x="295"
+         y="490" />
     </a>
     <ellipse
        style="opacity:0.69999994;fill:#af9300;fill-opacity:1;stroke:#e1e1ee;stroke-opacity:1"
@@ -23497,6 +23514,90 @@
        y="20"
        id="score"
        style="fill:#ff0000">0</text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer28"
+     inkscape:label="Blocky"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <rect
+       style="display:inline;fill:#d38d5f"
+       id="rect6052"
+       width="73.4375"
+       height="68.75"
+       x="162.34784"
+       y="169.68675" />
+    <rect
+       style="display:inline;fill:#deaa87"
+       id="rect6048"
+       width="135.15625"
+       height="72.65625"
+       x="41.644699"
+       y="215.38988" />
+    <rect
+       style="display:inline;fill:#ffe6d5"
+       id="rect6069"
+       width="16.40625"
+       height="11.71875"
+       x="211.56659"
+       y="184.5305" />
+    <rect
+       style="display:inline;fill:#000000"
+       id="rect6071"
+       width="5.6680794"
+       height="5.6572781"
+       x="222.30475"
+       y="190.59196" />
+    <rect
+       style="display:inline;fill:#c87137"
+       id="rect6093"
+       width="63.529125"
+       height="14.363107"
+       x="162.26813"
+       y="273.59415" />
+    <rect
+       style="display:inline;fill:#c87137"
+       id="rect6093-8"
+       width="63.529125"
+       height="14.363107"
+       x="154.82169"
+       y="247.84557" />
+    <rect
+       style="display:inline;fill:#c87137"
+       id="rect6093-5"
+       width="63.529125"
+       height="14.363107"
+       x="-10.785324"
+       y="273.76263" />
+    <rect
+       style="display:inline;fill:#c87137"
+       id="rect6093-8-2"
+       width="63.529125"
+       height="14.363107"
+       x="10.494431"
+       y="246.90919" />
+    <rect
+       style="display:inline;fill:#deaa87"
+       id="rect6048-5"
+       width="135.15625"
+       height="72.65625"
+       x="41.644699"
+       y="215.38988" />
+    <rect
+       style="display:inline;fill:#c87137"
+       id="rect6093-2"
+       width="63.529125"
+       height="14.363107"
+       x="162.26813"
+       y="273.59415" />
+    <rect
+       style="display:inline;fill:#c87137"
+       id="rect6093-5-1"
+       width="63.529125"
+       height="14.363107"
+       x="-10.785324"
+       y="273.76263" />
   </g>
   <g
      inkscape:groupmode="layer"
