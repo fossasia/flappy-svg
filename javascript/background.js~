@@ -86,7 +86,6 @@ function stopAllBackgrounds(){
 
 function backgroundChange(layer){
 	desertHide()
-	islandHide()
 	gothamHide()
   spaceHide()
 	snowHide()
@@ -94,10 +93,6 @@ function backgroundChange(layer){
 
 	if (layer =='background'){
 		desertShow()
-	}
-
-	if (layer =='Island'){
-		islandShow()
 	}
 
 	if (layer =='Gotham'){
@@ -131,18 +126,6 @@ function desertHide(){
         hide_layer('background');
         hide_layer('SunAndMoon');
         hide_layer('sky');
-}
-
-function islandShow(){
-        show_layer('Island');
-        show_layer('thunder');
-
-        createObstacles("thunder");
-}
-
-function islandHide(){
-        hide_layer('Island');
-        hide_layer('thunder');
 }
 
 function gothamShow(){

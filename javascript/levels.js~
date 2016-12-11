@@ -93,24 +93,6 @@ var all_level_specifications = {
 
 	},
 
-	"island":{
-
-		"obstacles":[
-		{
-			"layer": "thunder",
-			"velocity": -7
-		}
-		],
-
-		"backgrounds":[
-		{
-			"layer" : "Island",
-			"velocity" : -7
-		}
-		],
-
-	},
-
 	"gotham":{
 
 		"obstacles":[
