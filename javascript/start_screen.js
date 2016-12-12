@@ -25,6 +25,7 @@ function startGame() {
     startMovingBackgound('Gifts', -7);
     startMovingBackgound('Sea', -7);
     startMovingBackgound('fishinghook', -7);
+    startMovingBackgound('binarybg', -7);
     scaleToFullscreen();
 
 

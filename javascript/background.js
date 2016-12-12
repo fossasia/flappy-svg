@@ -91,7 +91,7 @@ function backgroundChange(layer){
   spaceHide()
 	snowHide()
   seaHide();
-
+  binaryHide();
 	if (layer =='background'){
 		desertShow()
 	}
@@ -112,6 +112,9 @@ function backgroundChange(layer){
 	}
   if (layer =='Sea'){
       seaShow()
+  }
+  if (layer == "binarybg") {
+      binaryShow();
   }
 }
 
@@ -168,6 +171,18 @@ function spaceHide(){
         hide_layer('space');
         hide_layer('space_rocket');
 }
+
+function binaryShow(){
+        show_layer('binarybg');
+        show_layer('space_rocket');
+
+        createObstacles("space_rocket");
+}
+function binaryHide(){
+        hide_layer('binarybg');
+        hide_layer('space_rocket');
+}
+
 
 function snowShow(){
         show_layer('Snow');
