@@ -2,7 +2,7 @@
 
 function showStartScreen() {
     layerNamed('startscreen').style.display = 'inline'; // none = hide layer
-
+    layerNamed('hull').style.display = 'inline'; // none = hide layer
 }
 
 // start the game
