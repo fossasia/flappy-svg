@@ -103,6 +103,7 @@ function characterChange(layer) {
     hide_layer('Santa');
     hide_layer('Flappyfish');
     hide_layer('Super_rocket');
+    hide_layer('botty');
     flappy = new Flappy(layer);
     flappy.show();
 }
