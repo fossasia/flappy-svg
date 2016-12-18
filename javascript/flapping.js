@@ -157,6 +157,11 @@ function onCollision(){
 function restartGame(){
     location.reload();
 }
+
+function helpMe(){
+    window.open('http://fossasia.github.io/flappy-svg/howtoplay.html','_blank');
+}
+
 function isBehind(r1,r2){
     return (r1.right<=r2.left);
 }
