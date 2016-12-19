@@ -66,7 +66,7 @@ Flappy.prototype = {
             } else {
 				var gameOverSound = new Audio("../flappy-svg/Sounds/GameOver.mp3");
 				gameOverSound.play();
-				alert('Game Over :( Final Score: ' + Number(document.getElementById("score").innerHTML));
+				alert('Game Over :( Final Score: ' + Number(document.getElementById("tspan17169").innerHTML));
 			}
 
             if (c || o_rect.right < flappy_rect.left)
