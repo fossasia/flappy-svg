@@ -162,6 +162,23 @@ var all_level_specifications = {
 		],
 	},
 
+	"Evil":{
+
+		"obstacles":[
+		{
+			"layer":"energy",
+			"velocity": -7
+		}
+		],
+
+		"backgrounds":[
+		{
+			"layer":"Evil",
+			"velocity": -7
+		}
+		],
+	},
+
 	"Sea":{
 
 		"obstacles":[
