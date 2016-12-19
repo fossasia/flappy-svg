@@ -66,7 +66,7 @@ Flappy.prototype = {
             } else {
 				var gameOverSound = new Audio("../flappy-svg/Sounds/GameOver.mp3");
 				gameOverSound.play();
-				alert('Game Over :( Final Score: ' + Number(document.getElementById("score").innerHTML));
+				alert('Game Over :( Final Score: ' + Number(document.getElementById("tspan17169").innerHTML));
 			}
 
             if (c || o_rect.right < flappy_rect.left)
@@ -104,6 +104,7 @@ function characterChange(layer) {
     hide_layer('Flappyfish');
     hide_layer('Super_rocket');
     hide_layer('botty');
+    hide_layer('black_cat');
     flappy = new Flappy(layer);
     flappy.show();
 }
@@ -157,6 +158,11 @@ function onCollision(){
 function restartGame(){
     location.reload();
 }
+
+function helpMe(){
+    window.open('http://fossasia.github.io/flappy-svg/howtoplay.html','_blank');
+}
+
 function isBehind(r1,r2){
     return (r1.right<=r2.left);
 }
