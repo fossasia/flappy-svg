@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Flappy SVG</string>
+    <string name="title_activity_centre">CentreActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="credits">Made by Abishek V Ashok</string>
+    <string name="email">abhi2424shekvashok@gmail.com</string>
+    <string name="retry">Tap to retry</string>
+</resources>
