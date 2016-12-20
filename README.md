@@ -5,7 +5,7 @@ Flappy Bird in SVG
 
 - [Improve the game and start developing](Contributing.md)
 - **[Play](https://fossasia.github.io/flappy-svg)**
-- **Android: [Play Store](https://play.google.com/store/apps/details?id=fossasia.flappysvg),  [APK](FlappySVG_Android/app-release.apk?raw=true)**
+- **Android: [Play Store](https://play.google.com/store/apps/details?id=fossasia.flappysvg),  [APK](FlappySVG_Android/app-release.apk?raw=true), [Another Alternative APK](https://drive.google.com/file/d/0Bwva5Kg_cjSIb2JEVnNMZ3lmems/view?usp=sharing) **
 - **Windows: [exe](https://github.com/fossasia/flappy-svg/blob/master/FlappySVG_Windows/FlappySVG.exe?raw=true)**
 - [See who contributed](http://fossasia.github.io/flappy-svg/credits.html)
 
