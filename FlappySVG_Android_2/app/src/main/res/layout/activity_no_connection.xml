@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_no_connection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.fossasia.www.flappysvg.NoConnection"
+    android:background="#ddd">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:background="#fff"
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@mipmap/no_internet"
+            android:id="@+id/imageView2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:text="No Internet Connection!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:textSize="21sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:text="@string/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp" />
+    </FrameLayout>
+</FrameLayout>

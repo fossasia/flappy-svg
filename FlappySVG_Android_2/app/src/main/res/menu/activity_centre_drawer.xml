@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_play"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Play" />
+        <item
+            android:id="@+id/nav_leaderboards"
+            android:icon="?android:attr/actionModePasteDrawable"
+            android:title="Leaderboards" />
+        <item
+            android:id="@+id/nav_howtoplay"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="How to play" />
+    </group>
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/nav_fossasia"
+                android:title="FOSSASIA" />
+            <item
+                android:id="@+id/nav_flappySVG"
+                android:title="Credits" />
+            <item
+                android:id="@+id/nav_about"
+                android:title="This APP" />
+        </menu>
+    </item>
+
+</menu>
