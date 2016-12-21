@@ -13,7 +13,11 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.webkit.WebResourceRequest;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 public class CentreActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -51,6 +55,18 @@ public class CentreActivity extends AppCompatActivity implements NavigationView.
         navigationView.setNavigationItemSelectedListener(this);
 
         WebView webView = (WebView) findViewById(R.id.mainview);
+        WebSettings settings = webView.getSettings();
+        settings.setDomStorageEnabled(true);
+        webView.getSettings().setLoadsImagesAutomatically(true);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                return false;
+            }
+        });
         webView.loadUrl("https://abhi2424shek.github.io/FlappySvg-frontend/welcome.html");
     }
 
@@ -68,6 +84,12 @@ public class CentreActivity extends AppCompatActivity implements NavigationView.
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         WebView webView = (WebView) findViewById(R.id.mainview);
+        WebSettings settings = webView.getSettings();
+        settings.setDomStorageEnabled(true);
+        webView.getSettings().setLoadsImagesAutomatically(true);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
+        webView.getSettings().setBuiltInZoomControls(true);
         int id = item.getItemId();
         if (id == R.id.nav_play) {
             webView.loadUrl("http://fossasia.github.io/flappy-svg/");
