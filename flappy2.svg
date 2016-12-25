@@ -20,17 +20,6 @@
    sodipodi:docname="flappy2.svg"
    enable-background="new">
    <script xlink:href="javascript/v2/main.js"/>
-   <script xlink:href="javascript/v2/gameObject.js"/>
-   <script xlink:href="javascript/v2/threading.js"/>
-   <script xlink:href="javascript/v2/background.js" />
-   <script xlink:href="javascript/v2/debug.js"/>
-   <script xlink:href="javascript/v2/flapping.js"/>
-   <script xlink:href="javascript/v2/layers.js"/>
-   <script xlink:href="javascript/v2/obstacle.js"/>-->
-   <script xlink:href="javascript/v2/start_screen.js"/>
-   <script xlink:href="javascript/v2/scaling.js"/>
-   <script xlink:href="javascript/v2/score.js"/>
-   <script xlink:href="javascript/v2/start.js"/>
    <defs>
     <inkscape:path-effect
        is_visible="true"
