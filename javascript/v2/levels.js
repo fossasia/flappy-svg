@@ -93,6 +93,24 @@ var all_level_specifications = {
 
 	},
 
+	"island":{
+
+		"obstacles":[
+		{
+			"layer": "thunder",
+			"velocity": -7
+		}
+		],
+
+		"backgrounds":[
+		{
+			"layer" : "Island",
+			"velocity" : -7
+		}
+		],
+
+	},
+
 	"gotham":{
 
 		"obstacles":[
@@ -139,6 +157,23 @@ var all_level_specifications = {
 		"backgrounds":[
 		{
 			"layer":"Snow",
+			"velocity": -7
+		}
+		],
+	},
+
+	"Evil":{
+
+		"obstacles":[
+		{
+			"layer":"energy",
+			"velocity": -7
+		}
+		],
+
+		"backgrounds":[
+		{
+			"layer":"Evil",
 			"velocity": -7
 		}
 		],

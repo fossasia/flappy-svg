@@ -86,13 +86,19 @@ function stopAllBackgrounds(){
 
 function backgroundChange(layer){
 	desertHide()
+	islandHide()
 	gothamHide()
   spaceHide()
 	snowHide()
-  seaHide();
-
+  seaHide()
+	evilHide()
+  binaryHide();
 	if (layer =='background'){
 		desertShow()
+	}
+
+	if (layer =='Island'){
+		islandShow()
 	}
 
 	if (layer =='Gotham'){
@@ -108,6 +114,12 @@ function backgroundChange(layer){
   if (layer =='Sea'){
       seaShow()
   }
+  if (layer == "binarybg") {
+      binaryShow()
+  }
+	if (layer =='Evil'){
+		evilShow();
+	}
 }
 
 function desertShow(){
@@ -126,6 +138,18 @@ function desertHide(){
         hide_layer('background');
         hide_layer('SunAndMoon');
         hide_layer('sky');
+}
+
+function islandShow(){
+        show_layer('Island');
+        show_layer('thunder');
+
+        createObstacles("thunder");
+}
+
+function islandHide(){
+        hide_layer('Island');
+        hide_layer('thunder');
 }
 
 function gothamShow(){
@@ -152,6 +176,18 @@ function spaceHide(){
         hide_layer('space_rocket');
 }
 
+function binaryShow(){
+        show_layer('binarybg');
+        show_layer('space_rocket');
+
+        createObstacles("space_rocket");
+}
+function binaryHide(){
+        hide_layer('binarybg');
+        hide_layer('space_rocket');
+}
+
+
 function snowShow(){
         show_layer('Snow');
         show_layer('Gifts');
@@ -174,4 +210,15 @@ function seaShow(){
 function seaHide(){
         hide_layer('Sea');
         hide_layer('fishinghook');
+}
+function evilShow(){
+        show_layer('Evil');
+        show_layer('energy');
+
+        createObstacles("energy");
+}
+
+function evilHide(){
+        hide_layer('Evil');
+        hide_layer('energy');
 }
