@@ -19,39 +19,6 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="flappydino.svg"
    enable-background="new">
-  <script
-     xlink:href="javascript/gameObject.js"
-     id="script0" />
-  <script
-     xlink:href="javascript/threading.js"
-     id="script4" />
-  <script
-     xlink:href="javascript/background.js"
-     id="script6" />
-  <script
-     xlink:href="javascript/debug.js"
-     id="script1" />
-  <script
-     xlink:href="javascript/flapping.js"
-     id="script2" />
-  <script
-     xlink:href="javascript/layers.js"
-     id="script3" />
-  <script
-     xlink:href="javascript/scaling.js"
-     id="script11" />
-  <script
-     xlink:href="javascript/start.js"
-     id="script5" />
-  <script
-     xlink:href="javascript/start_screen.js"
-     id="script14" />
-  <script
-     xlink:href="javascript/obstacle.js"
-     id="script15" />
-  <script
-     xlink:href="javascript/score.js"
-     id="script16" />
   <defs
      id="defs4">
     <inkscape:path-effect
@@ -281,7 +248,6 @@
      id="layer14"
      inkscape:label="flappydino"
      onclick="characterChange('helicopter');"
-     style="display:none"
      sodipodi:insensitive="true">
     <path
        style="fill:#008000"
