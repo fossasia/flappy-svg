@@ -105,6 +105,7 @@ function characterChange(layer) {
     hide_layer('Super_rocket');
     hide_layer('botty');
     hide_layer('black_cat');
+    hide_layer('ball');
     flappy = new Flappy(layer);
     flappy.show();
 }
@@ -159,9 +160,6 @@ function restartGame(){
     location.reload();
 }
 
-function helpMe(){
-    window.open('http://fossasia.github.io/flappy-svg/howtoplay.html','_blank');
-}
 
 function isBehind(r1,r2){
     return (r1.right<=r2.left);
