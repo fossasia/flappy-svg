@@ -106,6 +106,7 @@ function characterChange(layer) {
     hide_layer('botty');
     hide_layer('black_cat');
     hide_layer('ball');
+    hide_layer('octodex');
     flappy = new Flappy(layer);
     flappy.show();
 }
