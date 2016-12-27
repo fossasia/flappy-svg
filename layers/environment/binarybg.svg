@@ -1,15 +1,4 @@
 <svg xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="480px" height="600px" viewBox="0 0 480 600" id="svg2" version="1.1" inkscape:version="0.91 r13725" sodipodi:docname="binarybg.svg" enable-background="new" preserveAspectRatio="xMidYMid meet" ><rect id="svgEditorBackground" x="0" y="0" width="480" height="600" style="fill: none; stroke: none;"/>
-  <script xlink:href="javascript/gameObject.js" id="script0"/>
-  <script xlink:href="javascript/threading.js" id="script4"/>
-  <script xlink:href="javascript/background.js" id="script6"/>
-  <script xlink:href="javascript/debug.js" id="script1"/>
-  <script xlink:href="javascript/flapping.js" id="script2"/>
-  <script xlink:href="javascript/layers.js" id="script3"/>
-  <script xlink:href="javascript/scaling.js" id="script11"/>
-  <script xlink:href="javascript/start.js" id="script5"/>
-  <script xlink:href="javascript/start_screen.js" id="script14"/>
-  <script xlink:href="javascript/obstacle.js" id="script15"/>
-  <script xlink:href="javascript/score.js" id="script16"/>
   <defs id="defs4">
     <inkscape:path-effect is_visible="true" id="path-effect16485" effect="spiro"/>
     <inkscape:path-effect is_visible="true" id="path-effect16481" effect="spiro"/>
@@ -94,7 +83,7 @@
       </cc:License>
     </rdf:RDF>
   </metadata>
-  <g inkscape:groupmode="layer" id="layer31" inkscape:label="binarybg" style="display:none" sodipodi:insensitive="true"
+  <g inkscape:groupmode="layer" id="layer31" inkscape:label="binarybg" sodipodi:insensitive="true"
     >
    </g>
      <rect style="fill: rgb(0, 128, 0); fill-opacity: 0.3;" id="rect8515" width="663.593" height="667.409" x="38.5031" y="76.0242" transform="matrix(10.9295 0 0 1.91451 -514.165 -442.536)" rx="0" ry="0"/>
