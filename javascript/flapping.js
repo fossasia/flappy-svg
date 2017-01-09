@@ -104,6 +104,7 @@ function characterChange(layer) {
     hide_layer('Flappyfish');
     hide_layer('Super_rocket');
     hide_layer('botty');
+    hide_layer('dog');
     hide_layer('black_cat');
     hide_layer('ball');
     hide_layer('octodex');
