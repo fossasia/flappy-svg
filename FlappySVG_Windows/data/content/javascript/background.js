@@ -33,7 +33,7 @@ function Background(layerName, velocity) {
     this.width = widthOfLayer(this.layer);
     var me = this;
     this.action = new Action(function(){me.move()}, function(){me.started()});
-    
+
     backgrounds[this.layerName] = this;
 }
 
@@ -86,14 +86,39 @@ function stopAllBackgrounds(){
 
 function backgroundChange(layer){
 	desertHide()
+	islandHide()
 	gothamHide()
-	
+  spaceHide()
+	snowHide()
+  seaHide()
+	evilHide()
+  binaryHide();
 	if (layer =='background'){
 		desertShow()
 	}
-	
+
+	if (layer =='Island'){
+		islandShow()
+	}
+
 	if (layer =='Gotham'){
 		gothamShow()
+	}
+
+    if (layer =='space'){
+        spaceShow()
+    }
+	if (layer =='Snow'){
+    snowShow()
+	}
+  if (layer =='Sea'){
+      seaShow()
+  }
+  if (layer == "binarybg") {
+      binaryShow()
+  }
+	if (layer =='Evil'){
+		evilShow();
 	}
 }
 
@@ -115,14 +140,85 @@ function desertHide(){
         hide_layer('sky');
 }
 
+function islandShow(){
+        show_layer('Island');
+        show_layer('thunder');
+
+        createObstacles("thunder");
+}
+
+function islandHide(){
+        hide_layer('Island');
+        hide_layer('thunder');
+}
+
 function gothamShow(){
         show_layer('Gotham');
         show_layer('Gotham_obstacles');
 
         createObstacles("Gotham_obstacles");
 }
-		
+
 function gothamHide(){
         hide_layer('Gotham');
         hide_layer('Gotham_obstacles');
+}
+
+function spaceShow(){
+        show_layer('space');
+        show_layer('space_rocket');
+
+        createObstacles("space_rocket");
+}
+
+function spaceHide(){
+        hide_layer('space');
+        hide_layer('space_rocket');
+}
+
+function binaryShow(){
+        show_layer('binarybg');
+        show_layer('space_rocket');
+
+        createObstacles("space_rocket");
+}
+function binaryHide(){
+        hide_layer('binarybg');
+        hide_layer('space_rocket');
+}
+
+
+function snowShow(){
+        show_layer('Snow');
+        show_layer('Gifts');
+
+        createObstacles("Gifts");
+}
+
+function snowHide(){
+        hide_layer('Snow');
+        hide_layer('Gifts');
+}
+
+function seaShow(){
+        show_layer('Sea');
+        show_layer('fishinghook');
+
+        createObstacles("fishinghook");
+}
+
+function seaHide(){
+        hide_layer('Sea');
+        hide_layer('fishinghook');
+}
+function evilShow(){
+        show_layer('Evil');
+        show_layer('energy');
+
+        createObstacles("energy");
+}
+
+function evilHide(){
+        hide_layer('Evil');
+        hide_layer('energy');
 }

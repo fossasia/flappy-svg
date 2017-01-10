@@ -15,7 +15,7 @@ body
 	width:50px;
 }
 
-#x1,#x2,#x3,#x4
+#x1,#x2,#x3,#x4,#x5, #x6
  {
  	position: absolute;
  }
@@ -92,7 +92,40 @@ body
 	from { }
 	to {margin-left:-10%;}
 }
+#x5
+{
+	animation:anim5 2s;
+	 animation-fill-mode: forwards;
+	width:77px;
+	height:77px;
+	padding-left:9px;
+	padding-top:12px;
+	border-radius:170px;
+}
+#x6
+{
+	animation:anim6 2s;
+	 animation-fill-mode: forwards;
+	width:77px;
+	height:77px;
+	padding-left:9px;
+	padding-top:12px;
+	border-radius:170px;
 
+}
+@keyframes anim6
+{
+	from { }
+	to {margin-left:-10%; margin-top:-8%;}
+}
+@keyframes anim5
+{
+	from {
+            transform: rotate(0deg);
+        } to {
+            transform: rotate(360deg);
+        }
+}
 #x1img
 {
 	width:60px;
@@ -111,4 +144,8 @@ body
 #x4img
 {
 	width:50px;
+}
+#x5img
+{
+	width:60px;
 }

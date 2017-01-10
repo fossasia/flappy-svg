@@ -1,0 +1,269 @@
+#navb
+{
+    background-color:#00384d;
+    border-radius: 0px;
+    border: 0px;
+    
+}
+
+#brand-logo
+{ 
+    margin-top:10px; 
+	width:150px;
+	height:60px;
+    margin-bottom: 25px;
+}
+
+#heading
+{
+    margin-top:25px;
+    margin-left:500px; 
+    margin-bottom:25px; 
+    text-align: center;
+    font-size:200%;
+    color: yellow;
+    font-family: 'Lora', serif;
+
+}
+.navbar-header button.navbar-toggle
+{
+    clear: both;
+}
+@media (min-width: 2560px) and (max-width: 4990px)
+{
+    .glyphicon
+    {
+        margin-top:0.75vw; 
+        margin-bottom:0.75vw;
+    }
+    #nav-list a
+    {
+        font-size:1.35vw;
+        color: white;
+    }
+
+    #brand-logo
+    { 
+        margin-top:1vw; 
+        width:9vw;
+        height:5vw;
+        margin-bottom:1vw;
+    }
+
+     #heading
+    {
+    margin-top:2.5vw;
+    margin-left:27.5vw; 
+    margin-bottom:1vw; 
+    text-align: center;
+    font-size:4.5vw;
+    color: yellow;
+    font-family: 'Lora', serif;
+    }
+
+
+} 
+
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    .glyphicon
+    {
+        margin-top:0.75vw; 
+        margin-bottom:0.75vw;
+    }
+    #nav-list a
+    {
+        font-size:1.5vw;
+        color: white;
+    }
+
+    #brand-logo
+    { 
+        margin-top:2.75vw; 
+        width:9vw;
+        height:5vw;
+        margin-bottom:1vw;
+    }
+
+     #heading
+    {
+    margin-top:2.5vw;
+    margin-left:22.5vw; 
+    margin-bottom:1vw; 
+    text-align: center;
+    font-size:5vw;
+    color: yellow;
+    font-family: 'Lora', serif;
+    }
+
+
+} 
+
+@media (min-width: 1440px) and (max-width: 2559px)
+{
+    #heading
+    {
+    margin-top:2.5vw;
+    margin-left:27.5vw; 
+    margin-bottom:1vw; 
+    text-align: center;
+    font-size:4.5vw;
+    color: yellow;
+    font-family: 'Lora', serif;
+    }
+
+    .glyphicon
+    {
+        margin-top:0.75vw; 
+        margin-bottom:0.75vw;
+    }
+    #nav-list a
+    {
+        font-size:1.35vw;
+        color: white;
+    }
+
+    #brand-logo
+    { 
+        margin-top:1vw; 
+        width:9vw;
+        height:5vw;
+        margin-bottom:1vw;
+    }
+
+
+} 
+
+@media (min-width: 1024px) and (max-width: 1439px) 
+{
+
+    #heading
+    {
+    margin-top:2vw;
+    margin-left:27.5vw; 
+    margin-bottom:1vw; 
+    text-align: center;
+    font-size:4.5vw;
+    color: yellow;
+    font-family: 'Lora', serif;
+    }
+
+    .glyphicon
+    {
+        margin-top:0.75vw; 
+        margin-bottom:0.75vw;
+    }
+    #nav-list a
+    {
+        font-size:1.35vw;
+        color: white;
+    }
+
+    #brand-logo
+    { 
+        margin-top:1.5vw; 
+        width:9vw;
+        height:5vw;
+        margin-bottom:1vw;
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 767px) 
+{
+    #heading
+    {   
+        margin-top:10px;
+        margin-left:10px; 
+        margin-bottom:25px; 
+        text-align: center;
+        font-size:12.5vw;
+        color: yellow;
+        font-family: 'Lora', serif;  
+    }
+
+    #bot
+    {
+       margin-top:-35px; 
+       margin-bottom:15px; 
+    }
+
+    #brand-logo
+    { 
+        margin-top:10px; 
+        width:100px;
+        height:40px;
+        margin-bottom: 25px;
+    }
+
+
+}
+
+@media (min-width: 375px) and (max-width: 424px) 
+{
+    #heading
+    {   
+        margin-top:10px;
+        margin-left:10px; 
+        margin-bottom:25px; 
+        text-align: center;
+        font-size:10vw;
+        color: yellow;
+        font-family: 'Lora', serif;  
+    }
+
+    #bot
+    {
+       margin-top:-35px; 
+       margin-bottom:15px; 
+    }
+
+    #brand-logo
+    { 
+        margin-top:10px; 
+        width:100px;
+        height:40px;
+        margin-bottom: 25px;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 374px) 
+{
+    #heading
+    {   
+        margin-top:10px;
+        margin-left:10px; 
+        margin-bottom:25px; 
+        text-align:center;
+        font-size:12.5vw;
+        color: yellow;
+        font-family: 'Lora', serif;  
+    }
+
+    #bot
+    {
+       margin-top:-35px; 
+       margin-bottom:15px; 
+    }
+
+    #brand-logo
+    { 
+        margin-top:10px; 
+        width:100px;
+        height:40px;
+        margin-bottom: 25px;
+    }
+}
+h2,h3{
+    text-align: center;
+}
+h2{
+    color:blue;
+    font-size: 300%;
+    font-family: 'Verdana', serif;
+}
+#introtext{
+    font-size: 120%;
+    font-style: italic;
+}
