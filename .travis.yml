@@ -1,0 +1,31 @@
+language: node_js
+node_js:
+  - 6
+sudo: required
+dist: precise
+addons:
+  apt:
+    packages:
+      - wget
+      - python2.7
+
+install:
+    - mkdir travis-phantomjs
+    - wget https://s3.amazonaws.com/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -O $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2
+    - tar -xvf $PWD/travis-phantomjs/phantomjs-2.0.0-ubuntu-12.04.tar.bz2 -C $PWD/travis-phantomjs
+    - export PATH=$PWD/travis-phantomjs:$PATH
+
+before_script:
+  - sudo pip install requests==2.9.0
+  - sudo pip install linkchecker
+  - linkchecker --version
+
+script:
+  - linkchecker -a --check-extern -f $TRAVIS_BUILD_DIR/ *.html 
+
+cache:
+  directories: node_modules
+
+branches:
+  only:
+  - gh-pages
