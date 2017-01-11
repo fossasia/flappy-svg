@@ -39,6 +39,8 @@ Flappy.prototype = {
     },
     flap : function() {
         this.velocity = this.flapVelocity;
+		var flapSound = new Audio("../flappy-svg/Sounds/Flappy.mp3");
+		flapSound.play();
     },
     show : function() {
         this.position.show();
@@ -61,7 +63,11 @@ Flappy.prototype = {
                 if(d){
                     updateScore();
                 }
-            }
+            } else {
+				var gameOverSound = new Audio("../flappy-svg/Sounds/GameOver.mp3");
+				gameOverSound.play();
+				alert('Game Over :( Final Score: ' + Number(document.getElementById("tspan17169").innerHTML));
+			}
 
             if (c || o_rect.right < flappy_rect.left)
                 obstacles.push(obstacles.shift());
@@ -90,8 +96,19 @@ function characterChange(layer) {
     hide_layer('bird');
     hide_layer('bat');
     hide_layer('alien');
+    hide_layer('unicorn');
     hide_layer('flappydino');
     hide_layer('helicopter');
+    hide_layer('rocket');
+    hide_layer('Santa');
+    hide_layer('Flappyfish');
+    hide_layer('Super_rocket');
+    hide_layer('botty');
+    hide_layer('dog');
+    hide_layer('black_cat');
+    hide_layer('ball');
+    hide_layer('octodex');
+    hide_layer('grandma');
     flappy = new Flappy(layer);
     flappy.show();
 }
@@ -145,6 +162,8 @@ function onCollision(){
 function restartGame(){
     location.reload();
 }
+
+
 function isBehind(r1,r2){
     return (r1.right<=r2.left);
 }

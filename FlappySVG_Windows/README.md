@@ -14,3 +14,15 @@ License
 -------
 
 [Creative Commons License](http://creativecommons.org/licenses/by/4.0/).
+
+### Recent changes:
+
+#### 2.0
+ - Updated source
+ - Used LZMA compression for small binary size
+ - Fixed few bugs
+
+#### 1.0
+ - Created Windows version of Flappy SVG
+ - Fully functional installer
+ - Added Uninstaller
