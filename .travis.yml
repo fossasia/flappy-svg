@@ -18,6 +18,8 @@ install:
 before_script:
   - sudo pip install requests==2.9.0
   - sudo pip install linkchecker
+  - sudo apt-get install python-dev libffi-dev libssl-dev
+  - sudo pip install requests[security]
   - linkchecker --version
 
 script:
