@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
+=======
+>>>>>>> f42a18f... Fixes #253 Adds Keyboard Control and updates the how-to-play svg
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -9,6 +12,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+<<<<<<< HEAD
    width="744.09448819"
    height="1052.3622047"
    id="svg3194"
@@ -18,6 +22,26 @@
    inkscape:export-filename="/home/sreeja/drawing.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
+=======
+   width="744px"
+   height="1052px"
+   id="svg3194"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="instructions.svg"
+   inkscape:export-filename="/home/sreeja/drawing.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   viewBox="5.17192 18.692 656.342 928.053"
+   preserveAspectRatio="xMidYMid meet">
+  <rect
+     id="svgEditorBackground"
+     x="5.1719151"
+     y="36.309448"
+     width="656.3418"
+     height="682.5011"
+     style="fill:none;stroke:none" />
+>>>>>>> f42a18f... Fixes #253 Adds Keyboard Control and updates the how-to-play svg
   <defs
      id="defs3196" />
   <sodipodi:namedview
@@ -29,6 +53,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
      inkscape:cx="375"
+<<<<<<< HEAD
      inkscape:cy="520"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -36,6 +61,15 @@
      inkscape:window-width="1317"
      inkscape:window-height="744"
      inkscape:window-x="43"
+=======
+     inkscape:cy="519.94523"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+>>>>>>> f42a18f... Fixes #253 Adds Keyboard Control and updates the how-to-play svg
      inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
@@ -46,7 +80,11 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+<<<<<<< HEAD
         <dc:title></dc:title>
+=======
+        <dc:title />
+>>>>>>> f42a18f... Fixes #253 Adds Keyboard Control and updates the how-to-play svg
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -59,9 +97,15 @@
        style="fill:#ff0000"
        id="path3202"
        sodipodi:sides="5"
+<<<<<<< HEAD
        sodipodi:cx="34.285714"
        sodipodi:cy="212.36218"
        sodipodi:r1="26.341556"
+=======
+       sodipodi:cx="34.285713"
+       sodipodi:cy="212.36218"
+       sodipodi:r1="26.341557"
+>>>>>>> f42a18f... Fixes #253 Adds Keyboard Control and updates the how-to-play svg
        sodipodi:r2="20.147415"
        sodipodi:arg1="0.86217005"
        sodipodi:arg2="1.4904886"
@@ -70,7 +114,12 @@
        inkscape:randomized="0"
        d="m 51.428571,232.36218 -15.526603,0.0825 -15.339951,2.40169 -4.876428,-14.74119 -7.0244446,-13.847 12.5128046,-9.19304 10.998606,-10.9596 12.609767,9.05958 13.821957,7.0736 -4.719541,14.79216 z"
        inkscape:transform-center-x="0.65300165"
+<<<<<<< HEAD
        inkscape:transform-center-y="-1.8862463" />
+=======
+       inkscape:transform-center-y="-1.4419122"
+       transform="matrix(1,0,0,0.76443453,0,6.0327377)" />
+>>>>>>> f42a18f... Fixes #253 Adds Keyboard Control and updates the how-to-play svg
     <path
        sodipodi:type="star"
        style="fill:#ff0000"
@@ -87,6 +136,7 @@
        inkscape:randomized="0"
        d="m 51.428572,440.9336 -15.331322,2.45617 -14.792165,4.71954 -7.073593,-13.82196 -9.0595798,-12.60977 10.9596018,-10.9986 9.193036,-12.51281 13.846999,7.02445 14.741189,4.87642 -2.401685,15.33996 z"
        inkscape:transform-center-x="1.8862463"
+<<<<<<< HEAD
        inkscape:transform-center-y="-0.65300165"
        transform="translate(0,-17.142857)" />
     <text
@@ -128,10 +178,54 @@
          id="tspan3326"
          style="fill:#000000"><tspan
            x="88.392075"
+=======
+       inkscape:transform-center-y="-0.49917789"
+       transform="matrix(1,0,0,0.76443453,0,-17.153912)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:46.0001297px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="55.181503"
+       y="91.150406"
+       id="text3330"
+       sodipodi:linespacing="125%"
+       transform="scale(0.97210236,1.0286983)"><tspan
+         sodipodi:role="line"
+         x="55.181503"
+         y="91.150406"
+         id="tspan3332"><tspan
+           x="55.181503"
+           y="91.150406"
+           style="font-size:64.40018463px;fill:#ff0000"
+           id="tspan3334">Flappy Svg Game</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40.08649445px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="69.100113"
+       y="170.70198"
+       id="text3320"
+       sodipodi:linespacing="125%"
+       transform="scale(0.9240781,1.0821596)"><tspan
+         sodipodi:role="line"
+         x="69.100113"
+         y="170.70198"
+         id="tspan3322"
+         style="fill:#000000"><tspan
+           x="69.100113"
+           y="170.70198"
+           style="fill:#000000"
+           id="tspan3324">Tap The Screen To Move The     </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="69.100113"
+         y="220.8101"
+         id="tspan3326"
+         style="fill:#000000"><tspan
+           x="69.100113"
+>>>>>>> f42a18f... Fixes #253 Adds Keyboard Control and updates the how-to-play svg
            style="fill:#000000"
            id="tspan3328">Flappy Object Up</tspan></tspan></text>
     <text
        xml:space="preserve"
+<<<<<<< HEAD
        style="font-size:44.61952209px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
        x="79.807137"
        y="348.41714"
@@ -200,6 +294,58 @@
        inkscape:transform-center-x="-0.1340427"
        inkscape:transform-center-y="-2.600532"
        transform="translate(-2.8571429,-11.428571)" />
+=======
+       style="font-style:normal;font-weight:normal;font-size:39.01171494px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="69.776932"
+       y="296.06406"
+       id="text3336"
+       sodipodi:linespacing="125%"
+       transform="scale(0.94207634,1.0614851)"><tspan
+         sodipodi:role="line"
+         x="69.776932"
+         y="296.06406"
+         id="tspan3338"
+         style="fill:#000000"><tspan
+           x="69.776932"
+           y="296.06406"
+           style="fill:#000000"
+           id="tspan3340">Avoid Colliding With Obstacles   </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="69.776932"
+         y="344.8287"
+         id="tspan3342"
+         style="fill:#000000"><tspan
+           x="69.776932"
+           style="fill:#000000"
+           id="tspan3344"
+           dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12.419745">and hitting the floot floor </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40.24990082px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="86.385857"
+       y="397.94839"
+       id="text3348"
+       sodipodi:linespacing="125%"
+       transform="scale(0.90724845,1.1022339)"><tspan
+         sodipodi:role="line"
+         x="86.385857"
+         y="397.94839"
+         id="tspan3350"
+         style="fill:#000000"><tspan
+           x="86.385857"
+           y="397.94839"
+           style="fill:#000000"
+           id="tspan3352">Score Will Be Based on how    </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="86.385857"
+         y="448.26077"
+         id="tspan3354"
+         style="fill:#000000"><tspan
+           x="86.385857"
+           style="fill:#000000"
+           id="tspan3356"
+           dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20.989695">many obstacles You cross</tspan></tspan></text>
+>>>>>>> f42a18f... Fixes #253 Adds Keyboard Control and updates the how-to-play svg
     <path
        sodipodi:type="star"
        style="fill:#ff0000"
@@ -216,6 +362,7 @@
        inkscape:randomized="0"
        d="m 54.285714,895.21933 -15.331323,2.45617 -14.792164,4.71954 -7.073592,-13.82196 -9.0595813,-12.60976 10.9596033,-10.99861 9.193035,-12.5128 13.846998,7.02444 14.74119,4.87643 -2.401687,15.33995 z"
        inkscape:transform-center-x="1.8862463"
+<<<<<<< HEAD
        inkscape:transform-center-y="-0.65300165"
        transform="translate(2.8571429,-42.857143)" />
     <text
@@ -243,5 +390,165 @@
            x="79.304459"
            style="fill:#000000"
            id="tspan3368">to Termination Of Game</tspan></tspan></text>
+=======
+       inkscape:transform-center-y="-0.49917895"
+       transform="matrix(1,0,0,0.76443453,-2.1838861,-109.90572)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:38.23707199px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="79.960701"
+       y="541.3913"
+       id="text3360"
+       sodipodi:linespacing="125%"
+       transform="scale(0.94905466,1.0536801)"><tspan
+         sodipodi:role="line"
+         x="79.960701"
+         y="541.3913"
+         id="tspan3362"
+         style="fill:#000000"><tspan
+           x="79.960701"
+           y="541.3913"
+           style="fill:#000000"
+           id="tspan3364">Colliding with Obstacles Leads    </tspan></tspan><tspan
+         sodipodi:role="line"
+         x="79.960701"
+         y="589.18762"
+         id="tspan3366"
+         style="fill:#000000"><tspan
+           x="79.960701"
+           style="fill:#000000"
+           id="tspan3368">to Termination Of Game</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="79.960701"
+         y="636.98395"
+         style="fill:#000000"
+         id="tspan3551" /><tspan
+         sodipodi:role="line"
+         x="79.960701"
+         y="684.78033"
+         style="fill:#000000"
+         id="tspan3547" /><tspan
+         sodipodi:role="line"
+         x="79.960701"
+         y="732.57666"
+         style="fill:#000000"
+         id="tspan3515" /><tspan
+         sodipodi:role="line"
+         x="79.960701"
+         y="780.37299"
+         style="fill:#000000"
+         id="tspan3464" /></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3456"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3458"><rect
+           id="rect3460"
+           width="711.42859"
+           height="208.57144"
+           x="11.428572"
+           y="120.57143" /></flowRegion><flowPara
+         id="flowPara3462"></flowPara></flowRoot>    <path
+       sodipodi:type="star"
+       style="fill:#ff0000"
+       id="path3272-3"
+       sodipodi:sides="5"
+       sodipodi:cx="24.701767"
+       sodipodi:cy="980.16492"
+       sodipodi:r1="26.341557"
+       sodipodi:r2="20.147413"
+       sodipodi:arg1="0.70862627"
+       sodipodi:arg2="1.3369448"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 44.701768,997.30777 -15.331323,2.45617 -14.792164,4.71956 -7.0735918,-13.82198 -9.0595817,-12.60976 10.9596029,-10.99861 9.1930346,-12.5128 13.846999,7.02444 14.74119,4.87643 -2.401688,15.33995 z"
+       inkscape:transform-center-x="1.8862463"
+       inkscape:transform-center-y="-0.49917902"
+       transform="matrix(1,0,0,0.76443453,17.643602,-59.500639)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3517"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3519"><rect
+           id="rect3521"
+           width="665.71429"
+           height="134.28572"
+           x="74.285713"
+           y="1072" /></flowRegion><flowPara
+         id="flowPara3523"></flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3529"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:10px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3531"><rect
+           id="rect3533"
+           width="637.14288"
+           height="142.85715"
+           x="68.571426"
+           y="1069.1428" /></flowRegion><flowPara
+         id="flowPara3535"></flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.7130723px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="403.39795"
+       y="916.87488"
+       id="text3537"
+       sodipodi:linespacing="125%"
+       transform="scale(1.1437467,0.87431947)"><tspan
+         sodipodi:role="line"
+         id="tspan3539"
+         x="403.39795"
+         y="916.87488">K</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40.24990082px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="108.75795"
+       y="632.39771"
+       id="text3348-6"
+       sodipodi:linespacing="125%"
+       transform="scale(0.90724845,1.1022339)"><tspan
+         sodipodi:role="line"
+         x="108.75795"
+         y="632.39771"
+         id="tspan3354-3"
+         style="fill:#000000">KeyBoard Shortcuts</tspan><tspan
+         sodipodi:role="line"
+         x="108.75795"
+         y="673.34302"
+         style="font-size:30.8522892px;fill:#000000"
+         id="tspan3597">Spacebar-Changes characters</tspan><tspan
+         sodipodi:role="line"
+         x="108.75795"
+         y="711.90839"
+         style="font-size:30.8522892px;fill:#000000"
+         id="tspan3599">b             -Changes background</tspan><tspan
+         sodipodi:role="line"
+         x="108.75795"
+         y="750.47375"
+         style="font-size:30.8522892px;fill:#000000"
+         id="tspan3601">Enter      -Starts the game</tspan><tspan
+         sodipodi:role="line"
+         x="108.75795"
+         y="789.03912"
+         style="font-size:30.8522892px;fill:#000000"
+         id="tspan3603">r              -Restarts the game</tspan></text>
+    <path
+       sodipodi:type="star"
+       style="fill:#ff0000"
+       id="path3272-3-6"
+       sodipodi:sides="5"
+       sodipodi:cx="24.701767"
+       sodipodi:cy="980.16492"
+       sodipodi:r1="26.341557"
+       sodipodi:r2="20.147413"
+       sodipodi:arg1="0.70862627"
+       sodipodi:arg2="1.3369448"
+       inkscape:flatsided="false"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 44.701768,997.30777 -15.331323,2.45617 -14.792164,4.71956 -7.0735918,-13.82198 -9.0595817,-12.60976 10.9596029,-10.99861 9.1930346,-12.5128 13.846999,7.02444 14.74119,4.87643 -2.401688,15.33995 z"
+       inkscape:transform-center-x="1.8862463"
+       inkscape:transform-center-y="-0.49917902"
+       transform="matrix(0.99999999,0,0,0.76443453,7.5615441,-316.21246)" />
+>>>>>>> f42a18f... Fixes #253 Adds Keyboard Control and updates the how-to-play svg
   </g>
 </svg>
