@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet type="text/css" href="index.css" ?><!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
    xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
@@ -19,39 +19,6 @@
    inkscape:version="0.91 r13725"
    sodipodi:docname="sky.svg"
    enable-background="new">
-  <script
-     xlink:href="javascript/gameObject.js"
-     id="script0" />
-  <script
-     xlink:href="javascript/threading.js"
-     id="script4" />
-  <script
-     xlink:href="javascript/background.js"
-     id="script6" />
-  <script
-     xlink:href="javascript/debug.js"
-     id="script1" />
-  <script
-     xlink:href="javascript/flapping.js"
-     id="script2" />
-  <script
-     xlink:href="javascript/layers.js"
-     id="script3" />
-  <script
-     xlink:href="javascript/scaling.js"
-     id="script11" />
-  <script
-     xlink:href="javascript/start.js"
-     id="script5" />
-  <script
-     xlink:href="javascript/start_screen.js"
-     id="script14" />
-  <script
-     xlink:href="javascript/obstacle.js"
-     id="script15" />
-  <script
-     xlink:href="javascript/score.js"
-     id="script16" />
   <defs
      id="defs4">
     <inkscape:path-effect
@@ -302,7 +269,6 @@
      inkscape:groupmode="layer"
      id="layer9"
      inkscape:label="sky"
-     style="display:none"
      sodipodi:insensitive="true">
     <path
        style="display:inline;fill:url(#linearGradient4839);fill-opacity:1;fill-rule:evenodd;stroke:none"

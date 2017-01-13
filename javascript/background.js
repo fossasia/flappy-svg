@@ -90,7 +90,8 @@ function backgroundChange(layer){
 	gothamHide()
   spaceHide()
 	snowHide()
-  seaHide();
+  seaHide()
+	evilHide()
   binaryHide();
 	if (layer =='background'){
 		desertShow()
@@ -114,8 +115,11 @@ function backgroundChange(layer){
       seaShow()
   }
   if (layer == "binarybg") {
-      binaryShow();
+      binaryShow()
   }
+	if (layer =='Evil'){
+		evilShow();
+	}
 }
 
 function desertShow(){
@@ -206,4 +210,15 @@ function seaShow(){
 function seaHide(){
         hide_layer('Sea');
         hide_layer('fishinghook');
+}
+function evilShow(){
+        show_layer('Evil');
+        show_layer('energy');
+
+        createObstacles("energy");
+}
+
+function evilHide(){
+        hide_layer('Evil');
+        hide_layer('energy');
 }
