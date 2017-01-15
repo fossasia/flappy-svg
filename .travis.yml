@@ -23,7 +23,11 @@ before_script:
   - linkchecker --version
 
 script:
+  - bash update-gradle.sh
   - linkchecker -a --check-extern -f $TRAVIS_BUILD_DIR/ *.html 
+
+after_success:
+  - bash update-apk.sh
 
 cache:
   directories: node_modules
