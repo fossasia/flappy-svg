@@ -1,4 +1,4 @@
-Flappy SVG
+Flappy SVG [![Build Status](https://travis-ci.org/fossasia/flappy-svg.svg?branch=master)](https://travis-ci.org/fossasia/flappy-svg)
 ==========
 
 Flappy Bird in SVG
