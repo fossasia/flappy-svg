@@ -247,8 +247,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="bird"
-     sodipodi:insensitive="true"
-     onclick="characterChange('bat');">
+     sodipodi:insensitive="true">
     <g
        transform="matrix(-0.38499866,0,0,0.38499866,204.22603,49.462824)"
        id="layer1-5"

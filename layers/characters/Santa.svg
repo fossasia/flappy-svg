@@ -246,8 +246,7 @@
   <g
      inkscape:groupmode="layer"
      id="layer23"
-     inkscape:label="Santa"
-     onclick="characterChange('Flappyfish');">
+     inkscape:label="Santa">
     <g
        id="g7269"
        transform="translate(0,19.586446)">

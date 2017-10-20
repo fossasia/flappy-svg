@@ -247,7 +247,6 @@
      inkscape:groupmode="layer"
      id="layer14"
      inkscape:label="flappydino"
-     onclick="characterChange('helicopter');"
      sodipodi:insensitive="true">
     <path
        style="fill:#008000"

@@ -247,8 +247,7 @@
      inkscape:groupmode="layer"
      id="layer26"
      inkscape:label="Flappyfish"
-     sodipodi:insensitive="true"
-     onclick="characterChange('rocket');">
+     sodipodi:insensitive="true">
     <g
        id="g7481"
        transform="matrix(0.58577941,0,0,0.58577941,-96.159516,-536.5413)">
