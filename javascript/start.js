@@ -1,37 +1,53 @@
 // Execute everything that should be started.
 // This script must be the last script. Otherwise not all functions may be loaded.
 
-var characters;
-var backgrounds;
+
+current_character_index = 0;
+current_background_index = 0;
+var characters = [ "bird", "bat", "alien", "flappydino", "helicopter", "rocket", "Santa",
+               "Super_rocket", "Flappyfish", "unicorn", "botty", "black_cat", "ball",
+               "octodex", "grandma", "dog" ];
+var backgrounds = [ "background", "Gotham", "space", "Snow", "Sea", "Island", "binarybg", "Evil" ];
+
+function next_character(){
+    var layer = characters[current_character_index];
+    console.log(characters[current_character_index]);
+    characterChange(layer);
+    current_character_index = (current_character_index + 1) % (characters.length);
+}
+
+function next_background(){
+    var layer=backgrounds[current_background_index];
+    console.log(backgrounds[current_background_index]);
+    backgroundChange(layer);
+    current_background_index = (current_background_index+1) % (backgrounds.length);
+}
 
 window.onload = function() {
     scaleToFullscreen();
     showStartScreen();
-    characters = ["bird", "bat", "alien","flappydino","helicopter", "rocket","Santa", "Super_rocket", "Flappyfish",  "unicorn", "botty", "black_cat","ball","octodex", "grandma","dog"];
-    backgrounds=["background","Gotham","space","Snow", "Sea", "Island", "binarybg","Evil"];
 
-    rand=Math.floor((Math.random() * (backgrounds.length)));
+    rand = Math.floor((Math.random() * (backgrounds.length)));
     backgroundChange(backgrounds[rand])
+    current_background_index = (rand + 1) % (backgrounds.length);
 
     rand = Math.floor((Math.random() * (characters.length)));
-    characterChange(characters[rand])
+    characterChange(characters[rand]);
+    current_character_index = (rand + 1) % (backgrounds.length);
 
+    for(var i = 0; i < characters.length; i++){
+        var character = characters[i];
+        layerNamed(character).onclick = function(){ next_character(); };
+    }
 }
-i=0;
-j=0;
+
 window.onkeydown = function(event){
     switch(event.keyCode){
         case 32:
-            var layer=characters[i];
-            console.log(characters[i]);
-            characterChange(layer);
-            i=(i+1)%(characters.length);
+            next_character();
             break;
         case 66:
-            var layer=backgrounds[j];
-            console.log(backgrounds[j]);
-            backgroundChange(layer);
-            j=(j+1)%(backgrounds.length);
+            next_background();
             break;
         case 13:
             startGame();

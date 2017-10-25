@@ -247,8 +247,7 @@
      inkscape:groupmode="layer"
      id="layer13"
      inkscape:label="alien"
-     sodipodi:insensitive="true"
-     onclick="characterChange('flappydino');">
+     sodipodi:insensitive="true">
     <g
        id="g5929"
        transform="matrix(0.76196743,0,0,0.85685411,246.45133,38.482319)">

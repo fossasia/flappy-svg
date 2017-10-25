@@ -247,8 +247,7 @@
      inkscape:groupmode="layer"
      id="layer21"
      inkscape:label="rocket"
-     sodipodi:insensitive="true"
-     onclick="characterChange('Super_rocket');">
+     sodipodi:insensitive="true">
     <g
        id="use9042"
        transform="translate(940.73311,-1221.3588)">

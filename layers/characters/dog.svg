@@ -91,7 +91,6 @@
      id="layer23"
      inkscape:label="dog"
      style="display:none"
-     onclick="characterChange('bird');"
      sodipodi:insensitive="true">
      
     <path

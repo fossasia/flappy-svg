@@ -247,8 +247,7 @@
      inkscape:groupmode="layer"
      id="layer18"
      inkscape:label="Super_rocket"
-     sodipodi:insensitive="true"
-     onclick="characterChange('bird');">
+     sodipodi:insensitive="true">
     <g
        transform="translate(2.652643,23.280459)"
        style="display:inline"
