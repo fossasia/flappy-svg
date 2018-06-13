@@ -1,14 +1,14 @@
 **Description**
 
 The game [Flappy-SVG](https://github.com/fossasia/flappy-svg#flappy-svg) can be customized using [Inkscape](http://inkscape.org/) and Javascript. 
-Learn how to contribute to open source projects using git.
+This task is for people who know different languages. This task involves just basic translation of things on the task menu.
 
 **Requirements:**
 
-1. Do a git tutorial.
-	- [git - the simple guide](https://rogerdudler.github.io/git-guide/index.html)
-	- [try.github.io](https://try.github.io/levels/1/challenges/1)
-	- [learn.opentechschool.org](http://learn.opentechschool.org/)
+1. Fork the repository.
+2. Create a new md file for whatever task you want to translate and name it accordingly.
+3. Basically, just translate the words into a different language.
+	
 
 **Expected Outcome:** 
 
@@ -17,6 +17,8 @@ Learn how to contribute to open source projects using git.
 
 **Links/Tutorials:**
 
+- [Learn git](learn_git)
 - [Flappy-SVG](https://github.com/fossasia/flappy-svg#flappy-svg)
 - [Inkscape](http://inkscape.org/)
 - [Post improvement ideas](https://github.com/fossasia/flappy-svg/issues)
+
