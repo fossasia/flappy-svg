@@ -15,3 +15,16 @@ g#layer4 image {
 g#layer4 image:hover {
 	opacity: 1.0;
 }
+
+tspan {
+   cursor: default;
+}
+#g17141, #g17141 tspan {
+   cursor: pointer;
+}
+#g17141 {
+   opacity: 0.8;
+}
+#g17141:hover {
+   opacity: 1;
+}
