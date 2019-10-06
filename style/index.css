@@ -15,3 +15,11 @@ g#layer4 image {
 g#layer4 image:hover {
 	opacity: 1.0;
 }
+
+#e1_circle:hover {
+   fill: #64a402 !important;
+   cursor: pointer;
+}
+#path4152 {
+   pointer-events: none;
+}
