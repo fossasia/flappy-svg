@@ -11,10 +11,11 @@
 /* in-game styles */
 
 g#layer4 image {
-	opacity: 0.7;
+   opacity: 0.7;
 }
 g#layer4 image:hover {
-	opacity: 1.0;
+   opacity: 1.0;
+   cursor: pointer;
 }
 
 #e1_circle:hover {
