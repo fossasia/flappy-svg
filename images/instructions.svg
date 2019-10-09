@@ -153,7 +153,7 @@
            x="69.776932"
            y="296.06406"
            style="fill:#000000"
-           id="tspan3340">Avoid Colliding With Obstacles   </tspan></tspan><tspan
+           id="tspan3340">Avoid colliding with obstacles   </tspan></tspan><tspan
          sodipodi:role="line"
          x="69.776932"
          y="344.8287"
@@ -162,7 +162,7 @@
            x="69.776932"
            style="fill:#000000"
            id="tspan3344"
-           dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12.419745">and hitting the floot floor </tspan></tspan></text>
+           dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12.419745">and hitting the floor </tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40.24990082px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -223,7 +223,7 @@
            x="79.960701"
            y="541.3913"
            style="fill:#000000"
-           id="tspan3364">Colliding with Obstacles Leads    </tspan></tspan><tspan
+           id="tspan3364">Hitting the obstacles =    </tspan></tspan><tspan
          sodipodi:role="line"
          x="79.960701"
          y="589.18762"
@@ -231,7 +231,7 @@
          style="fill:#000000"><tspan
            x="79.960701"
            style="fill:#000000"
-           id="tspan3368">to Termination Of Game</tspan></tspan><tspan
+           id="tspan3368"> GAME OVER! </tspan></tspan><tspan
          sodipodi:role="line"
          x="79.960701"
          y="636.98395"
