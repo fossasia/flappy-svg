@@ -2,6 +2,7 @@
 
 function Obstacle(svg_object) {
     this.svg = svg_object;
+    this.svg.classList.add('obstacle');
 }
 
 Obstacle.prototype = {

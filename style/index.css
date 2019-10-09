@@ -9,6 +9,7 @@
 }
 
 /* in-game styles */
+
 g#layer4 image {
 	opacity: 0.7;
 }
@@ -16,6 +17,9 @@ g#layer4 image:hover {
 	opacity: 1.0;
 }
 
+.obstacle path {
+   stroke: red !important;
+}
 tspan {
    cursor: default;
 }
