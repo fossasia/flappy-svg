@@ -56,9 +56,9 @@ Flappy.prototype = {
                 return;
             var o_rect = obstacles[i].getBox;
 
-            var c = isOverlap(flappy_rect, o_rect);
+            var c = isNoOverlap(flappy_rect, o_rect);
 
-            if(!c){
+            if(c){
                 var d = isBehind(o_rect,flappy_rect);
                 if(d){
                     updateScore();
@@ -69,10 +69,10 @@ Flappy.prototype = {
 				alert('Game Over :( Final Score: ' + Number(document.getElementById("tspan17169").innerHTML));
 			}
 
-            if (c || o_rect.right < flappy_rect.left)
+            if (!c || o_rect.right < flappy_rect.left)
                 obstacles.push(obstacles.shift());
 
-            this.isCollided = c;
+            this.isCollided = !c;
         }
     },
 
@@ -143,15 +143,15 @@ function getCenteredrect(rect){
 }
 
 //Parameters are rects
-function isOverlap(e1, e2) {
+function isNoOverlap(e1, e2) {
     rect1 = getCenteredrect(e1);
     rect2 = getCenteredrect(e2);
     if (rect1.x < rect2.x + rect2.width &&
    rect1.x + rect1.width > rect2.x &&
    rect1.y < rect2.y + rect2.height &&
    rect1.height + rect1.y > rect2.y)
-        return true;
-    else return false;
+        return false;
+    else return true;
 }
 
 function onCollision(){
