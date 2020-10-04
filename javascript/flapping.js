@@ -26,9 +26,11 @@ Flappy.prototype = {
         this.position.y = this.position.y + this.velocity;
         if (this.position.screen.bottom > playfield().height) {
             this.position.screen.bottom = playfield().height;
+			this.isCollided = true;
         }
         if (this.position.screen.top < 0) {
             this.position.screen.top = 0;
+			this.isCollided = true;
         }
 
         this.checkCollision();
