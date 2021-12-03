@@ -6,6 +6,7 @@ function Flappy(layerName) {
     var me = this;
     this.action = new Action(function(){me.fly()}, function(){me.started()});
     document.onmousedown = function () { me.flap() };
+    this.myDist = 0;
 }
 
 Flappy.prototype = {
@@ -52,6 +53,8 @@ Flappy.prototype = {
     },
 
     checkCollision : function() {
+//        updateDistance();
+        this.myDist = this.myDist + 1;
         var flappy_rect = this.layer.getBoundingClientRect();
         for (i = 0; i < 3; i++) {
             if (i >= obstacles.length)
@@ -68,7 +71,7 @@ Flappy.prototype = {
             } else {
 				var gameOverSound = new Audio("../flappy-svg/Sounds/GameOver.mp3");
 				gameOverSound.play();
-				alert('Game Over :( Final Score: ' + Number(document.getElementById("tspan17169").innerHTML));
+				alert('Game Over :( Final Score: ' + Number(document.getElementById("tspan17169").innerHTML) + ', Distance: ' + this.myDist);
 			}
 
             if (c || o_rect.right < flappy_rect.left)
