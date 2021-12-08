@@ -53,7 +53,7 @@ Flappy.prototype = {
     },
 
     checkCollision : function() {
-//        updateDistance();
+        updateDistance();
         this.myDist = this.myDist + 1;
         var flappy_rect = this.layer.getBoundingClientRect();
         for (i = 0; i < 3; i++) {
