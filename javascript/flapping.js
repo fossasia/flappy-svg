@@ -52,6 +52,7 @@ Flappy.prototype = {
     },
 
     checkCollision : function() {
+        updateDistance();
         var flappy_rect = this.layer.getBoundingClientRect();
         for (i = 0; i < 3; i++) {
             if (i >= obstacles.length)
@@ -68,7 +69,7 @@ Flappy.prototype = {
             } else {
 				var gameOverSound = new Audio("../flappy-svg/Sounds/GameOver.mp3");
 				gameOverSound.play();
-				alert('Game Over :( Final Score: ' + Number(document.getElementById("tspan17169").innerHTML));
+				alert('Game Over :( Final Score: ' + Number(document.getElementById("tspan17169").innerHTML) + ', Distance: ' + Number(document.getElementById("tspan_distance").innerHTML));
 			}
 
             if (c || o_rect.right < flappy_rect.left)
@@ -148,10 +149,10 @@ function getCenteredrect(rect){
 function isOverlap(e1, e2) {
     rect1 = getCenteredrect(e1);
     rect2 = getCenteredrect(e2);
-    if (rect1.x < rect2.x + rect2.width &&
-   rect1.x + rect1.width > rect2.x &&
-   rect1.y < rect2.y + rect2.height &&
-   rect1.height + rect1.y > rect2.y)
+    if (rect1.x < rect2.x + rect2.width/2 &&
+   rect1.x + rect1.width/2 > rect2.x &&
+   rect1.y < rect2.y + rect2.height/2 &&
+   rect1.height/2 + rect1.y > rect2.y)
         return true;
     else return false;
 }

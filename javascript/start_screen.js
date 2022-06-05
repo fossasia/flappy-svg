@@ -11,6 +11,7 @@ function startGame() {
     // this must be configured one mousedown event in the start screen
     layerNamed('startscreen').style.display = 'none'; // none = hide layer
     layerNamed('score_board').style.display = 'inline';
+    layerNamed('distance_board').style.display = 'inline';
     startFlapping('bird');
     startMovingBackgound('background', -7);
     startMovingBackgound('cactus', -7);
