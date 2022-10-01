@@ -1,13 +1,259 @@
 <html>
-    <head>
-        <title>Flappy Leader Board</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/ico" href="images/favicon.ico" />
-    </head>
-    <body>
-        <p>
-            <h1>This Page displays the leader board!</h1>
-        </p>
-    </body>
+  <head>
+    <title>Flappy Leader Board</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
+    <link href="style/leaderboard.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 id="leaderheader">LeaderBoard</h1>
+      <div class="lboard_section">
+        <div class="lboard_tabs">
+          <div class="tabs">
+            <ul>
+              <li data-li="today">Today</li>
+              <li class="active" data-li="month">Month</li>
+              <li data-li="year">Year</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lboard_wrap">
+          <div class="lboard_item today" style="display: none">
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/560/560216.png"
+                  alt="picture_1"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>1.</span> Charles John</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="points">195 points</div>
+            </div>
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/149/149995.png"
+                  alt="picture_2"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>2.</span>Alex Mike</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="points">185 points</div>
+            </div>
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/2922/2922506.png"
+                  alt="picture_2"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>3.</span>Johnson</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 60%"></div>
+                </div>
+              </div>
+              <div class="points">160 points</div>
+            </div>
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/560/560216.png"
+                  alt="picture_1"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>4.</span>Rosey</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 30%"></div>
+                </div>
+              </div>
+              <div class="points">130 points</div>
+            </div>
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/149/149071.png"
+                  alt="picture_2"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>5.</span>Scarlett Angela</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 10%"></div>
+                </div>
+              </div>
+              <div class="points">110 points</div>
+            </div>
+          </div>
+          <div class="lboard_item month" style="display: block">
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/149/149071.png"
+                  alt="picture_2"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>1.</span> Alex Mike</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="points">1195 points</div>
+            </div>
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/660/660611.png"
+                  alt="picture_3"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>2.</span>Johnson</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="points">1185 points</div>
+            </div>
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/660/660611.png"
+                  alt="picture_1"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>3.</span>Charles John</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="points">1160 points</div>
+            </div>
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/2922/2922506.png"
+                  alt="picture_5"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>4.</span>Scarlett Angela</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 50%"></div>
+                </div>
+              </div>
+              <div class="points">1130 points</div>
+            </div>
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/560/560216.png"
+                  alt="picture_4"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>5.</span>Rosey</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 30%"></div>
+                </div>
+              </div>
+              <div class="points">1110 points</div>
+            </div>
+          </div>
+          <div class="lboard_item year" style="display: none">
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/2922/2922506.png"
+                  alt="picture_5"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>1.</span>Scarlett Angela</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="points">2195 points</div>
+            </div>
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/560/560216.png"
+                  alt="picture_4"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>2.</span>Rosey</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="points">2185 points</div>
+            </div>
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/2922/2922506.png"
+                  alt="picture_3"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>3.</span>Johnson</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 65%"></div>
+                </div>
+              </div>
+              <div class="points">2160 points</div>
+            </div>
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/560/560216.png"
+                  alt="picture_1"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>4.</span>Charles John</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 30%"></div>
+                </div>
+              </div>
+              <div class="points">2130 points</div>
+            </div>
+            <div class="lboard_mem">
+              <div class="img">
+                <img
+                  src="https://image.flaticon.com/icons/png/512/149/149995.png"
+                  alt="picture_2"
+                />
+              </div>
+              <div class="name_bar">
+                <p><span>5.</span>Alex Mike</p>
+                <div class="bar_wrap">
+                  <div class="inner_bar" style="width: 10%"></div>
+                </div>
+              </div>
+              <div class="points">2110 points</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
