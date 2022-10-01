@@ -41,7 +41,7 @@ Flappy.prototype = {
     },
     flap : function() {
         this.velocity = this.flapVelocity;
-		var flapSound = new Audio("../flappy-svg/Sounds/Flappy.mp3");
+		var flapSound = new Audio("../Sounds/Flappy.mp3");
 		flapSound.play();
     },
     show : function() {
@@ -66,7 +66,7 @@ Flappy.prototype = {
                     updateScore();
                 }
             } else {
-				var gameOverSound = new Audio("../flappy-svg/Sounds/GameOver.mp3");
+				var gameOverSound = new Audio("../Sounds/GameOver.mp3");
 				gameOverSound.play();
 				alert('Game Over :( Final Score: ' + Number(document.getElementById("tspan17169").innerHTML));
 			}
