@@ -9,7 +9,20 @@ var characters = [ "bird", "bat", "alien", "flappydino", "helicopter", "rocket",
                "octodex", "grandma", "dog" ];
 var backgrounds = [ "background", "Gotham", "space", "Snow", "Sea", "Island", "binarybg", "Evil" ];
 
+// Debounce variables to prevent rapid switching on mobile
+var last_character_switch_time = 0;
+var last_background_switch_time = 0;
+var SWITCH_DEBOUNCE_MS = 300; // 300ms minimum between switches
+
 function next_character(){
+    var now = Date.now();
+    // Check if enough time has passed since last switch
+    if (now - last_character_switch_time < SWITCH_DEBOUNCE_MS) {
+        console.log('Character switch debounced - too fast');
+        return;
+    }
+    
+    last_character_switch_time = now;
     var layer = characters[current_character_index];
     console.log(characters[current_character_index]);
     characterChange(layer);
@@ -17,6 +30,14 @@ function next_character(){
 }
 
 function next_background(){
+    var now = Date.now();
+    // Check if enough time has passed since last switch
+    if (now - last_background_switch_time < SWITCH_DEBOUNCE_MS) {
+        console.log('Background switch debounced - too fast');
+        return;
+    }
+    
+    last_background_switch_time = now;
     var layer=backgrounds[current_background_index];
     console.log(backgrounds[current_background_index]);
     backgroundChange(layer);
