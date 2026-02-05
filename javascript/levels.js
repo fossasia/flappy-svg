@@ -1,7 +1,7 @@
 function Level(name, backgrounds, obstacles){
 	this._backgrounds = backgrounds;
 	this.obstacles = obstacles;
-	this._obstacles = createObstacles(obstaclesLayer);
+	this._obstacles = createObstacles(obstacles);
 	this._name = name;
 	this._score = 0;
 }
@@ -10,29 +10,28 @@ Level.prototype = {
 
 	show: function(){
 
-		for (background in this.backgrounds){
-			show_layer(background["layer"]);
+		for (let i = 0; i < this._backgrounds.length; i++) {
+			show_layer(this._backgrounds[i].layer);
 		}
 
-		for(obstacle in this.obstacles){
-			show_layer(obstacle["layer"]);
+		for (let i = 0; i < this.obstacles.length; i++) {
+			show_layer(this.obstacles[i].layer);
 		}
-
 	},
 
 	hide: function(){
 
-		for (background in this.backgrounds){
-			hide_layer(background["layer"]);
+		for (let i = 0; i < this._backgrounds.length; i++) {
+			hide_layer(this._backgrounds[i].layer);
 		}
 
-		for(obstacle in this.obstacles){
-			hide_layer(obstacle["layer"]);
+		for (let i = 0; i < this.obstacles.length; i++) {
+			hide_layer(this.obstacles[i].layer);
 		}
 
 	},
 
-	getBackgrounds(): function(){
+	getBackgrounds: function(){
 		return this._backgrounds;
 	},
 
@@ -40,25 +39,27 @@ Level.prototype = {
 		return this._obstacles;
 	},
 
-	getName(): function(){
+	getName: function(){
 		return this._name;
 	},
 
-	getScore(): function{
-		return this_score;
+	getScore: function(){
+		return this._score;
 	},
 
-	start(): function(){
+	start: function(){
 		//Needs to be Implemented
+		this.show();
 	},
 
-	stop(): function(){
+	stop: function(){
 		// Needs to be Implemented
+		this.hide();
 	},
 
 }
 
-var all_levels,current_level;
+var all_levels = {}, current_level;
 
 // Specifications of any new level must be given here
 
